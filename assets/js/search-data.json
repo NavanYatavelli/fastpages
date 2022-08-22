@@ -2,8 +2,8 @@
   
     
         "post0": {
-            "title": "First Jupyter Notebook Post",
-            "content": "Code Notebook . Some Python code: . print(&quot;Hello&quot;) . Hello . for i in range (3): print(&quot;HEY!&quot;, end = &#39; &#39;) for i in range (3): print(&quot;CODE!&quot;, end = &#39; &#39;) . HEY! HEY! HEY! CODE! CODE! CODE! .",
+            "title": "Navan's Jupyter Notebook Post",
+            "content": "Code Notebook . Some Python code: . print(&quot;Hello DNHS!!!&quot;) . Hello DNHS!!! . for i in range (5): print(&quot;DNHS!&quot;, end = &#39; &#39;) for i in range (5): print(&quot;DNHS!&quot;, end = &#39; &#39;) . HEY! HEY! HEY! CODE! CODE! CODE! .",
             "url": "https://beebadger.github.io/fastpages/jupyter/2022/08/21/Firstnotebook.html",
             "relUrl": "/jupyter/2022/08/21/Firstnotebook.html",
             "date": " • Aug 21, 2022"
