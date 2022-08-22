@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Jupyter Notebook & Python Code",
-            "content": "Printing &quot;DNHS!&quot; Using Python . print(&quot;DNHS!&quot;) . DNHS! .",
+            "content": "Printing &quot;DNHS!&quot; Using Python . print(&quot;Hello&quot;) print(&quot;DNHS!&quot;) . Hello DNHS! .",
             "url": "https://beebadger.github.io/fastpages/2022/08/21/Firstnotebook.html",
             "relUrl": "/2022/08/21/Firstnotebook.html",
             "date": " • Aug 21, 2022"
