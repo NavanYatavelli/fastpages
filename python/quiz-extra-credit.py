@@ -1,8 +1,8 @@
-# Online Python-3 Compiler (Interpreter)
+
 import getpass, sys # imports library/ code
 from site import ENABLE_USER_SITE # imports from a site
 
-def question_and_answer(prompt): # defines question_and_answer
+def question_and_answer(prompt): # defines question_and_answer # definition
     print("Question: " + prompt) # asks question
     msg = input() # get input
     print("Answer: " + msg) # prints answer
@@ -11,10 +11,10 @@ questions = 8 # declaring variables
 correct = 0
 wrong = 0
 
-def question_with_response(prompt,answer): 
+def question_with_response(prompt,answer): # definition of optimized function
     print("Question: " + prompt) 
     rsp = input()
-    global correct, wrong
+    global correct, wrong # use global variables
     if rsp == answer:
         print("Correct respose")
         correct += 1
@@ -28,6 +28,7 @@ print('Hey there!, ' + getpass.getuser() + " running " + sys.executable) # progr
 print("You will be asked " + str(questions) + " questions.")
 question_and_answer("Are you ready to take a test?") # first question begins
 
+# definition of arrray with two strings
 array=[
     ["Who was the quarterback for the Patriots 7 years ago?","Tom Brady"],
     ["Who is the current quarterback for the Patriots?","Mac Jones"],
@@ -41,7 +42,8 @@ array=[
 
 for rows in array:
     question_with_response(rows[0],rows[1]) # third question
-    
+
+# percent calculation    
 percent = (correct/questions) * 100 # finding a perctage
 
 print(getpass.getuser() + " you scored " + str(correct) +"/" + str(questions) + ". You got " + str(wrong) + " questions wrong. Your percentage on this quiz is " + str(percent) + "%.") # printing out the score and percentage
