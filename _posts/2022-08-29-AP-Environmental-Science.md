@@ -7,96 +7,42 @@ title: AP Environmental Science!!
 ---
 # AP Environmental Science
 
-## Basic setup
+## Lab:  Tragedy of the Commons Fishing Contest 
 
-Jekyll requires blog post files to be named according to the following format:
 
-`YEAR-MONTH-DAY-filename.md`
+## Purpose
+The purpose of this simulation is to demonstrate how individuals might utilize one of more common resources and the potential result(s) of various resource use approaches.
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `filename` is whatever file name you choose, to remind yourself what this post is about. `.md` is the file extension for markdown files.
+Materials
+Fishing tools (straws, chopsticks, or something similar) nothing spoon or fork-like!
+Common Pond (sheet of paper, or desk)
+Private Pond (optional)
+Fish (6 of each of four types of “fish”--for example, 6 sour worms, 6 regular M&Ms, 6 gummi bears and 6 candied oranges)
 
-The first line of the file should start with a single hash character, then a space, then your title. This is how you create a "*level 1 heading*" in markdown. Then you can create level 2, 3, etc headings as you wish but repeating the hash character, such as you see in the line `## File names` above.
+## Procedure
 
-## Basic formatting
-
-You can use *italics*, **bold**, `code font text`, and create [links](https://www.markdownguide.org/cheat-sheet/). Here's a footnote [^1]. Here's a horizontal rule:
+Work in groups of 3 or 4 (with distance learning, you can either get family members/others living in your household (best option) or take on the role of all fisherpersons separately by yourself).
+Each group will begin this exercise with 24 “fish.”  This start total of 24 is to be comprised of six fish each of four different types.  For example, 6 sour worms, 6 regular M&Ms, 6 gummi bears and 6 candied oranges.  .
+Each fisherperson needs two straws (or chopsticks).  
+Hands may not be used during the fishing process; that is poaching.  It is illegal.  You will lose your boat (or computer), job, fishing license, your entire harvest will be distributed to others.  Remember, people who make good choices don’t break the law.
+Each fish has a current market value (again fish types may vary)
 
 ---
 
-## Lists
+## CONCLUSIONS
 
-Here's a list:
+Discuss any significant trends illustrated in carrying out this exercise.
 
-- item 1
-- item 2
-
-And a numbered list:
-
-1. item 1
-1. item 2
-
-## Boxes and stuff
-
-> This is a quotation
-
-{% include alert.html text="You can include alert boxes" %}
-
-...and...
-
-{% include info.html text="You can include info boxes" %}
-
-## Images
-
-![]({{ site.baseurl }}/images/logo.png "fast.ai's logo")
-
-## Code
-
-You can format text and code per usual 
-
-General preformatted text:
-
-    # Do a thing
-    do_thing()
-
-Python code and output:
-
-```python
-# Prints '2'
-print(1+1)
-```
-
-    2
-
-Formatting text as shell commands:
-
-```shell
-echo "hello world"
-./some_script.sh --option "value"
-wget https://example.com/cat_photo1.png
-```
-
-Formatting text as YAML:
-
-```yaml
-key: value
-- another_key: "another value"
-```
+At the beginning of the experiment me and my group realized that is much easier to catch fish and sell them due to an abundance of fish. At the end of the experiment, due to the overfishing of fish the population had declined and it was harder to catch anything.
 
 
-## Tables
+Did your fishing group talk about the harvesting approach that would be taken during each season?  What was your decision if one was reached?
 
-| Column 1 | Column 2 |
-|-|-|
-| A thing | Another thing |
+Our fishing group talked about the harvesting approach that would be taken during each season. Our decision after the discussion was that we would incorporate a law that would only allow us to catch a certain amount of fish every time we fished. This fishing policy would make the fish to have enough time to repopulate and get back to their correct population.
 
 
-## Tweetcards
-
-{% twitter https://twitter.com/jakevdp/status/1204765621767901185?s=20 %}
+Compare your group’s results with the other groups.  Explain whether or not you think your group was successful in using the ocean’s resources in a sustainable manner.
 
 
-## Footnotes
+After comparing our groups data to other groups - we realize that our group ( alont with many of the other groups) did not use the pond resources to keep the pond fishes sustainable. We realized that we have overfished and as a result to that the fish population has decreased gradually. The overfishing made it more harder to fish and resluted in less abundance of fish in the pond. We were not successful in using the pond resources in a sustainable manner.
 
-
-
-[^1]: This is the footnote.
