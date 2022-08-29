@@ -85,7 +85,7 @@
   
       ,"page7": {
           "title": "Vocab",
-          "content": "Vocab . A collection of vocabulary from throughout the trimester . Basic Terms . Variable: A value that changes based off of conditions . File Types . .html: Used for designing webpages .md: Also used for basic webpage design and can be used with python .ipynb: Uses a combination of python and .md .",
+          "content": "Vocab . A collection of vocabulary this trimester . Basic Terms . Variable: A value that changes based off of conditions Statement: A simple programing statement . File Types . .html: Used for designing webpages .md: Also used for basic webpage design and can be used with python .ipynb: Uses a combination of python and .md .py: a python file .",
           "url": "https://beebadger.github.io/fastpages/vocab/",
           "relUrl": "/vocab/",
           "date": ""
