@@ -4,8 +4,8 @@
         "post0": {
             "title": "Bash Tool Setup",
             "content": "Verify Tools have been installed . echo &quot;Checking python is installed&quot; if eval &quot;python --version&quot;; then echo &quot;Python is installed&quot; else echo &quot;Python is not installed&quot; fi echo &quot;Checking Conds is installed&quot; if eval &quot;conda --version&quot;; then echo &quot;Conda is installed&quot; else echo &quot;Conda is not installed&quot; fi echo &quot;Checking jupyter is installed&quot; if eval &quot;jupyter --version&quot;; then echo &quot;jupyter is installed&quot; else echo &quot;jupyter is not installed&quot; fi echo &quot;Checking javascript is installed&quot; if eval &quot;javascript --version&quot;; then echo &quot;javascript is installed&quot; else echo &quot;javascript is not installed&quot; fi . Checking python is installed004l Python 3.9.1204l Python is installed Checking Conds is installed conda 4.13.0004l Conda is installed Checking jupyter is installed Selected Jupyter core packages...[?2004l IPython : 8.2.0 ipykernel : 6.9.1 ipywidgets : 7.6.5 jupyter_client : 6.1.12 jupyter_core : 4.9.2 jupyter_server : 1.13.5 jupyterlab : 3.3.2 nbclient : 0.5.13 nbconvert : 6.4.4 nbformat : 5.3.0 notebook : 6.4.8 qtconsole : 5.3.0 traitlets : 5.1.1 jupyter is installed Checking javascript is installed javascript: command not found04l javascript is not installed . . Update repository with Bash . #go to the git directory cd /pwd/../../ #make changes to files and then add git add . #commit git commit -m &quot;fake update&quot; #update git push origin master . Automate Installation!! . echo &quot;installing Jupyter bash kernel&quot; pip install bash_kernel python -m bash_kernel.install echo &quot;Installation complete&quot; .",
-            "url": "https://beebadger.github.io/fastpages/2022/08/29/bash-tool-setup.html",
-            "relUrl": "/2022/08/29/bash-tool-setup.html",
+            "url": "https://beebadger.github.io/fastpages/jupyter/2022/08/29/bash-tool-setup.html",
+            "relUrl": "/jupyter/2022/08/29/bash-tool-setup.html",
             "date": " • Aug 29, 2022"
         }
         
