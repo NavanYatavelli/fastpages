@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -159,7 +159,7 @@ window.onload = wrap_img;
     <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
     <span class="k">return</span> <span class="n">msg</span>
 
-<span class="n">questions</span> <span class="o">=</span> <span class="mi">5</span> <span class="c1"># declaring variables</span>
+<span class="n">questions</span> <span class="o">=</span> <span class="mi">8</span> <span class="c1"># declaring variables</span>
 <span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">wrong</span> <span class="o">=</span> <span class="mi">0</span>
 
@@ -203,13 +203,34 @@ window.onload = wrap_img;
     <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is incorrect!&quot;</span><span class="p">)</span>
     <span class="n">wrong</span> <span class="o">+=</span> <span class="mi">1</span>
 
-<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">&quot;What is the name of the most popular football video game?&quot;</span><span class="p">)</span> <span class="c1">#</span>
+<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">&quot;What is the name of the most popular football video game?&quot;</span><span class="p">)</span> <span class="c1">#sixth question</span>
 <span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;Madden&quot;</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is correct!&quot;</span><span class="p">)</span>
     <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is incorrect!&quot;</span><span class="p">)</span>
     <span class="n">wrong</span> <span class="o">+=</span> <span class="mi">1</span>
+    
+<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">&quot;What command is used to include other functions that are developed?&quot;</span><span class="p">)</span> <span class="c1">#Teachers Questions </span>
+<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;import&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is correct!&quot;</span><span class="p">)</span>
+    <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is incorrect!&quot;</span><span class="p">)</span>
+
+<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">&quot;What command in this example is used to evaluate a response?&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;if&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is correct!&quot;</span><span class="p">)</span>
+    <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is incorrect!&quot;</span><span class="p">)</span>
+
+<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">&quot;Each &#39;if&#39; command contains an &#39;_________&#39; to determine a true or false condition?&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;expression&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is correct!&quot;</span><span class="p">)</span>
+    <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is incorrect!&quot;</span><span class="p">)</span>
     
 <span class="n">percent</span> <span class="o">=</span> <span class="p">(</span><span class="n">correct</span><span class="o">/</span><span class="n">questions</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span> <span class="c1"># finding a perctage</span>
 
@@ -227,20 +248,26 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Hey there!, root running /bin/python3
-You will be asked 5 questions.
+You will be asked 8 questions.
 Question: Are you ready to take a test?
-Answer: yes
+Answer: Yes!
 Question: Who was the quarterback for the Patriots 7 years ago?
 Tom Brady Good Job!
 Question: Who is the current quarterback for the Patriots?
-Mac Jones is the current quarterback for the New England Patriots!
+Tom Brady is incorrect!
 Question: What position does Aaron Rodgers play?
-Wide Reciever is incorrect!
+Quarterback is correct!
 Question: Who is the owner of the Patriots football team?
-Robert Kraft is correct!
+Quarterback is incorrect!
 Question: What is the name of the most popular football video game?
 Madden is correct!
-root you scored 4/5. You got 1 questions wrong. Your percentage on this quiz is 80.0%.
+Question: What command is used to include other functions that are developed?
+import is correct!
+Question: What command in this example is used to evaluate a response?
+if is correct!
+Question: Each &#39;if&#39; command contains an &#39;_________&#39; to determine a true or false condition?
+expression is correct!
+root you scored 6/8. You got 2 questions wrong. Your percentage on this quiz is 75.0%.
 </pre>
 </div>
 </div>
