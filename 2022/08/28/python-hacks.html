@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      1 min read
     
 </span></p>
 
@@ -223,49 +223,6 @@ window.onload = wrap_img;
 You will be asked 5 questions.
 Question: Are you ready to take a test?
 </pre>
-</div>
-</div>
-
-<div class="output_area">
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">KeyboardInterrupt</span>                         Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">Untitled-1.ipynb Cell 2</span> in <span class="ansi-cyan-fg">&lt;cell line: 20&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:Untitled-1.ipynb?jupyter-notebook#W3sdW50aXRsZWQ%3D?line=17&#39;&gt;18&lt;/a&gt;</span> print(&#39;Hey there!, &#39; + getpass.getuser() + &#34; running &#34; + sys.executable)
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:Untitled-1.ipynb?jupyter-notebook#W3sdW50aXRsZWQ%3D?line=18&#39;&gt;19&lt;/a&gt;</span> print(&#34;You will be asked &#34; + str(questions) + &#34; questions.&#34;)
-<span class="ansi-green-fg">---&gt; &lt;a href=&#39;vscode-notebook-cell:Untitled-1.ipynb?jupyter-notebook#W3sdW50aXRsZWQ%3D?line=19&#39;&gt;20&lt;/a&gt;</span> question_and_answer(&#34;Are you ready to take a test?&#34;)
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:Untitled-1.ipynb?jupyter-notebook#W3sdW50aXRsZWQ%3D?line=21&#39;&gt;22&lt;/a&gt;</span> rsp = question_with_response(&#34;Who was the quarterback for the Patriots 7 years ago?&#34;)
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href=&#39;vscode-notebook-cell:Untitled-1.ipynb?jupyter-notebook#W3sdW50aXRsZWQ%3D?line=22&#39;&gt;23&lt;/a&gt;</span> if rsp == &#34;Tom Brady&#34;:
-
-<span class="ansi-green-intense-fg ansi-bold">Untitled-1.ipynb Cell 2</span> in <span class="ansi-cyan-fg">question_and_answer</span><span class="ansi-blue-fg">(prompt)</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:Untitled-1.ipynb?jupyter-notebook#W3sdW50aXRsZWQ%3D?line=3&#39;&gt;4&lt;/a&gt;</span> def question_and_answer(prompt):
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:Untitled-1.ipynb?jupyter-notebook#W3sdW50aXRsZWQ%3D?line=4&#39;&gt;5&lt;/a&gt;</span>     print(&#34;Question: &#34; + prompt)
-<span class="ansi-green-fg">----&gt; &lt;a href=&#39;vscode-notebook-cell:Untitled-1.ipynb?jupyter-notebook#W3sdW50aXRsZWQ%3D?line=5&#39;&gt;6&lt;/a&gt;</span>     msg = input()
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href=&#39;vscode-notebook-cell:Untitled-1.ipynb?jupyter-notebook#W3sdW50aXRsZWQ%3D?line=6&#39;&gt;7&lt;/a&gt;</span>     print(&#34;Answer: &#34; + msg)
-
-File <span class="ansi-green-fg">/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py:1177</span>, in <span class="ansi-cyan-fg">Kernel.raw_input</span><span class="ansi-blue-fg">(self, prompt)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1173</span> if not self._allow_stdin:
-<span class="ansi-green-intense-fg ansi-bold">   1174</span>     raise StdinNotImplementedError(
-<span class="ansi-green-intense-fg ansi-bold">   1175</span>         &#34;raw_input was called, but this frontend does not support input requests.&#34;
-<span class="ansi-green-intense-fg ansi-bold">   1176</span>     )
-<span class="ansi-green-fg">-&gt; 1177</span> return self._input_request(
-<span class="ansi-green-intense-fg ansi-bold">   1178</span>     str(prompt),
-<span class="ansi-green-intense-fg ansi-bold">   1179</span>     self._parent_ident[&#34;shell&#34;],
-<span class="ansi-green-intense-fg ansi-bold">   1180</span>     self.get_parent(&#34;shell&#34;),
-<span class="ansi-green-intense-fg ansi-bold">   1181</span>     password=False,
-<span class="ansi-green-intense-fg ansi-bold">   1182</span> )
-
-File <span class="ansi-green-fg">/usr/local/lib/python3.10/dist-packages/ipykernel/kernelbase.py:1219</span>, in <span class="ansi-cyan-fg">Kernel._input_request</span><span class="ansi-blue-fg">(self, prompt, ident, parent, password)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1216</span>             break
-<span class="ansi-green-intense-fg ansi-bold">   1217</span> except KeyboardInterrupt:
-<span class="ansi-green-intense-fg ansi-bold">   1218</span>     # re-raise KeyboardInterrupt, to truncate traceback
-<span class="ansi-green-fg">-&gt; 1219</span>     raise KeyboardInterrupt(&#34;Interrupted by user&#34;) from None
-<span class="ansi-green-intense-fg ansi-bold">   1220</span> except Exception:
-<span class="ansi-green-intense-fg ansi-bold">   1221</span>     self.log.warning(&#34;Invalid Message:&#34;, exc_info=True)
-
-<span class="ansi-red-fg">KeyboardInterrupt</span>: Interrupted by user</pre>
 </div>
 </div>
 
