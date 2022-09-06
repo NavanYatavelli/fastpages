@@ -18,3 +18,6 @@ Below is the weekly assignments for APCSP course
 | 3  |  | |
 | 4  | |  |
 | 5  |  |  |
+
+
+This page was last updated at {{ "now" | date: "%Y-%m-%d %H:%M" }}.
