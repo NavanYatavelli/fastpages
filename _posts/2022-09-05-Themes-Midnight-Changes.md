@@ -13,7 +13,7 @@ Changing remote theme for a moment
 
 
 ## Theme -- Frontpage look
-Changing remote theme the frontpage looks like this with color changes on the right picture below
+Changing remote theme the frontpage looks like this with color changes on the picture below
 <img src="{{site.baseurl}}/images/themes_frontpage.jpg" alt="Beebadger Blog Header">
 
 ## Theme -- tags looks
@@ -23,3 +23,8 @@ Changing remote theme the tags looks like this with style changes  on the right 
 ## Theme -- Vocab looks
 Changing remote theme the vocab looks like this with style and color changes  on the right picture below
 <img src="{{site.baseurl}}/images/themes_vocab.jpg" alt="Beebadger Blog Header">
+
+## Theme -- Issues encountered
+The Fronpage looks off. 
+Tags style completely changes.
+Vocab background erased and is all white.
