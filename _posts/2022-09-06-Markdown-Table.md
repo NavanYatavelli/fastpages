@@ -20,8 +20,7 @@ Below is the weekly assignments for APCSP course
 | 5  |  |  |
 
 
-<pre><code>{{ "now" | date: "%Y-%m-%d %H:%M" }}</code></pre>
-<blockquote><p>This below logic is rendered using the Liquid syntax {{}} </p></blockquote>
+<blockquote><p>This Liquid syntax {{}} logic  {{ "now" | date: "%Y-%m-%d %H:%M" }} is used in rendered below   </p></blockquote>
 
 This page was last updated at {{ "now" | date: "%Y-%m-%d %H:%M" }}.
 
