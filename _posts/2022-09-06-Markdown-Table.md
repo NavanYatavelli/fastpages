@@ -3,14 +3,18 @@ toc: true
 layout: post
 description: Markdown Table.
 categories: [markdown, week2]
-title: Beebadger's Markdown Table
+title: Markdown Table
 ---
-# This is a Markdown Table
-Below is the weekly HW for APCSP
+# This is a Markdown Table to keep track of APCSP course material
+Below is the weekly assignments for APCSP course
 
 ## Tables
 
-| Week |Tasks |
-|-|-|
-| 0  | [FirstMD1]({% post_url /posts/2022-08-21-FirstMD %}) |
-| 1  | [FirstMD2]({% post_url /2022-08-21-FirstMD %}) |
+| Week |Tasks | Description |
+|-|-|-|
+| 0  | [Tools]({% post_url /posts/2022-08-21-FirstMD %}) | Tools Setup |
+| 1  | [Python]({% post_url /2022-08-28-Dog-photo %}), [Jupyter]({% post_url /2022-08-29-AP-Environmental-Science %}) | Intro Python, Jupyter, Fastpages |
+| 2  | [Lists & Collections]({% post_url /2022-09-05-Themes-Midnight-Changes %}) | Data Abstraction  |
+| 3  |  | |
+| 4  | |  |
+| 5  |  |  |
