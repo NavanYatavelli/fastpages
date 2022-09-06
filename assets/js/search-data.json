@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Markdown Table",
-            "content": "This is a Markdown Table to keep track of APCSP course material . Below is the weekly assignments for APCSP course . Tables . Week Tasks Description . 0 | Tools | Tools Setup | . 1 | Python, Jupyter | Intro Python, Jupyter, Fastpages | . 2 | Lists &amp; Collections | Data Abstraction | . 3 |   |   | . 4 |   |   | . 5 |   |   | . 2022-09-06 03:10 . This below logic is rendered using the Liquid syntax . This page was last updated at 2022-09-06 03:10. .",
+            "content": "This is a Markdown Table to keep track of APCSP course material . Below is the weekly assignments for APCSP course . Tables . Week Tasks Description . 0 | Tools | Tools Setup | . 1 | Python, Jupyter | Intro Python, Jupyter, Fastpages | . 2 | Lists &amp; Collections | Data Abstraction | . 3 |   |   | . 4 |   |   | . 5 |   |   | . This Liquid syntax logic 2022-09-06 03:17 is used in rendered below . This page was last updated at 2022-09-06 03:17. .",
             "url": "https://beebadger.github.io/fastpages/markdown/week2/2022/09/06/Markdown-Table.html",
             "relUrl": "/markdown/week2/2022/09/06/Markdown-Table.html",
             "date": " • Sep 6, 2022"
