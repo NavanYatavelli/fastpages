@@ -181,6 +181,85 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="n">third</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;FirstName&quot;</span><span class="p">:</span> <span class="s2">&quot;Nanu&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;LastName&quot;</span><span class="p">:</span> <span class="s2">&quot;Shadow&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;DOB&quot;</span><span class="p">:</span> <span class="s2">&quot;August 5&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Residence&quot;</span><span class="p">:</span> <span class="s2">&quot;San Diego&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Email&quot;</span><span class="p">:</span> <span class="s2">&quot;san@powayusd.com&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Owns_Cars&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Jeep&quot;</span><span class="p">,</span><span class="s2">&quot;4Runner&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="c1"># add the dict to List</span>
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">third</span><span class="p">)</span>
+
+
+<span class="c1"># create dict</span>
+<span class="n">fourth</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;FirstName&quot;</span><span class="p">:</span> <span class="s2">&quot;Lional&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;LastName&quot;</span><span class="p">:</span> <span class="s2">&quot;Messi&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;DOB&quot;</span><span class="p">:</span> <span class="s2">&quot;January 30&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Residence&quot;</span><span class="p">:</span> <span class="s2">&quot;Barcelona&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Email&quot;</span><span class="p">:</span> <span class="s2">&quot;LMessi@gmail.com&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Owns_Cars&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;Lamborghini&quot;</span><span class="p">,</span><span class="s2">&quot;Maserati&quot;</span><span class="p">,</span><span class="s2">&quot;Corvette&quot;</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="c1"># add the dict to List</span>
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fourth</span><span class="p">)</span>
+
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">&quot;FirstName&quot;</span><span class="p">:</span> <span class="s2">&quot;Dan&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;LastName&quot;</span><span class="p">:</span> <span class="s2">&quot;Mark&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;DOB&quot;</span><span class="p">:</span> <span class="s2">&quot;October 10&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Residence&quot;</span><span class="p">:</span> <span class="s2">&quot;San Francisco&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Email&quot;</span><span class="p">:</span> <span class="s2">&quot;DMark@yahoo.com&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;Owns_Cars&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;2006 toyota sienna&quot;</span><span class="p">,</span> <span class="s2">&quot;2011-Hellcat&quot;</span><span class="p">,</span> <span class="s2">&quot;2003-Toyota Carolla&quot;</span><span class="p">]</span>
+<span class="p">})</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="print-function:-of-InfoDb-content">print function: of InfoDb content<a class="anchor-link" href="#print-function:-of-InfoDb-content"> </a></h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-python"><pre><span></span><span class="k">def</span> <span class="nf">print_data</span><span class="p">(</span><span class="n">d_rec</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;FirstName&quot;</span><span class="p">],</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;LastName&quot;</span><span class="p">])</span>  <span class="c1"># using comma puts space between values</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Residence:&quot;</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Residence&quot;</span><span class="p">])</span> <span class="c1"># \t is a tab indent</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Birth Day:&quot;</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;DOB&quot;</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Cars: &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>  <span class="c1"># end=&quot;&quot; make sure no return occurs</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">&quot;Owns_Cars&quot;</span><span class="p">]))</span>  <span class="c1"># join allows printing a string list with separator</span>
+    <span class="nb">print</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
