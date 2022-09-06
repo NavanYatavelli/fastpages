@@ -12,4 +12,5 @@ Below is the weekly HW for APCSP
 
 | Week |Tasks |
 |-|-|
-| A thing | Another thing |
+| 0  | [FirstMD1]({% post_url /posts/2022-08-21-FirstMD %}) |
+| 1  | [FirstMD2]({% post_url /2022-08-21-FirstMD %}) |
