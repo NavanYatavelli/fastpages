@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: AP Environmental Science -- Study Material.
-categories: [APES]
+categories: [APES, week1]
 title: AP Environmental Science!!
 ---
 # AP Environmental Science
