@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Theme Changes to Midnight and its effects
-categories: [Themes, Week2]
+categories: [Themes, week2]
 title: Theme Changes to Midnight
 ---
 
