@@ -95,6 +95,17 @@ def while_loop():
 
 while_loop()
 
+# recursion algorithm loops incrementing on each call (n + 1) until exit condition is met
+def recursive_loop(i):
+    if i < len(InfoDb):
+        record = InfoDb[i]
+        print_data(record)
+        recursive_loop(i + 1)
+    return
+    
+print("Recursive loop output\n")
+recursive_loop(0)
+
 #for loop with an index
 
 print("for loop with index output\n")
