@@ -20,9 +20,8 @@ Below is the weekly assignments for APCSP course
 | 5  |  |  |
 
 
-<pre><code>{% raw %}{{ "now" | date: "%Y-%m-%d %H:%M" }}{% endraw %}</code></pre>
-<blockquote><p>This code block was rendered using the "raw" attribute, part of the Liquid syntax!</p>
-</blockquote>
+<pre><code>{{ "now" | date: "%Y-%m-%d %H:%M" }}</code></pre>
+<blockquote><p>This below logic is rendered using the Liquid syntax {{}} </p></blockquote>
 
 This page was last updated at {{ "now" | date: "%Y-%m-%d %H:%M" }}.
 
