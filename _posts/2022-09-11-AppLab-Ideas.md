@@ -9,19 +9,12 @@ title: AppLab Ideas!!
 
 ## AppLab:  Design 
 
+The requirement for this task is to do a  3 question quiz. During the early stage of PLANing we spent considerable amount of time on coming up with ideas of Quiz. We discussed about quiz ideas of various topics ranging from Football, History, Countries and Cities. We finally narrowed down on the Countries since this would bring more versatile audience interested in playing the game.  You will be creating your own quiz with a partner on a topic of your choice. The most important thing you do before coding is to PLAN. 
 
-## Purpose
-The purpose of this simulation is to demonstrate how individuals might utilize one of more common resources and the potential result(s) of various resource use approaches.
+As part of the Design -- we started doing the outline of the quiz rather than going straight to the coding. As part of the outline we listed out the flowchart of our game. It is a diagram of the sequence of movements and actions of interactions involved in our game. After multiple revisions of thinking, discussing, drawing and envisioning of our game steps -- we came up with the below flowchart as part of our design and planning. 
 
 ![Design of Game]({{site.baseurl}}/images/quiz_design.jpg)
 
-Materials
-Fishing tools (straws, chopsticks, or something similar) nothing spoon or fork-like!
-Common Pond (sheet of paper, or desk)
-Private Pond (optional)
-Fish (6 of each of four types of “fish”--for example, 6 sour worms, 6 regular M&Ms, 6 gummi bears and 6 candied oranges)
-
-<img src="{{site.baseurl}}/images/quiz_design.jpg" alt="quiz_design">
 
 ## Procedure
 
