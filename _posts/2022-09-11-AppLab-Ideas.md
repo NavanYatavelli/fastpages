@@ -13,11 +13,15 @@ title: AppLab Ideas!!
 ## Purpose
 The purpose of this simulation is to demonstrate how individuals might utilize one of more common resources and the potential result(s) of various resource use approaches.
 
+![Design of Game]({{site.baseurl}}/images/quiz_design.jpg)
+
 Materials
 Fishing tools (straws, chopsticks, or something similar) nothing spoon or fork-like!
 Common Pond (sheet of paper, or desk)
 Private Pond (optional)
 Fish (6 of each of four types of “fish”--for example, 6 sour worms, 6 regular M&Ms, 6 gummi bears and 6 candied oranges)
+
+<img src="{{site.baseurl}}/images/quiz_design.jpg" alt="quiz_design">
 
 ## Procedure
 
