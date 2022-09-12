@@ -17,7 +17,7 @@ I would like to create a AppLab game that gets the Football players data from NF
 
 ### Design 
 
-![Design of Game]({{site.baseurl}}/images/quiz_design.jpg)
+![Design of Game]({{site.baseurl}}/images/perftask.jpg)
 
 ### Learning
 
