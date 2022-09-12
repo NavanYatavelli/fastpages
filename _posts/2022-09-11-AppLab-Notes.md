@@ -13,9 +13,12 @@ Link to the Quiz Game App
 [Quiz Game App](https://studio.code.org/projects/applab/7C7Wx87SDmZ-pGtIjQ5nYRIn2ZEZ8s3MdYTCSud-hMQ)
 <a href="https://studio.code.org/projects/applab/7C7Wx87SDmZ-pGtIjQ5nYRIn2ZEZ8s3MdYTCSud-hMQ" title="Quiz Game App">QuizGame-App</a>
 
-The requirement for this task is to do a  3 question quiz. During the early stage of PLANing we spent considerable amount of time on coming up with ideas of Quiz. We discussed about quiz ideas of various topics ranging from Football, History, Countries and Cities. We finally narrowed down on the Countries since this would bring more versatile audience interested in playing the game.  You will be creating your own quiz with a partner on a topic of your choice. The most important thing you do before coding is to PLAN. 
 
-As part of the Design -- we started doing the outline of the quiz rather than going straight to the coding. As part of the outline we listed out the flowchart of our game. It is a diagram of the sequence of movements and actions of interactions involved in our game. After multiple revisions of thinking, discussing, drawing and envisioning of our game steps -- we came up with the below flowchart as part of our design and planning. 
+Program Purpose: The purpose of the quiz game is knowledge and entertainment. The requirement for this task is to do atlease 3 question quiz. We  narrowed down to ask Countries questions since this would bring more versatile audience interested in playing the game. As suggested this game is a quick and easy fun game for any new players to play.
+
+Functionality: The functionality of the Quiz game is built on navagation of screens as user answers each question. As part of the Design -- we started doing the outline of the quiz rather than going straight to the coding. Functionality of the Quiz Game is listed captured as a flowchart. It is a diagram of the sequence of movements and actions of interactions involved in our game. One screen to next screen functionality is captured below in each box.  
+
+
 
 ### Design 
 
