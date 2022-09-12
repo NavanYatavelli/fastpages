@@ -25,7 +25,7 @@
     
         ,"post2": {
             "title": "Markdown Table",
-            "content": "This is a Markdown Table to keep track of APCSP course material . Below is the weekly assignments for APCSP course . Tables . Week Tasks Description . 0 | Tools | Tools Setup | . 1 | Python, Jupyter | Intro Python, Jupyter, Fastpages | . 2 | Lists &amp; Collections | Data Abstraction | . 3 |   |   | . 4 |   |   | . 5 |   |   | . {{ &quot;now&quot; | date: &quot;%Y-%m-%d %H:%M&quot; }} . This code block was rendered using the Liquid syntax . The source for this Liquid syntax is https://shopify.github.io/liquid/filters/date/ . This page was last updated at 2022-09-11 18:52. .",
+            "content": "This is a Markdown Table to keep track of APCSP course material . Below is the weekly assignments for APCSP course . Tables . Week Tasks Description . 0 | Tools | Tools Setup | . 1 | Python, Jupyter | Intro Python, Jupyter, Fastpages | . 2 | Lists &amp; Collections | Data Abstraction | . 3 |   |   | . 4 |   |   | . 5 |   |   | . {{ &quot;now&quot; | date: &quot;%Y-%m-%d %H:%M&quot; }} . This code block was rendered using the Liquid syntax . The source for this Liquid syntax is https://shopify.github.io/liquid/filters/date/ . This page was last updated at 2022-09-11 19:07. .",
             "url": "https://beebadger.github.io/fastpages/markdown/week2/2022/09/06/Markdown-Table.html",
             "relUrl": "/markdown/week2/2022/09/06/Markdown-Table.html",
             "date": " • Sep 6, 2022"
