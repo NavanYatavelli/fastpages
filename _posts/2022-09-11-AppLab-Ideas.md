@@ -18,8 +18,11 @@ As part of the Design -- we started doing the outline of the quiz rather than go
 
 ## Daily Plans
 
-Daily Planning
 To improve the quality of our implementation we planned on discussing about our plans daily atleast for 5 minutes on our current issues before embarking into work. This Daily Planning helped with our classroom focus and execution of building the Game, and its planning.
+
+As part of our Daily plans while implementing our Design we wanted to implement the Instructions screen aswell. Here is the change to our Design after adding Instructions screen to our Game
+
+![Design of Game Instruction]({{site.baseurl}}/images/quiz_design_instructions.jpg)
 
 ## Planning Phases 
 
