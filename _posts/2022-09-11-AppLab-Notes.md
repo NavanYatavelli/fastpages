@@ -18,6 +18,37 @@ Program Purpose: The purpose of the quiz game is knowledge and entertainment. Th
 
 Functionality: The functionality of the Quiz game is built on navagation of screens as user answers each question. As part of the Design -- we started doing the outline of the quiz rather than going straight to the coding. Functionality of the Quiz Game is listed captured as a flowchart. It is a diagram of the sequence of movements and actions of interactions involved in our game. One screen to next screen functionality is captured below in each box.  
 
+How it works
+
+1)    This quiz is about identifying different countries by the clues provided about the country
+
+2)    Defined and set the variable “score” to 0
+
+3)    Started on homescreen with Instructions “How To” and “Start Quiz” buttons
+
+4)    Selecting “How To” shows Instructions of playing the quiz. From here we can start the quiz or go back to homepage
+
+5)    When “Start the Quiz” button is selected, “The Country”quiz starts with the first question.
+
+6)    The first question is about Brazil. A picture of Brazil is shown with 4 options indicating different countries. Options are provided as Buttons
+
+7)    If the correct country, for this first question Brazil, is selected, Correct Answer screen pops up. This screen provided more fun facts about the country in question 1
+
+8)    When user answers Brazil, score is incremented by 1
+
+9)    Selecting “Next Question” in the screen, takes user to the second question
+
+10) In this second question, a phrase is shown. User has to guess the country to which the phrase belongs and enter the correct answer in the text box provided
+
+11) If he correctly guesses it as “America”, score is incremented, Fun facts about America are provided, and Next question button is presented
+
+12) When user selects this Next question button, Question 3 showing a countries flag is presented with 4 coutnry options to guess
+
+13) If the correct country, for this third question India, is selected, Correct Answer screen pops up and score is again incremented by 1. This screen provided more fun facts about the country in question 3
+
+14) End Quiz button is provided on the third questions fun facts screen, selecting it would take the user to “How did you do?” screen, with a button to get the score is provided
+
+15) Pressing this button shows the score that’s stored in the store variable 
 
 ### Design 
 
@@ -51,6 +82,13 @@ As part of execution we discussed to layout various steps for the Country Game -
 ## App#2 - Piano 
 The Piano App is here 
 [Piano App](https://studio.code.org/projects/applab/35N9tDBlcOcZeakwvdU2D8WcUEbokAIC_yMBKHTpXTY)
+
+How it works
+
+1) This program mimicks a Piano Player with only 7 keys
+2) Program starts with a homescreen with a Piano image and Start button
+3) Upon selecting the Start button, user is presented with 7 keys, A, B, C, D, E, F
+4) When each key is selected, a different sound associated with the key is play
 
 ### Design 
 
