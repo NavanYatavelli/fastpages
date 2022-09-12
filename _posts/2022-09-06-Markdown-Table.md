@@ -1,7 +1,7 @@
 ---
 toc: true
 layout: post
-description: Markdown Table.
+description: Weekly Progress - Markdown Table.
 categories: [markdown, week2]
 title: Markdown Table
 ---
