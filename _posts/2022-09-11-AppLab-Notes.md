@@ -57,53 +57,41 @@ How it works
 
 ### Successes
 
-The App Screens are Designed fairly simple and very user-friendly. 
-Any novice user can immediately start play the Quiz game
-The screen to screen colors, text, buttons and text entry are very attractive for users to keep playing
-Score calculation logic was implemented using a variable and shows simple status at the end of the Game. Very easy to follow and understand the Game.
+* The App Screens are Designed fairly simple and very user-friendly. 
+* Any novice user can immediately start play the Quiz game
+* The screen to screen colors, text, buttons and text entry are very attractive for users to keep playing
+* Score calculation logic was implemented using a variable and shows simple status at the end of the Game. Very easy to follow and understand the Game.
 
-![Design of Game Instruction]({{site.baseurl}}/images/quiz_design_instructions.jpg)
 
-### Discoveries 
+### Discoveries & Challanges
 
-As part of execution we discussed to layout various steps for the Country Game - 
-* Coming up with the Idea of Game
-* Design of the Country game
-* Prototyping of the game
-* Coding of the game
-* Testing of the Country Game  
-
-### Challanges
-
-* Prototyping of the game
-* Coding of the game
-* Testing of the Country Game  
+* Discovered how to use OnEvent() fairly quickly 
+* I had challanges in getting the user text submission to work 
+* Setting up right varibles took some exploration
 
 ## App#2 - Piano 
 The Piano App is here 
 [Piano App](https://studio.code.org/projects/applab/35N9tDBlcOcZeakwvdU2D8WcUEbokAIC_yMBKHTpXTY)
 
-How it works
+Program Purpose: The purpose of the Piano App is entertainment and learning. The requirement for this task is to do atlease 3 music keys. I narrowed down to simple keys since this would bring more versatile audience interested in playing the music game. As suggested this game is a quick and easy fun game for any new players to play and learn music.
+
+ 
+### Design Functionality: 
 
 1) This program mimicks a Piano Player with only 7 keys
 2) Program starts with a homescreen with a Piano image and Start button
 3) Upon selecting the Start button, user is presented with 7 keys, A, B, C, D, E, F
 4) When each key is selected, a different sound associated with the key is play
 
-### Design 
-
-![Design of Game]({{site.baseurl}}/images/quiz_design.jpg)
-
 
 ### Successes
-As part of execution we discussed to layout various steps for the Country Game - 
+* The Music App Screens are Designed fairly simple and very user-friendly. 
+* The whole program was written in less than an hour
 
-### Discoveries 
+### Challanges & Discoveries 
 
-As part of execution we discussed to layout various steps for the Country Game - 
-* Coming up with the Idea of Game
-* Design of the Country game
+* Discovered that the sound played has delay after the key is pressed
+* The delay in sound may be due to the file load takes time
+* Challanges was to extend the game to more functionality
 
-### Challanges
 
-* Prototyping of the game
