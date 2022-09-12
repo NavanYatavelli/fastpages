@@ -15,7 +15,7 @@ Below is the weekly assignments for APCSP course
 | 0  | [Tools]({% post_url /posts/2022-08-21-FirstMD %}) | Tools Setup |
 | 1  | [Python]({% post_url /2022-08-28-Dog-photo %}), [Jupyter]({% post_url /2022-08-29-AP-Environmental-Science %}) | Intro Python, Jupyter, Fastpages |
 | 2  | [Lists & Collections]({% post_url /2022-09-05-Themes-Midnight-Changes %}) | Data Abstraction  |
-| 3  |  [AppLab, Creative Development ]({% post_url /2022-09-11-AppLab-Ideas %}, [AppLab Notes]({% post_url /2022-09-11-AppLab-Notes.md %}) | AppLab, Creative Development|
+| 3  |  [AppLab, Creative Development ]({% post_url /2022-09-11-AppLab-Ideas %}, [AppLab Notes]({% post_url /2022-09-11-AppLab-Notes %}) | AppLab, Creative Development|
 | 4  | |  |
 | 5  |  |  |
 
