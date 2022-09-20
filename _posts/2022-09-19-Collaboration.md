@@ -1,11 +1,11 @@
 ---
 toc: true
 layout: post
-description: CollegeBoard Notes.
-categories: [CollegeBoard, week5]
-title: CollegeBoard Notes!!
+description: Collaboration Notes.
+categories: [Collaboration, week4]
+title: Collaboration Notes!!
 ---
-# Collaboration 1.1 Notes - CollegeBoard
+# Collaboration 1.1 Notes 
 
 - Social Media is a great example for collaboration, this is because its digital functionality allows others to communicate. Facebook and Instagram are examples of collaboration. 
 
