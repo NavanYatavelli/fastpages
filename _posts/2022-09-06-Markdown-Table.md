@@ -12,7 +12,7 @@ Below is the weekly assignments for APCSP course
 
 | Week |Tasks | Description |
 |-|-|-|
-| 0  |  | Tools Setup |
+| 0  | TBD | Tools Setup |
 | 1  | | Intro Python, Jupyter, Fastpages |
 | 2  |  | Data Abstraction  |
 | 3  |  | AppLab, Creative Development|
