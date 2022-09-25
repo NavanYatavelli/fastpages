@@ -226,6 +226,17 @@
 
   
       ,"page1": {
+          "title": "Submenu",
+          "content": "&lt;!DOCTYPE html&gt; . . Dropdown Link 1 Link 2 .",
+          "url": "https://beebadger.github.io/fastpages/submenu/",
+          "relUrl": "/submenu/",
+          "date": ""
+      }
+      
+  
+
+  
+      ,"page2": {
           "title": "About Me",
           "content": "Hello – This is Beebadger!!! .",
           "url": "https://beebadger.github.io/fastpages/about/",
@@ -248,7 +259,7 @@
   
 
   
-      ,"page7": {
+      ,"page8": {
           "title": "Vocab",
           "content": "Vocab . A collection of vocabulary this trimester . Basic Terms . Variable: A value that changes based off of conditions Statement: A simple programing statement . File Types . .html: Used for designing webpages .md: Also used for basic webpage design and can be used with python .ipynb: Uses a combination of python and .md .py: a python file .",
           "url": "https://beebadger.github.io/fastpages/vocab/",
@@ -270,7 +281,7 @@
   
 
   
-      ,"page12": {
+      ,"page13": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://beebadger.github.io/fastpages/robots.txt",
