@@ -4,13 +4,31 @@
 
 <h2>My First Web Page</h2>
 
-<p>Activate debugging in your browser (Chrome, IE, Firefox) with F12, and select "Console" in the debugger menu.</p>
+<p>This is my Table built with JavaScript.</p>
 
 <style>
-table, th, td {
-  border:1px solid black;
+body {
+	background-color:powderblue;
 }
+
+table, td {
+  border:1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+  background-color: #D6EEEE;
+}
+
+th {
+  text-align: middle;
+  border:1px solid black;
+  border-collapse: collapse;
+  padding: 15px;
+  background-color: #D6EEEE;
+  color: #ff6347;
+} 
+
 </style>
+
 
 <table id="t1">
 </table>
@@ -119,7 +137,7 @@ console.log("PRINTING BODY DONE!!!");
 document.getElementById("t1").innerHTML = apcompsci._toHtml();
 </script>
 
-//<p id="p1">Hello World!</p>
+
 
 
 </body>
