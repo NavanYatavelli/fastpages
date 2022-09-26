@@ -30,6 +30,6 @@ As DevOps Lead , I'm the liaison between the other team members that contribute 
 
 # SCRUM poster
 
-![]({{ site.baseurl }}/images/unknown.png)
+![]({{ site.baseurl }}/images/scrum.png)
 
 This poster here is one that my team and I created together in order to describe each role of a SCRUM team and the process that goes into a sprint from the start to the end.
