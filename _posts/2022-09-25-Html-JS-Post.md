@@ -130,3 +130,11 @@ document.getElementById("t1").innerHTML = apcompsci._toHtml();
 </script>
 
 <p id="p3">After Table!!</p>
+
+```
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
