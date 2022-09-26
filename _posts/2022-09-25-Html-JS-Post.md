@@ -5,9 +5,9 @@ description: Post that uses HTML fragments and JavaScript data  to build a table
 categories: [Java Script, week5]
 title: Post that uses HTML fragments and JavaScript data!!
 ---
-## Post that uses HTML fragments and JavaScript data to build a table 
-
+### This Post uses HTML fragments and JavaScript data to build a table.
 ### Below table is built with Java Script data and HTML fragments
+
 ### AP Computer Science Principles -- Assignments Data
 <table id="t1">
 </table>
@@ -90,9 +90,9 @@ Course.prototype._toHtml = function() {
 document.getElementById("t1").innerHTML = apcompsci._toHtml();
 </script>
 
-## Here is the Java Script code explanation
+### Here is the Java Script code explanation
 
-### This Java Script snippet defines HW Assignment function to hold assignment data 
+#### This Java Script snippet defines HW Assignment function to hold assignment data 
 ```
 // define a function to hold data for a Assignment
 function Assignment(week, topic, description, link) {
@@ -102,7 +102,7 @@ function Assignment(week, topic, description, link) {
     this.link = link;
 }
 ```
-### HW Assignment array initilization used to populate the table
+#### HW Assignment array initilization used to populate the table
 ```
 // define a Assignment Array 
 var assignments = [ 
@@ -123,7 +123,7 @@ var assignments = [
 ];
 ```
 
-### Below defines the Course function and also constructs its instance 
+#### Below defines the Course function and also constructs its instance 
 ```
 // define a course and build Course objects
 function Course(name, assignments){ 
