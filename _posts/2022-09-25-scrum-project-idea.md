@@ -20,10 +20,11 @@ My team and I collaborated on a Google Drawing to mock up what our website will 
 
 My team and I decided on the following roles:
 
+- Navan: DevOps
 - Safin: SCRUM Master
 - Kalani: Frontend
 - Alex: Backend
-- Navan: DevOps
+
 
 As DevOps Lead , I'm the liaison between the other team members that contribute to software maintenance and creation with the purpose of making faster updates and writing code that is easy to update and access.The DevOps pipeline will be powered by GitHub Actions + some hosting provider (presumably AWS) . We intend to use HTML/CSS/JS for our frontend and Python on the backend. 
 
