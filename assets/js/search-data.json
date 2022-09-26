@@ -227,7 +227,7 @@
   
       ,"page1": {
           "title": "Submenu",
-          "content": "&lt;!DOCTYPE html&gt; . . This is the new pages with submenu&#39;s added. . (1)The link from submenu to Jupyter Notebook that shows personal usage of Jupyter JavaScript kernel (2)The link from submenu to a regular Post that uses HTML fragments and JavaScript data to build a table . . Dropdown Link 1 Link 2 .",
+          "content": "&lt;!DOCTYPE html&gt; . . This is the new _pages with Submenu added. . (1)The link from submenu to Jupyter Notebook that shows personal usage of Jupyter JavaScript kernel (2)The link from submenu to a regular Post that uses HTML fragments and JavaScript data to build a table . . Dropdown Link 1 Link 2 .",
           "url": "https://beebadger.github.io/fastpages/submenu/",
           "relUrl": "/submenu/",
           "date": ""
