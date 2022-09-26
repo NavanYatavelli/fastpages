@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Post that uses HTML fragments and JavaScript data!!",
-            "content": "Post that uses HTML fragments and JavaScript data to build a table . Post that uses HTML fragments and JavaScript data to build a table. | . Hello World! . Fake Link Fake | . Before Table!! . After Table!! .",
+            "content": "Post that uses HTML fragments and JavaScript data to build a table . Post that uses HTML fragments and JavaScript data to build a table. | . Hello World! . Fake Link Fake | . Before Table!! . After Table!! . { &quot;firstName&quot;: &quot;John&quot;, &quot;lastName&quot;: &quot;Smith&quot;, &quot;age&quot;: 25 } .",
             "url": "https://beebadger.github.io/fastpages/java%20script/week5/2022/09/25/Html-JS-Post.html",
             "relUrl": "/java%20script/week5/2022/09/25/Html-JS-Post.html",
             "date": " • Sep 25, 2022"
