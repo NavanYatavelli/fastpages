@@ -12,12 +12,12 @@ Below is the weekly assignments for APCSP course
 
 | Week |Tasks | Description |
 |-|-|-|
-| 0  | TBD | Tools Setup |
+| 0  | [Tools](https://github.com/NavanYatavelli/fastpages/issues/2) | Tools Setup |
 | 1  | | Intro Python, Jupyter, Fastpages |
 | 2  |  | Data Abstraction  |
 | 3  |  | AppLab, Creative Development|
-| 4  | |  |
-| 5  |  |  |
+| 4  | | Python Web Server Project |
+| 5  |  | UI Starters |
 
 
 
