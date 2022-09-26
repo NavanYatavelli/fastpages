@@ -98,29 +98,10 @@ window.onload = wrap_img;
     </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h1"><a href="#post-that-uses-html-fragments-and-javascript-data-to-build-a-table">Post that uses HTML fragments and JavaScript data to build a table</a>
-<ul>
-<li class="toc-entry toc-h2"><a href="#ap-computer-science-principles--assignments-data">AP Computer Science Principles – Assignments Data</a></li>
-<li class="toc-entry toc-h2"><a href="#here-is-the-java-script-code-explanation">Here is the Java Script code explanation</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#this-defines-and-hw-assignment-function-to-hold-assignment-data">This defines and HW Assignment function to hold assignment data</a></li>
-<li class="toc-entry toc-h3"><a href="#hw-assignment-array-initilization">HW Assignment array initilization</a></li>
-<li class="toc-entry toc-h3"><a href="#this-defines-the-course-function-and-also-constructs-its-instance">This defines the Course function and also constructs its instance</a></li>
-<li class="toc-entry toc-h3"><a href="#this-builds-the-html-table-body-using-fragments-and-java-script">This builds the HTML table body using fragments and Java Script</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul><h1 id="post-that-uses-html-fragments-and-javascript-data-to-build-a-table">
-<a class="anchor" href="#post-that-uses-html-fragments-and-javascript-data-to-build-a-table" aria-hidden="true"><span class="octicon octicon-link"></span></a>Post that uses HTML fragments and JavaScript data to build a table</h1>
+    <h2 id="post-that-uses-html-fragments-and-javascript-data-to-build-a-table">Post that uses HTML fragments and JavaScript data to build a table</h2>
 
-<ul>
-  <li>This Post is built with HTML Fragments and JavaScript data to build a table.</li>
-</ul>
-
-<h2 id="ap-computer-science-principles--assignments-data">
-<a class="anchor" href="#ap-computer-science-principles--assignments-data" aria-hidden="true"><span class="octicon octicon-link"></span></a>AP Computer Science Principles – Assignments Data</h2>
+<h3 id="below-table-is-built-with-java-script-data-and-html-fragments">Below table is built with Java Script data and HTML fragments</h3>
+<h3 id="ap-computer-science-principles--assignments-data">AP Computer Science Principles – Assignments Data</h3>
 <table id="t1">
 </table>
 
@@ -202,11 +183,9 @@ Course.prototype._toHtml = function() {
 document.getElementById("t1").innerHTML = apcompsci._toHtml();
 </script>
 
-<h2 id="here-is-the-java-script-code-explanation">
-<a class="anchor" href="#here-is-the-java-script-code-explanation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Here is the Java Script code explanation</h2>
+<h2 id="here-is-the-java-script-code-explanation">Here is the Java Script code explanation</h2>
 
-<h3 id="this-defines-and-hw-assignment-function-to-hold-assignment-data">
-<a class="anchor" href="#this-defines-and-hw-assignment-function-to-hold-assignment-data" aria-hidden="true"><span class="octicon octicon-link"></span></a>This defines and HW Assignment function to hold assignment data</h3>
+<h3 id="this-java-script-snippet-defines-hw-assignment-function-to-hold-assignment-data">This Java Script snippet defines HW Assignment function to hold assignment data</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// define a function to hold data for a Assignment
 function Assignment(week, topic, description, link) {
     this.week = "Week#" + week;
@@ -215,8 +194,7 @@ function Assignment(week, topic, description, link) {
     this.link = link;
 }
 </code></pre></div></div>
-<h3 id="hw-assignment-array-initilization">
-<a class="anchor" href="#hw-assignment-array-initilization" aria-hidden="true"><span class="octicon octicon-link"></span></a>HW Assignment array initilization</h3>
+<h3 id="hw-assignment-array-initilization-used-to-populate-the-table">HW Assignment array initilization used to populate the table</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// define a Assignment Array 
 var assignments = [ 
     new Assignment(0,"Tools and Equipment", 
@@ -236,8 +214,7 @@ var assignments = [
 ];
 </code></pre></div></div>
 
-<h3 id="this-defines-the-course-function-and-also-constructs-its-instance">
-<a class="anchor" href="#this-defines-the-course-function-and-also-constructs-its-instance" aria-hidden="true"><span class="octicon octicon-link"></span></a>This defines the Course function and also constructs its instance</h3>
+<h3 id="below-defines-the-course-function-and-also-constructs-its-instance">Below defines the Course function and also constructs its instance</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// define a course and build Course objects
 function Course(name, assignments){ 
     this.name = name; // name of the course
@@ -248,8 +225,7 @@ function Course(name, assignments){
 apcompsci = new Course("AP Computer Science Principles", assignments);
 </code></pre></div></div>
 
-<h3 id="this-builds-the-html-table-body-using-fragments-and-java-script">
-<a class="anchor" href="#this-builds-the-html-table-body-using-fragments-and-java-script" aria-hidden="true"><span class="octicon octicon-link"></span></a>This builds the HTML table body using fragments and Java Script</h3>
+<h4 id="this-snippet-builds-the-html-table-body-using-fragments-and-java-script">This snippet builds the HTML table body using fragments and Java Script</h4>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// define an HTML conversion "method" associated with Course
 Course.prototype._toHtml = function() {
   // HTML Style is build using inline structure
