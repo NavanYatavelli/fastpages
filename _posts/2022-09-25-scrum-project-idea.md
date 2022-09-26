@@ -8,11 +8,11 @@ title: SCRUM Project Idea
 
 # Program purpose
 
-Our Team creating a website called `Striver` that can keep track of your personal goals and share them with your peers. You will be able to like each other's goals and see a feed of goals that you and your friends have.
+The website that our team decided to create is called `Striver`. The website keeps track of your personal goals and shares them with others. Just like popular social media websites such as Instagram and Facebook, you will be able to like each other's goals and see a the goals of people that you know.
 
 # Design
 
-My team and I collaborated on a Google Drawing to mock up what our website will look like. We will use Bootstrap to design the components and Flask to template different pages. The like button will be an image that will switch to a different color once activated.
+Our group decided to use Google Drawings to mock up what our website will look like. We have decided to use Bootstrap in order to design the components. We will use Flask to template different pages. The like button is going to be an image that, when clicked, will switch to an undecided color.
 
 ![]({{ site.baseurl }}/images/drawing.png)
 
@@ -32,4 +32,4 @@ As DevOps Lead , I'm the liaison between the other team members that contribute 
 
 ![]({{ site.baseurl }}/images/unknown.png)
 
-Here is a poster that my team and I created together to describe each role of a SCRUM team in detail!
+This poster here is one that my team and I created together in order to describe each role of a SCRUM team and the process that goes into a sprint from the start to the end.
