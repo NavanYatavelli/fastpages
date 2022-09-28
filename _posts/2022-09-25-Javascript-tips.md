@@ -40,6 +40,12 @@ function getJavascriptTips() {
 #### Here is the Java Script code explanation
 
 ```
+// Clicking this button will call function getJavascriptTips() 
+<button name="button" onclick="getJavascriptTips()" >Generate the next JavaScript Tip!!!</button>
+
+// The function getJavascriptTips() will display the JavaScript tip here in this para
+<p id="tips"></p>
+
 // Array of 10 tips
 var tipsArray = [
 "JavaScript took just 10 days to develop.",
