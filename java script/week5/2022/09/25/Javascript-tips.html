@@ -131,7 +131,13 @@ function getJavascriptTips() {
 <p><br /><br /><br /><br /></p>
 <h4 id="here-is-the-java-script-code-explanation">Here is the Java Script code explanation</h4>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Array of 10 tips
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Clicking this button will call function getJavascriptTips() 
+&lt;button name="button" onclick="getJavascriptTips()" &gt;Generate the next JavaScript Tip!!!&lt;/button&gt;
+
+// The function getJavascriptTips() will display the JavaScript tip here in this para
+&lt;p id="tips"&gt;&lt;/p&gt;
+
+// Array of 10 tips
 var tipsArray = [
 "JavaScript took just 10 days to develop.",
 "JavaScript was probably named after Java.",
