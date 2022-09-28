@@ -10,7 +10,7 @@ title: JavaScript Tips Generator!!!
 <button name="button" onclick="getJavascriptTips()" style="background-color:green; border-color:blue; color:white">Generate the next JavaScript Tip!!!</button>
 <br/>
 
-<p id="tips" style="background-color:yellow; color:black">Click the below button to generate JavaScript Tips.</p>
+<p id="tips" style="background-color:yellow; color:black">Click the above button to generate JavaScript Tips.</p>
 
 <script>
 // Array of 10 tips
