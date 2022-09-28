@@ -10,7 +10,7 @@ title: JavaScript Tips Generator!!!
 <button name="button" onclick="getJavascriptTips()" style="background-color:green; border-color:blue; color:white">Generate the next JavaScript Tip!!!</button>
 <br/>
 
-<p id="tips" style="background-color:yellow; color:black"></p>
+<p id="tips" style="background-color:yellow; color:black">Click the below button to generate JavaScript Tips.</p>
 
 <script>
 // Array of 10 tips
@@ -44,8 +44,9 @@ function getJavascriptTips() {
 <button name="button" onclick="getJavascriptTips()" >Generate the next JavaScript Tip!!!</button>
 
 // The function getJavascriptTips() will display the JavaScript tip here in this para
-<p id="tips"></p>
+<p id="tips">Click the above button to generate JavaScript Tips.</p>
 
+<script>
 // Array of 10 tips
 var tipsArray = [
 "JavaScript took just 10 days to develop.",
@@ -64,6 +65,7 @@ var tipsArray = [
 function getJavascriptTips() {
 	var time = new Date().getMilliseconds(); //get current time
 	var arrayIndex = time % 10; // get the arrray index value < 10
-	document.getElementById("tips").innerHTML = tipsArray[arrayIndex]; // replace the tip 
+	document.getElementById("tips").innerHTML = tipsArray[arrayIndex]; // replace the p element tips 
 }
+</script>
 ```
