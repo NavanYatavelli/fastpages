@@ -9,7 +9,7 @@ title: Group Flask Website
 ## This is my blogpost that shows details of our Group Flash Website and Deployment. 
 
 #### Here is the website snapshot 
-<img src="{{site.baseurl}}/images/mcq.jpg" alt="MCQ Completed">
+<img src="{{site.baseurl}}/images/group-flask-website.jpg" alt="group-flask-website jpg">
 
 #### Link to our Group Flask Website
 [Group Flask Website](http://18.216.138.52/)
