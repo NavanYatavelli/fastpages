@@ -14,7 +14,7 @@ cd /home/ubuntu/navan-flask
 git clone https://github.com/NavanYatavelli/BeeFlask.git
 ```
 ####  Edit docker-compose.yml file 
-<img src="{{site.baseurl}}/images/personal-flask-website.jpg" alt="personal-flask-website jpg">
+#### TBD - docker-compose.yml file
 
 #### Run and check if docker-compose process is running
 ```
