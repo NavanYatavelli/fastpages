@@ -14,11 +14,22 @@ cd /home/ubuntu/navan-flask
 git clone https://github.com/NavanYatavelli/BeeFlask.git
 ```
 ####  Edit docker-compose.yml file 
-#### TBD - docker-compose.yml file
+```
+version: '3'
+services:
+        web:
+                image: flask_port_v1
+                build: .
+                ports:
+                        - "8087:8080"
+```
 
 #### Run and check if docker-compose process is running
 ```
+// Run docker-compose
 sudo docker-compose up -d
+
+//Check Docker process running (optional)
 sudo docker-compose ps
 ```
 
@@ -26,14 +37,25 @@ sudo docker-compose ps
 ```
 curl localhost:8087
 ```
-#### TBD - Image of the run
+<img src="{{site.baseurl}}/images/deployment-localhost.jpg" alt="Acesss locally jpg">
 
 #### Configure nginx to redirect requests. Internet request 8081 port on maps to 8087 port on localhost
 #### 18.216.138.52:8081 --> localhose:8087
 ```
-sudo nano /etc/nginx/sites-available/navan-flask
+// contents of file -- /etc/nginx/sites-available/navan-flask
+
+server {
+        listen 8081;
+        listen [::]:8081;
+        server_name 18.216.138.52;
+
+        location / {
+                proxy_pass http://localhost:8087;
+                add_header "Access-Control-Allow-Origin" *;
+        }
+}
 ```
-#### TBD - Image of navan-flask
+
 
 #### Accesss Flask Website - Browser
 [Personal Flask Website](http://18.216.138.52:8081/)
@@ -64,7 +86,7 @@ sudo docker-compose up -d
 ```
 curl localhost:8087
 ```
-#### TBD - Image of the run
+<img src="{{site.baseurl}}/images/deployment-localhost-html.jpg" alt="Acesss locally jpg">
 
 #### Accesss Flask Website - Browser, shows updated
 <img src="{{site.baseurl}}/images/deployment-browser-updated.jpg" alt="personal-flask-website jpg">
