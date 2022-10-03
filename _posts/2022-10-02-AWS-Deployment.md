@@ -37,10 +37,10 @@ sudo nano /etc/nginx/sites-available/navan-flask
 
 #### Accesss Flask Website - Browser
 [Personal Flask Website](http://18.216.138.52:8081/)
-#### TBD - Browser image
+<img src="{{site.baseurl}}/images/personal-flask-website.jpg" alt="personal-flask-website jpg">
 
 #### Make change in github.com/../BeeFlask to this file /BeeFlask/templates/index.html
-#### TBD - git commit image
+<img src="{{site.baseurl}}/images/deployment-github-updated.jpg" alt="personal-flask-website jpg">
 
 #### Get latest from Github to AWS, rebuild and relaunch docker process
 ```
@@ -66,8 +66,8 @@ curl localhost:8087
 ```
 #### TBD - Image of the run
 
-#### Accesss Flask Website - Browser
-[Personal Flask Website](http://18.216.138.52:8081/)
-#### TBD - Browser image
+#### Accesss Flask Website - Browser, shows updated
+<img src="{{site.baseurl}}/images/deployment-browser-updated.jpg" alt="personal-flask-website jpg">
+
 
 
