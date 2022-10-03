@@ -105,23 +105,43 @@ window.onload = wrap_img;
 git clone https://github.com/NavanYatavelli/BeeFlask.git
 </code></pre></div></div>
 <h4 id="edit-docker-composeyml-file">Edit docker-compose.yml file</h4>
-<h4 id="tbd---docker-composeyml-file">TBD - docker-compose.yml file</h4>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>version: '3'
+services:
+        web:
+                image: flask_port_v1
+                build: .
+                ports:
+                        - "8087:8080"
+</code></pre></div></div>
 
 <h4 id="run-and-check-if-docker-compose-process-is-running">Run and check if docker-compose process is running</h4>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo docker-compose up -d
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Run docker-compose
+sudo docker-compose up -d
+
+//Check Docker process running (optional)
 sudo docker-compose ps
 </code></pre></div></div>
 
 <h4 id="acesss-locally">Acesss locally</h4>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl localhost:8087
 </code></pre></div></div>
-<h4 id="tbd---image-of-the-run">TBD - Image of the run</h4>
+<p><img src="/fastpages/images/deployment-localhost.jpg" alt="Acesss locally jpg" /></p>
 
 <h4 id="configure-nginx-to-redirect-requests-internet-request-8081-port-on-maps-to-8087-port-on-localhost">Configure nginx to redirect requests. Internet request 8081 port on maps to 8087 port on localhost</h4>
 <h4 id="18216138528081--localhose8087">18.216.138.52:8081 –&gt; localhose:8087</h4>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo nano /etc/nginx/sites-available/navan-flask
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// contents of file -- /etc/nginx/sites-available/navan-flask
+
+server {
+        listen 8081;
+        listen [::]:8081;
+        server_name 18.216.138.52;
+
+        location / {
+                proxy_pass http://localhost:8087;
+                add_header "Access-Control-Allow-Origin" *;
+        }
+}
 </code></pre></div></div>
-<h4 id="tbd---image-of-navan-flask">TBD - Image of navan-flask</h4>
 
 <h4 id="accesss-flask-website---browser">Accesss Flask Website - Browser</h4>
 <p><a href="http://18.216.138.52:8081/">Personal Flask Website</a>
@@ -150,7 +170,7 @@ sudo docker-compose up -d
 <h4 id="acesss-locally-1">Acesss locally</h4>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl localhost:8087
 </code></pre></div></div>
-<h4 id="tbd---image-of-the-run-1">TBD - Image of the run</h4>
+<p><img src="/fastpages/images/deployment-localhost-html.jpg" alt="Acesss locally jpg" /></p>
 
 <h4 id="accesss-flask-website---browser-shows-updated">Accesss Flask Website - Browser, shows updated</h4>
 <p><img src="/fastpages/images/deployment-browser-updated.jpg" alt="personal-flask-website jpg" /></p>
