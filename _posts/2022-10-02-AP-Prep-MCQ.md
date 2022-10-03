@@ -15,3 +15,4 @@ title: AP Prep MCQ
 ### Incorrect Answers
 <img src="{{site.baseurl}}/images/mcq_wrong.jpg" alt="MCQ Incorrect">
 
+#### Explanation - when x is not negative y is assigned the value false and hte display statement is never executed.  
