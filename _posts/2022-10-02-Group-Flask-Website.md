@@ -1,7 +1,7 @@
 ---
 toc: false
 layout: post
-description: AP Prep MCQ
+description: Group Flask Website and Deployment
 categories: [Deployment, week6]
 title: Group Flask Website
 ---
