@@ -8,7 +8,7 @@ title: AWS Deployment
 
 ## This is my blogpost that shows details of AWS Deployment of Personal Flash Website. 
 
-####  Here are the steps from git clone to build and run Flask locally on AWS after connecting to AWS E2C
+####  Here are the steps from git clone to build and run Flask locally on AWS after connecting to AWS EC2
 ```
 cd /home/ubuntu/navan-flask
 git clone https://github.com/NavanYatavelli/BeeFlask.git
