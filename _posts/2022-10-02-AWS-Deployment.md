@@ -39,7 +39,7 @@ curl localhost:8087
 ```
 <img src="{{site.baseurl}}/images/deployment-localhost.jpg" alt="Acesss locally jpg">
 
-#### Configure nginx to redirect requests. Internet request 8081 port on maps to 8087 port on localhost
+#### Configure nginx to redirect requests. Nginx listens for the Web Application request and directs it to the Web Application service. Internet requests for 8081 port maps to 8087 port on localhost
 #### 18.216.138.52:8081 --> localhose:8087
 ```
 // contents of file -- /etc/nginx/sites-available/navan-flask
