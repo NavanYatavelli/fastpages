@@ -19,7 +19,7 @@ title: AP Prep Multiple Choice
 <img src="{{site.baseurl}}/images/ap-copy.jpg" alt="MCQ Completed">
 
 ### Incorrect Answer#1
-<img src="{{site.baseurl}}/imagesap-internet-quiz-corr1.jpg" alt="MCQ Incorrect">
+<img src="{{site.baseurl}}/images/ap-internet-quiz-corr1.jpg" alt="MCQ Incorrect">
 
 ### Incorrect Answer#2
-<img src="{{site.baseurl}}/imagesap-internet-quiz-corr2.jpg" alt="MCQ Incorrect">
+<img src="{{site.baseurl}}/images/ap-internet-quiz-corr2.jpg" alt="MCQ Incorrect">
