@@ -28,8 +28,17 @@ My team and I decided on the following roles:
 
 As DevOps Lead , I'm the liaison between the other team members that contribute to software maintenance and creation with the purpose of making faster updates and writing code that is easy to update and access.The DevOps pipeline will be powered by GitHub Actions + some hosting provider (presumably AWS) . We intend to use HTML/CSS/JS for our frontend and Python on the backend. 
 
-# Plan poster
+# Plan scrum poster
 
 ![]({{ site.baseurl }}/images/scrum.png)
 
 This poster here is one that my team and I created together in order to describe each role of a SCRUM team and the process that goes into a sprint from the start to the end.
+
+# Development 
+The software development will employ Linux Ubuntu OS, VS Code, HTML, JavaScript, Python and Github will be used to host the code. 
+
+# Testing
+The Striver website will emply manual testing. After code is developed unit testing will be done by the developeer and integration testing will be done in phases.
+
+# Release
+There will be multiple releases os the product and one final releases. We make a build everyday for team members to test. 
