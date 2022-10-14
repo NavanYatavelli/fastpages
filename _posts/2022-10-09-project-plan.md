@@ -16,7 +16,7 @@ Our group decided to use Google Drawings to mock up what our website will look l
 
 # UI Design 
 
-![]({{ site.baseurl }}/images/quotes.png)
+![]({{ site.baseurl }}/images/quotes.jpg)
 
 In this picture as you, the design shows inspiration quotes from prevalent speakers such as DJ Khaled and Martin Luther King Jr. This satisfies the Collegeboard criteria as follows:
 
