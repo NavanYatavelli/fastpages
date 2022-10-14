@@ -59,7 +59,7 @@ There will be multiple releases os the product and one final releases. We make a
 # Roles
 Here are the Roles for our Project 
 
-Safin: Scrum Leader
-Alex: Back- end
-Kalani: Front End
-Navan: Dev ops
+- Safin: Scrum Leader
+- Alex: Back- end
+- Kalani: Front End
+- Navan: Dev ops
