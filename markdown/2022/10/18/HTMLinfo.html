@@ -216,39 +216,148 @@ window.onload = wrap_img;
 <h1 id="hacks-breaking-down-the-code">
 <a class="anchor" href="#hacks-breaking-down-the-code" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks: Breaking Down the Code</h1>
 
-<p><img src="/fastpages/images/tablecode.png" alt="" title="https://github.com/LiavB2/ominicient-lavebear"></p>
+<!-- HTML table fragment for page -->
+<table>
+  <thead>
+  <tr>
+    <th>Time</th>
+    <th>All-time Cases</th>
+    <th>Recorded Deaths</th>
+    <th>Active Cases</th>
+  </tr>
+  </thead>
+  <tbody>
+    <td id="time"></td>
+    <td id="total_cases"></td>
+    <td id="total_deaths"></td>
+    <td id="active_cases"></td>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+  <tr>
+    <th>Country</th>
+    <th>All-time Cases</th>
+    <th>Recorded Deaths</th>
+    <th>Active Cases</th>
+  </tr>
+  </thead>
+  <tbody id="result">
+    <!-- generated rows -->
+  </tbody>
+</table>
 
 <ul>
   <li>This first part is a Table, Th is table header, and we can see that the table has 4 columns: “time” “all time cases “ “Recorded Deaths” and “Active cases”. td is the table data and it gives 4 IDs: time, total cases, total deaths, and active cases. Each ID stores the data that is fetched by dcoument.getElementByID (later in the code) for time, total cases, total deaths, and active cases. To make the world data table.</li>
   <li>The country data table does the same process for the headers, however it has an ID “result” which is returned by the upcoming data.</li>
 </ul>
 
-<p><img src="/fastpages/images/script.png" alt="" title="https://github.com/LiavB2/ominicient-lavebear"></p>
+<!-- Script is layed out in a sequence (no function) and will execute when page is loaded -->
+<script>
+  // prepare HTML result container for new output
+  const resultContainer = document.getElementById("result");
 
-<ul>
-  <li>&lt;”Script”&gt; makes it in javascript</li>
-  <li>const url: stores the link inside a variable called “url” and uses the fetch command (further down) to take that link (url) and use the headers that are in the json file and takes their values and puts them in the table that was just made.</li>
-</ul>
+  // prepare fetch options
+  const url = "https://flask.nighthawkcodingsociety.com/api/covid/";
+  const headers = {
+    method: 'GET', // *GET, POST, PUT, DELETE, etc.
+    mode: 'cors', // no-cors, *cors, same-origin
+    cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
+    credentials: 'omit', // include, *same-origin, omit
+    headers: {
+      'Content-Type': 'application/json'
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+  };
 
-<p><img src="/fastpages/images/fetch.png" alt="" title="https://github.com/LiavB2/ominicient-lavebear"></p>
+- <"Script"> makes it in javascript
+- const url: stores the link inside a variable called "url" and uses the fetch command (further down) to take that link (url) and use the headers that are in the json file and takes their values and puts them in the table that was just made.
 
-<ul>
-  <li>fetches the links to get the headers from URl</li>
-  <li>const errorMsg disregards the Database response error</li>
-  <li>if (response.status…) instead of breaking down the whole code, it eliminates that specific error .</li>
-  <li>then returns the result.container for the country data table.</li>
-</ul>
+ // fetch the API
+  fetch(url, headers)
+    // response is a RESTful "promise" on any successful fetch
+    .then(response => {
+      // check for response errors
+      if (response.status !== 200) {
+          const errorMsg = 'Database response error: ' + response.status;
+          console.log(errorMsg);
+          const tr = document.createElement("tr");
+          const td = document.createElement("td");
+          td.innerHTML = errorMsg;
+          tr.appendChild(td);
+          resultContainer.appendChild(tr);
+          return;
+      }
+      // valid response will have json data
+      response.json().then(data => {
+          console.log(data);
+          console.log(data.world_total)
 
-<p><img src="/fastpages/images/data.png" alt="" title="https://github.com/LiavB2/ominicient-lavebear"></p>
+- fetches the links to get the headers from URl
+- const errorMsg disregards the Database response error
+- if (response.status...) instead of breaking down the whole code, it eliminates that specific error .
+- then returns the result.container for the country data table.
 
-<ul>
-  <li>response.json and console.log take the data from the URL that is in the form of a json file.</li>
-  <li>the document.getElementBYID takes specific data for each ID of the world data table (time, total cases, total deaths, active cases)</li>
-  <li>country data is in the form of a for loop under an HTML contianer called result.container that makes a new row in the country data table for each data point that the country data api link gives us.</li>
-  <li>tr.append builds a row from each table data which is then added to the HTML container with resultContainer.appendChild(tr);</li>
-</ul>
+      // valid response will have json data
+      response.json().then(data => {
+          console.log(data);
+          console.log(data.world_total)
 
-<p><img src="/fastpages/images/errorcatch.png" alt="" title="https://github.com/LiavB2/ominicient-lavebear"></p>
+          // World Data
+          document.getElementById("time").innerHTML = data.world_total.statistic_taken_at;
+          document.getElementById("total_cases").innerHTML = data.world_total.total_cases;
+          document.getElementById("total_deaths").innerHTML = data.world_total.total_deaths;
+          document.getElementById("active_cases").innerHTML = data.world_total.active_cases;
+
+          // Country data
+          for (const row of data.countries_stat) {
+            console.log(row);
+
+            // tr for each row
+            const tr = document.createElement("tr");
+            // td for each column
+            const name = document.createElement("td");
+            const cases = document.createElement("td");
+            const deaths = document.createElement("td");
+            const active = document.createElement("td");
+
+            // data is specific to the API
+            name.innerHTML = row.country_name;
+            cases.innerHTML = row.cases; 
+            deaths.innerHTML = row.deaths; 
+            active.innerHTML = row.active_cases; 
+
+            // this builds td's into tr
+            tr.appendChild(name);
+            tr.appendChild(cases);
+            tr.appendChild(deaths);
+            tr.appendChild(active);
+
+            // add HTML to container
+            resultContainer.appendChild(tr);
+          }
+      })
+  })
+
+- response.json and console.log take the data from the URL that is in the form of a json file.
+- the document.getElementBYID takes specific data for each ID of the world data table (time, total cases, total deaths, active cases)
+- country data is in the form of a for loop under an HTML contianer called result.container that makes a new row in the country data table for each data point that the country data api link gives us. 
+- tr.append builds a row from each table data which is then added to the HTML container with resultContainer.appendChild(tr);
+
+
+      })
+  })
+  // catch fetch errors (ie ACCESS to server blocked)
+  .catch(err => {
+    console.error(err);
+    const tr = document.createElement("tr");
+    const td = document.createElement("td");
+    td.innerHTML = err;
+    tr.appendChild(td);
+    resultContainer.appendChild(tr);
+  });
+</script>
 
 <ul>
   <li>Finally .catch(err =&gt;{ catches every error in the code, and instead of breaking the whole code, it just tells you what the specific error is</li>
