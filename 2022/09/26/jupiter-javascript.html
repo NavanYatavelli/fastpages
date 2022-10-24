@@ -145,7 +145,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">);</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">);</span>
 </pre></div>
 
     </div>
@@ -183,8 +183,8 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="kd">var</span> <span class="nx">text</span> <span class="o">=</span> <span class="s2">&quot;Hello, APCSP&quot;</span><span class="p">;</span> 
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">text</span><span class="p">);</span>
+<div class=" highlight hl-python"><pre><span></span><span class="n">var</span> <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Hello, APCSP&quot;</span><span class="p">;</span> 
+<span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">text</span><span class="p">);</span>
 </pre></div>
 
     </div>
@@ -229,12 +229,12 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// define a function to hold data for a Assignment</span>
-<span class="kd">function</span> <span class="nx">Assignment</span><span class="p">(</span><span class="nx">week</span><span class="p">,</span> <span class="nx">topic</span><span class="p">,</span> <span class="nx">description</span><span class="p">,</span> <span class="nx">link</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">week</span> <span class="o">=</span> <span class="s2">&quot;Week#&quot;</span> <span class="o">+</span> <span class="nx">week</span><span class="p">;</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">topic</span> <span class="o">=</span> <span class="nx">topic</span><span class="p">;</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">description</span> <span class="o">=</span> <span class="nx">description</span><span class="p">;</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">link</span> <span class="o">=</span> <span class="nx">link</span><span class="p">;</span>
+<div class=" highlight hl-python"><pre><span></span><span class="o">//</span> <span class="n">define</span> <span class="n">a</span> <span class="n">function</span> <span class="n">to</span> <span class="n">hold</span> <span class="n">data</span> <span class="k">for</span> <span class="n">a</span> <span class="n">Assignment</span>
+<span class="n">function</span> <span class="n">Assignment</span><span class="p">(</span><span class="n">week</span><span class="p">,</span> <span class="n">topic</span><span class="p">,</span> <span class="n">description</span><span class="p">,</span> <span class="n">link</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">week</span> <span class="o">=</span> <span class="s2">&quot;Week#&quot;</span> <span class="o">+</span> <span class="n">week</span><span class="p">;</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">topic</span> <span class="o">=</span> <span class="n">topic</span><span class="p">;</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">description</span> <span class="o">=</span> <span class="n">description</span><span class="p">;</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">link</span> <span class="o">=</span> <span class="n">link</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 
@@ -259,20 +259,20 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// define a Assignment Array </span>
-<span class="kd">var</span> <span class="nx">assignments</span> <span class="o">=</span> <span class="p">[</span> 
-    <span class="k">new</span> <span class="nx">Assignment</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="s2">&quot;Tools and Equipment&quot;</span><span class="p">,</span> 
+<div class=" highlight hl-python"><pre><span></span><span class="o">//</span> <span class="n">define</span> <span class="n">a</span> <span class="n">Assignment</span> <span class="n">Array</span> 
+<span class="n">var</span> <span class="n">assignments</span> <span class="o">=</span> <span class="p">[</span> 
+    <span class="n">new</span> <span class="n">Assignment</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;Tools and Equipment&quot;</span><span class="p">,</span> 
     <span class="s2">&quot;Tool Setup Sprint and Pair Programming&quot;</span><span class="p">,</span> 		<span class="s2">&quot;https://github.com/NavanYatavelli/fastpages/issues/2&quot;</span><span class="p">),</span>
-    <span class="k">new</span> <span class="nx">Assignment</span><span class="p">(</span><span class="mf">1</span><span class="p">,</span><span class="s2">&quot;Introduction to Python&quot;</span><span class="p">,</span> 
+    <span class="n">new</span> <span class="n">Assignment</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="s2">&quot;Introduction to Python&quot;</span><span class="p">,</span> 
     <span class="s2">&quot;Fastpages Frontend Development &amp; Bash Tutorial&quot;</span><span class="p">,</span> 		<span class="s2">&quot;https://github.com/NavanYatavelli/fastpages/issues/3&quot;</span><span class="p">),</span>
-    <span class="k">new</span> <span class="nx">Assignment</span><span class="p">(</span><span class="mf">2</span><span class="p">,</span><span class="s2">&quot;Data Abstraction in Python&quot;</span><span class="p">,</span> 
+    <span class="n">new</span> <span class="n">Assignment</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="s2">&quot;Data Abstraction in Python&quot;</span><span class="p">,</span> 
     <span class="s2">&quot;HTML Fragments&quot;</span><span class="p">,</span> 		
     <span class="s2">&quot;https://github.com/NavanYatavelli/fastpages/issues/4&quot;</span><span class="p">),</span>
-    <span class="k">new</span> <span class="nx">Assignment</span><span class="p">(</span><span class="mf">3</span><span class="p">,</span><span class="s2">&quot;Creative Development Sprint&quot;</span><span class="p">,</span> 
+    <span class="n">new</span> <span class="n">Assignment</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="s2">&quot;Creative Development Sprint&quot;</span><span class="p">,</span> 
     <span class="s2">&quot;Program Design with App Lab by Code.org&quot;</span><span class="p">,</span> 		<span class="s2">&quot;https://github.com/NavanYatavelli/fastpages/issues/5&quot;</span><span class="p">),</span>
-    <span class="k">new</span> <span class="nx">Assignment</span><span class="p">(</span><span class="mf">4</span><span class="p">,</span><span class="s2">&quot;Python Web Server Project&quot;</span><span class="p">,</span> 
+    <span class="n">new</span> <span class="n">Assignment</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="s2">&quot;Python Web Server Project&quot;</span><span class="p">,</span> 
     <span class="s2">&quot;Flask/Python Web Application &amp; Fastpages local server&quot;</span><span class="p">,</span> 		<span class="s2">&quot;https://github.com/NavanYatavelli/fastpages/issues/6&quot;</span><span class="p">),</span>
-    <span class="k">new</span> <span class="nx">Assignment</span><span class="p">(</span><span class="mf">5</span><span class="p">,</span><span class="s2">&quot;UI Starters&quot;</span><span class="p">,</span> 
+    <span class="n">new</span> <span class="n">Assignment</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="s2">&quot;UI Starters&quot;</span><span class="p">,</span> 
     <span class="s2">&quot;JavaScript Tutorial&quot;</span><span class="p">,</span> 	<span class="s2">&quot;https://github.com/NavanYatavelli/fastpages/issues/7&quot;</span><span class="p">),</span>
 
 <span class="p">];</span>
@@ -299,14 +299,14 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// define a course and build Course objects</span>
-<span class="kd">function</span> <span class="nx">Course</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">assignments</span><span class="p">){</span> 
-    <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span> <span class="c1">// name of the course</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">assignments</span> <span class="o">=</span> <span class="nx">assignments</span><span class="p">;</span> <span class="c1">//assignments for this course</span>
+<div class=" highlight hl-python"><pre><span></span><span class="o">//</span> <span class="n">define</span> <span class="n">a</span> <span class="n">course</span> <span class="ow">and</span> <span class="n">build</span> <span class="n">Course</span> <span class="n">objects</span>
+<span class="n">function</span> <span class="n">Course</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">assignments</span><span class="p">){</span> 
+    <span class="n">this</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">;</span> <span class="o">//</span> <span class="n">name</span> <span class="n">of</span> <span class="n">the</span> <span class="n">course</span>
+    <span class="n">this</span><span class="o">.</span><span class="n">assignments</span> <span class="o">=</span> <span class="n">assignments</span><span class="p">;</span> <span class="o">//</span><span class="n">assignments</span> <span class="k">for</span> <span class="n">this</span> <span class="n">course</span>
 <span class="p">}</span>
 
-<span class="c1">// make a Computer Science Course - with name and assignements</span>
-<span class="nx">apcompsci</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Course</span><span class="p">(</span><span class="s2">&quot;AP Computer Science Principles&quot;</span><span class="p">,</span> <span class="nx">assignments</span><span class="p">);</span>
+<span class="o">//</span> <span class="n">make</span> <span class="n">a</span> <span class="n">Computer</span> <span class="n">Science</span> <span class="n">Course</span> <span class="o">-</span> <span class="k">with</span> <span class="n">name</span> <span class="ow">and</span> <span class="n">assignements</span>
+<span class="n">apcompsci</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Course</span><span class="p">(</span><span class="s2">&quot;AP Computer Science Principles&quot;</span><span class="p">,</span> <span class="n">assignments</span><span class="p">);</span>
 </pre></div>
 
     </div>
@@ -378,47 +378,47 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// define an HTML conversion &quot;method&quot; associated with Course</span>
-<span class="nx">Course</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">_toHtml</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="c1">// HTML Style is build using inline structure</span>
-    <span class="kd">var</span> <span class="nx">style</span> <span class="o">=</span> <span class="p">(</span>
+<div class=" highlight hl-python"><pre><span></span><span class="o">//</span> <span class="n">define</span> <span class="n">an</span> <span class="n">HTML</span> <span class="n">conversion</span> <span class="s2">&quot;method&quot;</span> <span class="n">associated</span> <span class="k">with</span> <span class="n">Course</span>
+<span class="n">Course</span><span class="o">.</span><span class="n">prototype</span><span class="o">.</span><span class="n">_toHtml</span> <span class="o">=</span> <span class="n">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="o">//</span> <span class="n">HTML</span> <span class="n">Style</span> <span class="ow">is</span> <span class="n">build</span> <span class="n">using</span> <span class="n">inline</span> <span class="n">structure</span>
+    <span class="n">var</span> <span class="n">style</span> <span class="o">=</span> <span class="p">(</span>
       <span class="s2">&quot;display:inline-block;&quot;</span> <span class="o">+</span>
       <span class="s2">&quot;border: 2px solid grey;&quot;</span> <span class="o">+</span>
       <span class="s2">&quot;box-shadow: 0.8em 0.4em 0.4em grey;&quot;</span>
     <span class="p">);</span>
   
-    <span class="c1">// HTML Body of Table is build as a series of concatenations (+=)</span>
-    <span class="kd">var</span> <span class="nx">body</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+    <span class="o">//</span> <span class="n">HTML</span> <span class="n">Body</span> <span class="n">of</span> <span class="n">Table</span> <span class="ow">is</span> <span class="n">build</span> <span class="k">as</span> <span class="n">a</span> <span class="n">series</span> <span class="n">of</span> <span class="n">concatenations</span> <span class="p">(</span><span class="o">+=</span><span class="p">)</span>
+    <span class="n">var</span> <span class="n">body</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
     
-    <span class="c1">// Heading for Array Columns</span>
-    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span><span class="p">;</span>
-    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&lt;mark&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Week&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/mark&gt;&lt;/th&gt;&quot;</span><span class="p">;</span>
-    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&lt;mark&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Topic&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/mark&gt;&lt;/th&gt;&quot;</span><span class="p">;</span>
-    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&lt;mark&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Description&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/mark&gt;&lt;/th&gt;&quot;</span><span class="p">;</span>
-    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&lt;mark&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;HW Link&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/mark&gt;&lt;/th&gt;&quot;</span><span class="p">;</span>
-    <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;/tr&gt;&quot;</span><span class="p">;</span>
-    <span class="c1">// Data of Array, iterate through each row of compsci.classroom </span>
-    <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">row</span> <span class="k">of</span> <span class="nx">apcompsci</span><span class="p">.</span><span class="nx">assignments</span><span class="p">)</span> <span class="p">{</span>
-      <span class="c1">// tr for each row, a new line</span>
-      <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span><span class="p">;</span>
-      <span class="c1">// td for each column of data</span>
-      <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="nx">row</span><span class="p">.</span><span class="nx">week</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
-      <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="nx">row</span><span class="p">.</span><span class="nx">topic</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
-      <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="nx">row</span><span class="p">.</span><span class="nx">description</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
-      <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;a href=\&quot;&quot;</span> <span class="o">+</span> <span class="nx">row</span><span class="p">.</span><span class="nx">link</span> <span class="o">+</span> <span class="s2">&quot;\&quot;&gt;&quot;</span> <span class="o">+</span> <span class="nx">row</span><span class="p">.</span><span class="nx">topic</span> <span class="o">+</span> <span class="s2">&quot;&lt;/a&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
-      <span class="nx">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span><span class="p">;</span>
+    <span class="o">//</span> <span class="n">Heading</span> <span class="k">for</span> <span class="n">Array</span> <span class="n">Columns</span>
+    <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span><span class="p">;</span>
+    <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&lt;mark&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Week&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/mark&gt;&lt;/th&gt;&quot;</span><span class="p">;</span>
+    <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&lt;mark&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Topic&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/mark&gt;&lt;/th&gt;&quot;</span><span class="p">;</span>
+    <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&lt;mark&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;Description&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/mark&gt;&lt;/th&gt;&quot;</span><span class="p">;</span>
+    <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;th&gt;&lt;mark&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;HW Link&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/mark&gt;&lt;/th&gt;&quot;</span><span class="p">;</span>
+    <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;/tr&gt;&quot;</span><span class="p">;</span>
+    <span class="o">//</span> <span class="n">Data</span> <span class="n">of</span> <span class="n">Array</span><span class="p">,</span> <span class="n">iterate</span> <span class="n">through</span> <span class="n">each</span> <span class="n">row</span> <span class="n">of</span> <span class="n">compsci</span><span class="o">.</span><span class="n">classroom</span> 
+    <span class="k">for</span> <span class="p">(</span><span class="n">var</span> <span class="n">row</span> <span class="n">of</span> <span class="n">apcompsci</span><span class="o">.</span><span class="n">assignments</span><span class="p">)</span> <span class="p">{</span>
+      <span class="o">//</span> <span class="n">tr</span> <span class="k">for</span> <span class="n">each</span> <span class="n">row</span><span class="p">,</span> <span class="n">a</span> <span class="n">new</span> <span class="n">line</span>
+      <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span><span class="p">;</span>
+      <span class="o">//</span> <span class="n">td</span> <span class="k">for</span> <span class="n">each</span> <span class="n">column</span> <span class="n">of</span> <span class="n">data</span>
+      <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="n">row</span><span class="o">.</span><span class="n">week</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
+      <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="n">row</span><span class="o">.</span><span class="n">topic</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
+      <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="n">row</span><span class="o">.</span><span class="n">description</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
+      <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;td&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;a href=</span><span class="se">\&quot;</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="n">row</span><span class="o">.</span><span class="n">link</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\&quot;</span><span class="s2">&gt;&quot;</span> <span class="o">+</span> <span class="n">row</span><span class="o">.</span><span class="n">topic</span> <span class="o">+</span> <span class="s2">&quot;&lt;/a&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;&lt;/td&gt;&quot;</span><span class="p">;</span>
+      <span class="n">body</span> <span class="o">+=</span> <span class="s2">&quot;&lt;tr&gt;&quot;</span><span class="p">;</span>
     <span class="p">}</span>
    
-     <span class="c1">// Build and HTML fragment of  body</span>
-     <span class="cm">/*</span>
-<span class="cm">    return (</span>
-<span class="cm">          body </span>
-<span class="cm">    );</span>
-<span class="cm">*/</span>
+     <span class="o">//</span> <span class="n">Build</span> <span class="ow">and</span> <span class="n">HTML</span> <span class="n">fragment</span> <span class="n">of</span>  <span class="n">body</span>
+     <span class="o">/*</span>
     <span class="k">return</span> <span class="p">(</span>
-      <span class="s2">&quot;&lt;div style=&#39;&quot;</span> <span class="o">+</span> <span class="nx">style</span> <span class="o">+</span> <span class="s2">&quot;&#39;&gt;&quot;</span> <span class="o">+</span>
+          <span class="n">body</span> 
+    <span class="p">);</span>
+<span class="o">*/</span>
+    <span class="k">return</span> <span class="p">(</span>
+      <span class="s2">&quot;&lt;div style=&#39;&quot;</span> <span class="o">+</span> <span class="n">style</span> <span class="o">+</span> <span class="s2">&quot;&#39;&gt;&quot;</span> <span class="o">+</span>
         <span class="s2">&quot;&lt;table&gt;&quot;</span> <span class="o">+</span>
-          <span class="nx">body</span> <span class="o">+</span>
+          <span class="n">body</span> <span class="o">+</span>
         <span class="s2">&quot;&lt;/table&gt;&quot;</span> <span class="o">+</span>
       <span class="s2">&quot;&lt;/div&gt;&quot;</span>
     <span class="p">);</span>
@@ -463,8 +463,8 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="c1">// IJavaScript HTML processor receive parameter of defined HTML fragment</span>
-<span class="nx">$$</span><span class="p">.</span><span class="nx">html</span><span class="p">(</span><span class="nx">apcompsci</span><span class="p">.</span><span class="nx">_toHtml</span><span class="p">());</span>
+<div class=" highlight hl-python"><pre><span></span><span class="o">//</span> <span class="n">IJavaScript</span> <span class="n">HTML</span> <span class="n">processor</span> <span class="n">receive</span> <span class="n">parameter</span> <span class="n">of</span> <span class="n">defined</span> <span class="n">HTML</span> <span class="n">fragment</span>
+<span class="err">$$</span><span class="o">.</span><span class="n">html</span><span class="p">(</span><span class="n">apcompsci</span><span class="o">.</span><span class="n">_toHtml</span><span class="p">());</span>
 </pre></div>
 
     </div>
