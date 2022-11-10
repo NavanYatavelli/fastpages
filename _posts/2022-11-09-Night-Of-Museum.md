@@ -9,11 +9,13 @@ title: Night At The Museum
 ## Our Project Striver
 We created Striver, a program that acts as a social media website for thoughts and quotes. The api we created randomly generated an inspirational quote that once could like and comment on. As you can see from the image, any user can add own post to their “forum”.
 
-#### This is a picture of my teammates, setting up the presentation of our program. I especially enjoyed my presentation to Mr. Yeung with random quotes references.  
-<img src="{{site.baseurl}}/images/night-of-mus-1.jpg" alt="group-flask-website jpg">
-
-#### This is a picture of a user, creating his own forum using our application.   This website allows user to post inspirational quotes and like their friends’ posts.
+#### This is a picture of my teammates, setting up the presentation of our program. I especially enjoyed my presentation to Mr. Mort with random quotes references.  
 <img src="{{site.baseurl}}/images/night-of-mus-4.jpg" alt="group-flask-website jpg">
+
+#### This above is a picture of a user, creating his own forum using our application.   This website allows user to post inspirational quotes and like their friends’ posts.
+
+#### This is the group that was presenting next to us - they made an Application called Mind Swepper. This had all the features of actual Mind Sweeper game. I had fun playing it!!!
+<img src="{{site.baseurl}}/images/night-of-mus-1.jpg" alt="group-flask-website jpg">
 
 ### Stock Application
 #### This si the CSP project I visited was made by another group from MORT P4. Their program tracks the stocks of a few major companies such as META, QCOM, APPLE, and INTC, which is also the data from their API.  
