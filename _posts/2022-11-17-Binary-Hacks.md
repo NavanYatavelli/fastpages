@@ -51,4 +51,22 @@ function getRandomBinaryHack2() {
 						       
 </script>
 
+```
+Here is my logic to convert decimal to binary
+− Create an empty string and a decimal number.
+− Iterate through the decimal number while it is greater than 0.
+− To get the last bit of the decimal number, perform bitwise & operation of 1 with decimal number. If the last bit is 1, append “1” in the front of the binary string. Otherwise, append ‘0’ in the front of the binary string.
+− Remove the last bit from the decimal number using the right shift operator.
+Example 
+decimal = 5; //101
+while (decimal > 0) {
+   if (decimal & 1) {
+      binary = "1" + binary;
+   } else {
+      binary = "0" + binary;
+   }
+   decimal = decimal >> 1;
+}
+```
+
 
