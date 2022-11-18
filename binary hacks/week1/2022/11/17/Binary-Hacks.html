@@ -114,6 +114,37 @@ window.onload = wrap_img;
 <p id="colorBox" style="background-color:purple; color:black">The Color changes</p>
 <p id="colorBoxHex"></p>
 
+<h3 id="hack-3---click-the-below-buttons-to-flip-the-bits-and-convert-to-diffetent-formats">Hack #3 - Click the below buttons to flip the bits and convert to diffetent formats.</h3>
+<p><button name="button" onclick="displayBits()" style="background-color:green; border-color:blue; color:white">Generate the next random number to convert!!!</button></p>
+<p id="randomBinary" style="background-color:orange; color:black">Binary.</p>
+<p id="randomHex" style="background-color:orange; color:black">Hex.</p>
+<p id="randomDecimal" style="background-color:orange; color:black">Decimal.</p>
+<p id="randomOctal" style="background-color:orange; color:black">Octal.</p>
+
+<table style="width:100%">
+  <tr>
+    <td><button id="tbit7" onclick="bitToggle(7)">Toggle</button></td>
+    <td><button id="tbit6" onclick="bitToggle(6)">Toggle</button></td>
+    <td><button id="tbit5" onclick="bitToggle(5)">Toggle</button></td>
+    <td><button id="tbit4" onclick="bitToggle(4)">Toggle</button></td>
+    <td><button id="tbit3" onclick="bitToggle(3)">Toggle</button></td>
+    <td><button id="tbit2" onclick="bitToggle(2)">Toggle</button></td>
+    <td><button id="tbit1" onclick="bitToggle(1)">Toggle</button></td>
+    <td><button id="tbit0" onclick="bitToggle(0)">Toggle</button></td>
+    
+  </tr>
+  <tr>
+    <td id="bit0">1</td>
+    <td id="bit1">0</td>
+    <td id="bit2">1</td>
+    <td id="bit3">1</td>
+    <td id="bit4">0</td>
+    <td id="bit5">1</td>
+    <td id="bit6">1</td>
+    <td id="bit7">0</td>
+  </tr>
+</table>
+
 <script>
 // this function is called upon button click
 function getRandomBinaryHack1() {
@@ -140,7 +171,50 @@ function getRandomBinaryHack2() {
     document.getElementById("colorBoxHex").innerHTML = "Hex#" + hex + hex + hex;
 }
 						       
-						       
+var gDecimal = 14;
+function displayBits() {
+    //decimal = 10; //101
+    var binary = "";
+    //document.write("Hello, Coding Ground!");
+    //while (decimal > 0) {
+    decimal = gDecimal;
+    for (i = 7; i > -1; i--) {
+       bitid = "bit" + i;
+       
+       if (decimal & 1) {
+          binary = "1" + binary;
+          document.getElementById(bitid).innerHTML = "1";
+       } else {
+          binary = "0" + binary;
+          document.getElementById(bitid).innerHTML = "0";
+       }
+       decimal = decimal >> 1;
+    }
+   document.getElementById("randomBinary").innerHTML = binary;
+   document.getElementById("randomHex").innerHTML = gDecimal.toString(16);
+   document.getElementById("randomOctal").innerHTML = gDecimal.toString(8);
+   document.getElementById("randomDecimal").innerHTML = gDecimal.toString(10);
+}
+function bit_test(num, bit){
+    return ((num>>bit) % 2 != 0)
+}
+
+function bit_set(num, bit){
+    return num | 1<<bit;
+}
+
+function bit_clear(num, bit){
+    return num & ~(1<<bit);
+}
+
+function bitToggle(bit){
+    num = gDecimal;
+    gDecimal = bit_test(num, bit) ? bit_clear(num, bit) : bit_set(num, bit);
+    //gDecimal = bit_set(num, bit);
+    displayBits();
+    return decimal;
+}
+	
 </script>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Here is my logic to convert decimal to binary
