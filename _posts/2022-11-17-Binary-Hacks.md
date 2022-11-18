@@ -22,7 +22,7 @@ title: Binary Hacks!!!
 <p id="colorBoxHex"></p>
 
 ### Hack #3 - Click the below buttons to flip the bits and convert to diffetent formats.
-<button name="button" onclick="displayBits()" style="background-color:green; border-color:blue; color:white">Generate the next random number to convert!!!</button>
+<button name="button" onclick="displayBits()" style="background-color:green; border-color:blue; color:white">Display Bits to flip!!!</button>
 <p id="randomBinary" style="background-color:orange; color:black">Binary.</p>
 <p id="randomHex" style="background-color:orange; color:black">Hex.</p>
 <p id="randomDecimal" style="background-color:orange; color:black">Decimal.</p>
@@ -123,6 +123,7 @@ function bitToggle(bit){
 }
 	
 </script>
+displayBits();
 
 ```
 Here is my logic to convert decimal to binary
