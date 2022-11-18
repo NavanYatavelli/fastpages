@@ -17,8 +17,24 @@ title: Binary Hacks!!!
 function getRandomBinary() {
 	var time = new Date().getMilliseconds(); //get current time
 	var random = time % 10; // get the arrray index value < 10
-	document.getElementById("randomBinary").innerHTML = random; // replace the text 
+	document.getElementById("randomBinary").innerHTML = toBinary(random); // replace the text 
 }
+function toBinary(decimal) {
+	while (decimal > 0) {
+		if (decimal & 1) {
+			binary = "1" + binary;
+		} else {
+			binary = "0" + binary;
+		}
+		decimal = decimal >> 1;
+	}
+	return binary;
+}
+								  
+								  
+								  
+								  
+								  
 </script>
 
 
