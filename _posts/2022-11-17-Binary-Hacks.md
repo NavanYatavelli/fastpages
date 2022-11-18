@@ -97,10 +97,10 @@ function displayBits() {
        }
        decimal = decimal >> 1;
     }
-   document.getElementById("randomBinaryP").innerHTML = binary;
-   document.getElementById("randomHexP").innerHTML = gDecimal.toString(16);
-   document.getElementById("randomOctalP").innerHTML = gDecimal.toString(8);
-   document.getElementById("randomDecimalP").innerHTML = gDecimal.toString(10);
+   document.getElementById("randomBinaryP").innerHTML = "Binary: " + binary;
+   document.getElementById("randomHexP").innerHTML = "Hexadecimal: 0x" +gDecimal.toString(16);
+   document.getElementById("randomOctalP").innerHTML = "Octal: " + gDecimal.toString(8);
+   document.getElementById("randomDecimalP").innerHTML = "Decimal: " + gDecimal.toString(10);
 }
 function bit_test(num, bit){
     return ((num>>bit) % 2 != 0)
@@ -119,12 +119,12 @@ function bitToggle(bit){
     gDecimal = bit_test(num, bit) ? bit_clear(num, bit) : bit_set(num, bit);
     //gDecimal = bit_set(num, bit);
     displayBits();
-	document.getElementById("randomDecimalP").innerHTML = gDecimal.toString(10);
+	document.getElementById("randomDecimalP").innerHTML = "Decimal: " + gDecimal.toString(10);
     return decimal;
 }
 	
 </script>
-displayBits();
+
 
 ```
 Here is my logic to convert decimal to binary
