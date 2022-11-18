@@ -116,10 +116,10 @@ window.onload = wrap_img;
 
 <h3 id="hack-3---click-the-below-buttons-to-flip-the-bits-and-convert-to-diffetent-formats">Hack #3 - Click the below buttons to flip the bits and convert to diffetent formats.</h3>
 <p><button name="button" onclick="displayBits()" style="background-color:green; border-color:blue; color:white">Display Bits to flip!!!</button></p>
-<p id="randomBinary" style="background-color:orange; color:black">Binary.</p>
-<p id="randomHex" style="background-color:orange; color:black">Hex.</p>
-<p id="randomDecimal" style="background-color:orange; color:black">Decimal.</p>
-<p id="randomOctal" style="background-color:orange; color:black">Octal.</p>
+<p id="randomBinary1" style="background-color:orange; color:black">Binary.</p>
+<p id="randomHex1" style="background-color:orange; color:black">Hex.</p>
+<p id="randomDecimal1" style="background-color:orange; color:black">Decimal.</p>
+<p id="randomOctal1" style="background-color:orange; color:black">Octal.</p>
 
 <table style="width:100%">
   <tr>
@@ -190,10 +190,10 @@ function displayBits() {
        }
        decimal = decimal >> 1;
     }
-   document.getElementById("randomBinary").innerHTML = binary;
-   document.getElementById("randomHex").innerHTML = gDecimal.toString(16);
-   document.getElementById("randomOctal").innerHTML = gDecimal.toString(8);
-   document.getElementById("randomDecimal").innerHTML = gDecimal.toString(10);
+   document.getElementById("randomBinary1").innerHTML = binary;
+   document.getElementById("randomHex1").innerHTML = gDecimal.toString(16);
+   document.getElementById("randomOctal1").innerHTML = gDecimal.toString(8);
+   document.getElementById("randomDecimal1").innerHTML = gDecimal.toString(10);
 }
 function bit_test(num, bit){
     return ((num>>bit) % 2 != 0)
