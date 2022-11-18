@@ -20,13 +20,13 @@ title: Binary Hacks!!!
 <br/>
 <p id="colorBox" style="background-color:purple; color:black">The Color changes</p>
 <p id="colorBoxHex"></p>
-
+<br/><br/><br/><br/>
 ### Hack #3 - Click the below buttons to flip the bits and convert to diffetent formats.
 <button name="button" onclick="displayBits()" style="background-color:green; border-color:blue; color:white">Display Bits to flip!!!</button>
-<p id="randomBinary1" style="background-color:orange; color:black">Binary.</p>
-<p id="randomHex1" style="background-color:orange; color:black">Hex.</p>
-<p id="randomDecimal1" style="background-color:orange; color:black">Decimal.</p>
-<p id="randomOctal1" style="background-color:orange; color:black">Octal.</p>
+<p id="randomBinaryP" style="background-color:orange; color:black">Binary.</p>
+<p id="randomHexP" style="background-color:orange; color:black">Hex.</p>
+<p id="randomDecimalP" style="background-color:orange; color:black">Decimal.</p>
+<p id="randomOctalP" style="background-color:orange; color:black">Octal.</p>
 
 <table style="width:100%">
   <tr>
@@ -97,10 +97,10 @@ function displayBits() {
        }
        decimal = decimal >> 1;
     }
-   document.getElementById("randomBinary1").innerHTML = binary;
-   document.getElementById("randomHex1").innerHTML = gDecimal.toString(16);
-   document.getElementById("randomOctal1").innerHTML = gDecimal.toString(8);
-   document.getElementById("randomDecimal1").innerHTML = gDecimal.toString(10);
+   document.getElementById("randomBinaryP").innerHTML = binary;
+   document.getElementById("randomHexP").innerHTML = gDecimal.toString(16);
+   document.getElementById("randomOctalP").innerHTML = gDecimal.toString(8);
+   document.getElementById("randomDecimalP").innerHTML = gDecimal.toString(10);
 }
 function bit_test(num, bit){
     return ((num>>bit) % 2 != 0)
@@ -119,6 +119,7 @@ function bitToggle(bit){
     gDecimal = bit_test(num, bit) ? bit_clear(num, bit) : bit_set(num, bit);
     //gDecimal = bit_set(num, bit);
     displayBits();
+	document.getElementById("randomDecimalP").innerHTML = gDecimal.toString(10);
     return decimal;
 }
 	
