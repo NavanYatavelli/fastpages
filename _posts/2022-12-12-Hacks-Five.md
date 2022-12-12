@@ -60,13 +60,13 @@ else{
 
 ## Question 4 & 5
 
-![hack5q4 Image](/images/hack5q4.jpg)
+<img src="{{site.baseurl}}/images/hack5q4.jpg" alt="Beebadger Blog Header">
 
 Explanation: We would start our search for element 69 by looking at the middle index, 5 first (8 elements divide by 2, plus 1 index). We find 6. 6 being less than 69 would lead you to consider the greater than half. The middle index for this section is Seven (5+9 = 14/2 = 7). Index number seven is 11, which is lower than index number 69. The eighth index is next examined ((8+8)/2 = 8). We searched and discovered the right number because 8 = 69.
 
 ### Question 6 Diagram
 
-![hack5q6 Image](/images/hack5q6.jpg)
+<img src="{{site.baseurl}}/images/hack5q6.jpg" alt="Beebadger Blog Header">
 
 ### Question 7
 
