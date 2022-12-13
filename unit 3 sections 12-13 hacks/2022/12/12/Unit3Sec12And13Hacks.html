@@ -100,28 +100,37 @@ window.onload = wrap_img;
 
 <p>Qais is writing code to calculate formulas from his math class. He’s currently working on a procedure to calculate average speed, based on this formula:</p>
 
-<p>Average speed=</p>
+<p>Average speed=
+Total Time/Total Distance</p>
 
-<p>Total Time/Total Distance</p>
+<p>Highlight which of these is the best procedure for calculating and displaying average speed.</p>
+<ul>
+  <li><mark>PROCEDURE calcAvgSpeed (distance, time) { DISPLAY (distance/time) }</mark></li>
+  <li>PROCEDURE calcAvgSpeed (distance) { DISPLAY (distance/time) }</li>
+  <li>PROCEDURE calcAvgSpeed (distance, time) { DISPLAY (time/distance) }</li>
+</ul>
 
-<p>Highlight which of these is the best procedure for calculating and displaying average speed.
-<mark>PROCEDURE calcAvgSpeed (distance, time) { DISPLAY (distance/time) }</mark>
-PROCEDURE calcAvgSpeed (distance) { DISPLAY (distance/time) }
-PROCEDURE calcAvgSpeed (distance, time) { DISPLAY (time/distance) }</p>
+<p>Problem 2: Procedures with return values
+James Hunter is looking through his classmate’s program and sees a procedure called heightenEmotions: PROCEDURE heightenEmotions(myEmotion)</p>
 
-<h3 id="question-1-hack">Question 1 HACK</h3>
+<p>{ moreEnergy ← CONCAT(myEmotion, “!!!”)</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>isCold = True
-isRaining = True
-stayInside = False
+<p>moreVolume ← UPPER(moreEnergy)</p>
 
-if ((isCold) or (isRaining)) :
-    stayInside = True
-else:
-    stayInside = False
+<p>RETURN moreVolume }</p>
 
-print("It is cold=" + str(isCold) + " and raining=" + str(isRaining) + " so stayInside=" + str(stayInside))
-</code></pre></div></div>
+<p>That procedure manipulates strings using two built-in procedures, CONCAT for concatenating two strings together, and UPPER for converting a string to uppercase.</p>
+
+<p>James Hunter then sees this line of code:</p>
+
+<p>heightenEmotions(“im mad”)</p>
+
+<p>After that line of code runs, will nothing be displayed?</p>
+
+<ul>
+  <li><mark>True</mark></li>
+  <li>False</li>
+</ul>
 
 <h3 id="question-2-hack">Question 2 HACK</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import random
