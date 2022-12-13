@@ -121,18 +121,21 @@ Print (Celsius)}
 ### 3.13 Hacks
 #### (1)
 Create a procedure that is meant to replace the top running backs yards per game in one season if the current running back has more yards per game
-- Necessary Parameters: toprbyardspg(100), currentrbyards(1260), totalGames(12)
+Necessary Parameters: toprbyardspg(100), currentrbyards(1260), totalGames(12)
+
 ```
 def replaceRrunningBackYards(toprbyardspg, currentrbyards, totalGames):
     if ((toprbyardspg/totalGames) < (currentrbyards/totalGames)):
         toprbyardspg = currentrbyards
     print(toprbyardspg)
-
 replaceRrunningBackYards(100, 1260, 12)
 ```
+
 <mark>1260</mark>
+
 #### (2)
 Write a procedure that will allow the A+ to get to the 1, while avoiding the black boxes.
+
 ```
 PROCEDURE APlus(){
 If (canMoveForward):
