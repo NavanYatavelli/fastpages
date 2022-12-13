@@ -117,3 +117,60 @@ Print (Celsius)}
 }
 ```
 <mark>39.44 degrees Celsius</mark>
+
+### 3.13 Hacks
+#### (1)
+Create a procedure that is meant to replace the top running backs yards per game in one season if the current running back has more yards per game
+- Necessary Parameters: toprbyardspg(100), currentrbyards(1260), totalGames(12)
+```
+def replaceRrunningBackYards(toprbyardspg, currentrbyards, totalGames):
+    if ((toprbyardspg/totalGames) < (currentrbyards/totalGames)):
+        toprbyardspg = currentrbyards
+    print(toprbyardspg)
+
+replaceRrunningBackYards(100, 1260, 12)
+```
+<mark>1260</mark>
+#### (2)
+Write a procedure that will allow the A+ to get to the 1, while avoiding the black boxes.
+```
+PROCEDURE APlus(){
+If (canMoveForward):
+Move_Forward
+Else (canMoveRight):
+Rotate_Right
+Move_Forward
+If (canMoveLeft);
+Rotate_Left
+Move_forward
+}
+```
+#### (3)
+Which Is the Correct Way to define the Name of a Procedure?
+- A. PROCEDURE MYLIST
+- B. <mark>PROCEDURE MyList</mark>
+- C. procedure mylist
+Since the procedure should be in all capital and part of the procedure name should be capitalized
+
+#### (4)
+Write A Procedure That gets the BeachBall To the Green Square
+```
+PROCEDURE toGreenSquare {
+Rotate_Left
+    move_forward
+    move_forward
+    move_forward
+    move_forward
+    move_forward
+    move_forward
+    rotate_left
+    rotate_left
+    rotate_left
+}
+```
+
+
+
+
+
+
