@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -204,6 +204,58 @@ Print (Celsius)}
 }
 </code></pre></div></div>
 <p><mark>39.44 degrees Celsius</mark></p>
+
+<h3 id="313-hacks">3.13 Hacks</h3>
+<h4 id="1-1">(1)</h4>
+<p>Create a procedure that is meant to replace the top running backs yards per game in one season if the current running back has more yards per game</p>
+<ul>
+  <li>Necessary Parameters: toprbyardspg(100), currentrbyards(1260), totalGames(12)
+```
+def replaceRrunningBackYards(toprbyardspg, currentrbyards, totalGames):
+  if ((toprbyardspg/totalGames) &lt; (currentrbyards/totalGames)):
+      toprbyardspg = currentrbyards
+  print(toprbyardspg)</li>
+</ul>
+
+<p>replaceRrunningBackYards(100, 1260, 12)</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;mark&gt;1260&lt;/mark&gt;
+#### (2)
+Write a procedure that will allow the A+ to get to the 1, while avoiding the black boxes.
+</code></pre></div></div>
+<p>PROCEDURE APlus(){
+If (canMoveForward):
+Move_Forward
+Else (canMoveRight):
+Rotate_Right
+Move_Forward
+If (canMoveLeft);
+Rotate_Left
+Move_forward
+}</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#### (3)
+Which Is the Correct Way to define the Name of a Procedure?
+- A. PROCEDURE MYLIST
+- B. &lt;mark&gt;PROCEDURE MyList&lt;/mark&gt;
+- C. procedure mylist
+Since the procedure should be in all capital and part of the procedure name should be capitalized
+
+#### (4)
+Write A Procedure That gets the BeachBall To the Green Square
+</code></pre></div></div>
+<p>PROCEDURE toGreenSquare {
+Rotate_Left
+    move_forward
+    move_forward
+    move_forward
+    move_forward
+    move_forward
+    move_forward
+    rotate_left
+    rotate_left
+    rotate_left
+}
+```</p>
+
 
   </div><a class="u-url" href="/fastpages/unit%203%20sections%2012-13%20hacks/2022/12/12/Unit3Sec12And13Hacks.html" hidden></a>
 </article>
