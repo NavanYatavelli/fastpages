@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -96,7 +96,7 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <h3 id="312-homework-part-1">3.12 Homework Part 1</h3>
-<p>Problem 1: This problem involves parameters</p>
+<h4 id="problem-1-this-problem-involves-parameters">Problem 1: This problem involves parameters</h4>
 
 <p>Qais is writing code to calculate formulas from his math class. He’s currently working on a procedure to calculate average speed, based on this formula:</p>
 
@@ -110,8 +110,9 @@ Total Time/Total Distance</p>
   <li>PROCEDURE calcAvgSpeed (distance, time) { DISPLAY (time/distance) }</li>
 </ul>
 
-<p>Problem 2: Procedures with return values
-James Hunter is looking through his classmate’s program and sees a procedure called heightenEmotions: PROCEDURE heightenEmotions(myEmotion)</p>
+<h4 id="problem-2-procedures-with-return-values">Problem 2: Procedures with return values</h4>
+
+<p>James Hunter is looking through his classmate’s program and sees a procedure called heightenEmotions: PROCEDURE heightenEmotions(myEmotion)</p>
 
 <p>{ moreEnergy ← CONCAT(myEmotion, “!!!”)</p>
 
@@ -130,6 +131,33 @@ James Hunter is looking through his classmate’s program and sees a procedure c
 <ul>
   <li><mark>True</mark></li>
   <li>False</li>
+</ul>
+
+<h4 id="problem-3-procedures-with-return-values">Problem 3: Procedures with return values</h4>
+
+<p>Bubz is writing a program to calculate the carbon footprint of his activities. The procedure calcFlightFootprint calculates the pounds of carbon dioxide produced per passenger in a flight that covers a given number of miles and seats a given number of passengers.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PROCEDURE calcFlightFootprint(numMiles, numPassengers) { CO2_PER_MILE ← 53.29
+
+carbonPerFlight ← numMiles * CO2_PER_MILE
+
+carbonPerPassenger ← carbonPerFlight / numPassengers
+
+RETURN carbonPerPassenger
+
+}
+</code></pre></div></div>
+
+<p>Bubz wants to use that procedure to calculate the total footprint for his two upcoming flights: LA to NY: 2,451 miles and 118 passengers NY to London: 3,442 miles and 252 passengers</p>
+
+<p>Which of these code snippets successfully calculates and stores her total footprint? Highlight 2 answers.</p>
+
+<ul>
+  <li><mark>totalFootprint ← calcFlightFootprint(2451, 118) + calcFlightFootprint(3442, 252)</mark></li>
+  <li>totalFootprint ← calcFlightFootprint(2451, 118 + 3442, 252)</li>
+  <li><mark>totalFootprint ← calcFlightFootprint((2451, 118) + (3442, 252))</mark></li>
+  <li>laNyCarbon ← calcFlightFootprint(2451, 118) nyLondonCarbon ← calcFlightFootprint(3442, 252)</li>
+  <li>totalFootprint ← laNyCarbon + nyLondonCarbon</li>
 </ul>
 
 <h3 id="question-2-hack">Question 2 HACK</h3>
