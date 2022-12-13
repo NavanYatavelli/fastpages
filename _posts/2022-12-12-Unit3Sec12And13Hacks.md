@@ -12,30 +12,33 @@ Problem 1: This problem involves parameters
 Qais is writing code to calculate formulas from his math class. He's currently working on a procedure to calculate average speed, based on this formula:
 
 Average speed=
-
 Total Time/Total Distance
 
 Highlight which of these is the best procedure for calculating and displaying average speed.
-<mark>PROCEDURE calcAvgSpeed (distance, time) { DISPLAY (distance/time) }</mark>
-PROCEDURE calcAvgSpeed (distance) { DISPLAY (distance/time) }
-PROCEDURE calcAvgSpeed (distance, time) { DISPLAY (time/distance) }
+- <mark>PROCEDURE calcAvgSpeed (distance, time) { DISPLAY (distance/time) }</mark>
+- PROCEDURE calcAvgSpeed (distance) { DISPLAY (distance/time) }
+- PROCEDURE calcAvgSpeed (distance, time) { DISPLAY (time/distance) }
 
 
-### Question 1 HACK
+Problem 2: Procedures with return values
+James Hunter is looking through his classmate's program and sees a procedure called heightenEmotions: PROCEDURE heightenEmotions(myEmotion)
 
-```
-isCold = True
-isRaining = True
-stayInside = False
+{ moreEnergy ← CONCAT(myEmotion, "!!!")
 
-if ((isCold) or (isRaining)) :
-    stayInside = True
-else:
-    stayInside = False
+moreVolume ← UPPER(moreEnergy)
 
-print("It is cold=" + str(isCold) + " and raining=" + str(isRaining) + " so stayInside=" + str(stayInside))
-```
+RETURN moreVolume }
 
+That procedure manipulates strings using two built-in procedures, CONCAT for concatenating two strings together, and UPPER for converting a string to uppercase.
+
+James Hunter then sees this line of code:
+
+heightenEmotions("im mad")
+
+After that line of code runs, will nothing be displayed?
+
+- <mark>True</mark>
+- False
 
 ### Question 2 HACK
 ```
