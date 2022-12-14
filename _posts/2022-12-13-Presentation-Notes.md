@@ -105,7 +105,7 @@ Business landscape can change: Use Sprints
 Machine Learning
 - Learn how to use python libraries
 - Use information on when to archive and delete repositories
-- To cut costs
+- To cut cost
 Questions:
 Most important skill to have in the tech industry:
 - Continuous learning
