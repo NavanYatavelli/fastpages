@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      2 min read
     
 </span></p>
 
@@ -101,144 +101,61 @@ window.onload = wrap_img;
 
 <h4 id="problem-2-multiple-choice">Problem 2: Multiple Choice</h4>
 
-<p>(1) What does the random(a,b) function generate?</p>
+<h5 id="1-what-does-the-randomab-function-generate">(1) What does the random(a,b) function generate?</h5>
 <ul>
   <li>A. A random integer from a to be exclusive</li>
   <li><mark>B. A random integer from a to b inclusive.</mark></li>
   <li>C. A random word from variable a to variable b exclusive.</li>
   <li>D. A random word from variable a to variable b inclusive.</li>
-  <li>(2) What is x, y, and z in random.randrange(x, y, z)?
--<mark> A. x = start, y = stop, z = step</mark></li>
+</ul>
+
+<h5 id="2-what-is-x-y-and-z-in-randomrandrangex-y-z">(2) What is x, y, and z in random.randrange(x, y, z)?</h5>
+
+<ul>
+  <li><mark> A. x = start, y = stop, z = step</mark></li>
   <li>B. x = start, y = step, z = stop</li>
   <li>C. x = stop, y = start, z = step</li>
   <li>D. x = step, y = start, z = stop</li>
 </ul>
 
-<h4 id="problem-3-procedures-with-return-values">Problem 3: Procedures with return values</h4>
-
-<p>Bubz is writing a program to calculate the carbon footprint of his activities. The procedure calcFlightFootprint calculates the pounds of carbon dioxide produced per passenger in a flight that covers a given number of miles and seats a given number of passengers.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PROCEDURE calcFlightFootprint(numMiles, numPassengers) { CO2_PER_MILE ← 53.29
-
-carbonPerFlight ← numMiles * CO2_PER_MILE
-
-carbonPerPassenger ← carbonPerFlight / numPassengers
-
-RETURN carbonPerPassenger
-
-}
-</code></pre></div></div>
-
-<p>Bubz wants to use that procedure to calculate the total footprint for his two upcoming flights: LA to NY: 2,451 miles and 118 passengers NY to London: 3,442 miles and 252 passengers</p>
-
-<p>Which of these code snippets successfully calculates and stores her total footprint? Highlight 2 answers.</p>
+<h5 id="3-which-of-the-following-is-not-part-of-the-random-library">(3) Which of the following is NOT part of the random library?</h5>
 
 <ul>
-  <li><mark>totalFootprint ← calcFlightFootprint(2451, 118) + calcFlightFootprint(3442, 252)</mark></li>
-  <li>totalFootprint ← calcFlightFootprint(2451, 118 + 3442, 252)</li>
-  <li><mark>totalFootprint ← calcFlightFootprint((2451, 118) + (3442, 252))</mark></li>
-  <li>laNyCarbon ← calcFlightFootprint(2451, 118) nyLondonCarbon ← calcFlightFootprint(3442, 252)</li>
-  <li>totalFootprint ← laNyCarbon + nyLondonCarbon</li>
+  <li><mark> A. random.item </mark></li>
+  <li>B. random.random</li>
+  <li>C. random.shuffle</li>
+  <li>D. random.randint</li>
 </ul>
 
-<h3 id="312-homework-part-2">3.12 Homework Part 2</h3>
-<h4 id="1">(1)</h4>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PROCEDURE find a ()
-{ 
-c &lt;-- 9
-b &lt;-- 9 * 9
-a &lt;-- b * c
-Print (a)
-}
+<h4 id="problem-3--short-answer-questions">Problem 3:  Short Answer Questions</h4>
+
+<h5 id="1-what-is-the-advantage-of-using-libraries">(1) What is the advantage of using libraries?</h5>
+<p>Libraries have a distinct advantage of having pre-written code that can provide efficiency at a linear level. Libraries help to simplify complex programs by allowing the code to reference pre-written code. This reduces the workload for the user writing the code and improves reliability. This cuts out time that the user has to write repetitive code. The user can spend more time on the creative and work process then repetitive code writing.</p>
+
+<h5 id="2-write-a-thorough-documentation-of-the-following-code">(2) Write a thorough documentation of the following code.</h5>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import random 
+
+# Saves user input in the in the comma seperated format
+names_string = input("Give me everybody's names, seperated by a comma.")
+
+# splits the stored user input by the character, comma, and stores each element in the list names
+names = names_string.split(",")
+
+# get the length of names
+num_items = len(names)
+
+# get random number within &lt; num_items
+random_choice = random.randint(0, num_items - 1)
+
+# figuring out randomly who to play
+person_who_will_pay = names[random_choice]
+
+# Prints the name random person name with message
+print(f"{person_who_will_pay} is going to buy the meal today!")
 </code></pre></div></div>
-<p>What is a?</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>c = 9
-b = 9 * 9 = 81
-a = b c = 81 9 = 729
+<p>Output</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Brady is going to buy the meal today!
 </code></pre></div></div>
-<p><mark>a=729</mark></p>
-
-<h4 id="2">(2)</h4>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cost &lt;-- 173 tax - 10%
-PROCEDURE applytax (cost, cpercentDiscounted) { 
-temp &lt;-- 100 + percentTaxed
-temp &lt;-- temp / 100
-cost &lt;-- cost x temp
-Print(cost)}
-</code></pre></div></div>
-<p>What is the cost?</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>temp = 110
-110/100 = 1.1
-173 * 1.1 = $190.30
-</code></pre></div></div>
-<p><mark>$190.30</mark></p>
-<h4 id="3">(3)</h4>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Tempature - 103 Degrees
-PROCEDURE convet Fahrenheit (tempature)
-{
-Celsius &lt;-- tempature - 32
-Celsius &lt;-- Celsius x 5/9
-Print (Celsius)}
-103 - 32 = 71
-71 x (5/9) = 39.44 degrees Celsius
-}
-</code></pre></div></div>
-<p><mark>39.44 degrees Celsius</mark></p>
-
-<h3 id="313-hacks">3.13 Hacks</h3>
-<h4 id="1-1">(1)</h4>
-<p>Create a procedure that is meant to replace the top running backs yards per game in one season if the current running back has more yards per game
-Necessary Parameters: toprbyardspg(100), currentrbyards(1260), totalGames(12)</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def replaceRrunningBackYards(toprbyardspg, currentrbyards, totalGames):
-    if ((toprbyardspg/totalGames) &lt; (currentrbyards/totalGames)):
-        toprbyardspg = currentrbyards
-    print(toprbyardspg)
-replaceRrunningBackYards(100, 1260, 12)
-</code></pre></div></div>
-
-<p><mark>1260</mark></p>
-
-<h4 id="2-1">(2)</h4>
-<p>Write a procedure that will allow the A+ to get to the 1, while avoiding the black boxes.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PROCEDURE APlus(){
-If (canMoveForward):
-Move_Forward
-Else (canMoveRight):
-Rotate_Right
-Move_Forward
-If (canMoveLeft);
-Rotate_Left
-Move_forward
-}
-</code></pre></div></div>
-<h4 id="3-1">(3)</h4>
-<p>Which Is the Correct Way to define the Name of a Procedure?</p>
-<ul>
-  <li>A. PROCEDURE MYLIST</li>
-  <li>B. <mark>PROCEDURE MyList</mark></li>
-  <li>C. procedure mylist
-Since the procedure should be in all capital and part of the procedure name should be capitalized</li>
-</ul>
-
-<h4 id="4">(4)</h4>
-<p>Write A Procedure That gets the BeachBall To the Green Square</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PROCEDURE toGreenSquare {
-Rotate_Left
-    move_forward
-    move_forward
-    move_forward
-    move_forward
-    move_forward
-    move_forward
-    rotate_left
-    rotate_left
-    rotate_left
-}
-</code></pre></div></div>
-
 
   </div><a class="u-url" href="/fastpages/unit%203%20sections%2014-15%20hacks/2022/12/14/Unit3Sec14And15Hacks.html" hidden></a>
 </article>
