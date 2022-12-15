@@ -90,3 +90,43 @@ Russell Wilson
 Adrian Peterson
 Deshaun Watson
 ```
+
+##### (2) Create a program to simulate a dice game where each player rolls two fair dice (6 sides); the player with the greater sum wins
+```
+import random
+
+def playerA():
+    firstRoll = 0
+    firstRoll = random.randrange(1,6)
+    secondRoll = 0
+    secondRoll = random.randrange(1,6)
+    score = firstRoll + secondRoll
+    return score
+
+def playerB():
+    firstRoll = 0
+    firstRoll = random.randrange(1,6)
+    secondRoll = 0
+    secondRoll = random.randrange(1,6)
+    score = firstRoll + secondRoll
+    return score
+
+first = playerA()
+print("First Player rolled",first)
+
+second = playerB()
+print("Second Player rolled",second)
+
+if (first > second):
+ print("First Player won!") 
+else:
+ print("Second Player won!") 
+```
+Output
+
+```
+First Player rolled 3
+Second Player rolled 8
+Second Player won!
+```
+
