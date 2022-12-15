@@ -33,5 +33,36 @@ title: Unit 3 Section 16 Hacks
 #### Reflection (Vocab )
 A simulation is an simpler abstraction of an very complicated natural phenomena.  Simulations help for people to learn more and predict important data which they can use to better improve algorithms and products. Simulations are often much cheaper and have no safety limits compared to real life experiments. I found these problems to be a little challenging, but a good review of simulations. Simulations are needed for modeling complicated situations in a much simpler way so that any user can still manage most aspects of the model without delving into complexities.
 
+### Extra Simulation
+```
+import random
 
+print("==================================")
+print("Simulation of newly born -- Panda!")
+print("==================================")
+
+births = 1000 #  sample size
+male_pandas = 0
+female_pandas = 0
+ 
+for i in range(births):
+    gender = random.randint(0,1) # get a random number between 0 and 1
+    if gender == 1: # head
+        male_pandas = male_pandas + 1
+    else:         # tail
+        female_pandas = female_pandas + 1
+ 
+print('Number of newly born pandas are male:', male_pandas, " and their percentage is ", (100*male_pandas/births), "%" )
+print('Number of newly born pandas are female:', female_pandas, " and their percentage is ", (100*female_pandas/births), "%" )
+```
+
+Output
+
+```
+==================================
+Simulation of newly born -- Panda!
+==================================
+Number of newly born pandas are male: 493  and their percentage is  49.3 %
+Number of newly born pandas are female: 507  and their percentage is  50.7 %
+```
 
