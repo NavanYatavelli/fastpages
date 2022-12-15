@@ -64,3 +64,29 @@ Output
 ```
  Brady is going to buy the meal today!
 ``` 
+
+#### Problem 4:  Coding Challenges!
+
+##### (1) Create a program to pick five random names from a list of at least 15 names
+```
+import random
+
+# list of random names
+random_names = ["Aaron Rodgers","Rob Gronkowski", "Patrick Mahomes", "Odell Beckham ", "Ben Roethlisberger", "Russell Wilson", "Cam Newton", "Lamar Jackson", "Antonio Brown", "JJ Watt", "Adrian Peterson", "Keira", "Deshaun Watson", "	Lionel Messi", "Jerry Rice"] 
+
+i = 0
+# printing 5 random names
+print("The five random names are:")
+while i < 5:
+    print(random.choice(random_names))
+    i += 1
+```
+Output
+
+```
+Lamar Jackson
+Ben Roethlisberger
+Russell Wilson
+Adrian Peterson
+Deshaun Watson
+```
