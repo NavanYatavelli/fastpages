@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      4 min read
     
 </span></p>
 
@@ -217,6 +217,62 @@ else:
 Second Player rolled 8
 Second Player won!
 </code></pre></div></div>
+<h5 id="extra-credit-opportunity-create-a-program-to-randomly-generate-one-of-those-5x5-square-collegeboard-robot-courses-frequently-seen-in-these-lessons">EXTRA-CREDIT OPPORTUNITY: Create a program to randomly generate one of those 5x5 square CollegeBoard robot courses frequently seen in these lessons</h5>
+<h5 id="extra-x-2-put-safeguards-in-your-program-to-make-sure-the-robot-course-is-actually-possible-to-complete">EXTRA X 2: Put safeguards in your program to make sure the robot course is actually possible to complete.</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import random
+# This &gt; is Start
+# This O is End
+# These # are obstacles
+
+print("Generating 3 randomized 5x5 squares:")
+count = 0
+while count &lt; 3:
+    grid = [['_' for _ in range(5)] for _ in range(5)]
+
+    obstacles = 12
+    for i in range(obstacles):
+        row = random.randint(0, 4)
+        col = random.randint(0, 4)
+        grid[row][col] = '#'
+
+    finish_row = random.randint(0, 4)
+    finish_column = random.randint(0, 4)
+    grid[finish_row][finish_column] = 'O'
+
+    start_row = random.randint(0, 4)
+    start_column = random.randint(0, 4)
+    grid[start_row][start_column] = '&gt;'
+
+    for row in grid:
+        print(' '.join(row))
+    print("==========")
+    count = count + 1
+    ```
+    
+Output
+
+</code></pre></div></div>
+<p>_ # _ _ #
+_ # &gt; _ _
+_ # _ _ #
+_ # # # #</p>
+<h1 id="o---_">O # # _</h1>
+<p>==========
+O _ _ _ _</p>
+<h1 id="_-_--_">_ _ # _</h1>
+<h1 id="--_"># # _</h1>
+<h1 id="-_--_"># _ # _</h1>
+<blockquote>
+  <h1 id="_---">_ # # #</h1>
+  <h1 id="_-_--_-1">_ _ # _</h1>
+  <p>_ # # # _</p>
+  <h1 id="_-_--o">_ _ # O</h1>
+  <p>_ &gt; # _ _</p>
+  <h1 id="-_-"># _ #</h1>
+  <p>==========
+```</p>
+</blockquote>
 
 
   </div><a class="u-url" href="/fastpages/unit%203%20sections%2014-15%20hacks/2022/12/14/Unit3Sec14And15Hacks.html" hidden></a>
