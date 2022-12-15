@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -160,6 +160,37 @@ window.onload = wrap_img;
 
 <h4 id="reflection-vocab-">Reflection (Vocab )</h4>
 <p>A simulation is an simpler abstraction of an very complicated natural phenomena.  Simulations help for people to learn more and predict important data which they can use to better improve algorithms and products. Simulations are often much cheaper and have no safety limits compared to real life experiments. I found these problems to be a little challenging, but a good review of simulations. Simulations are needed for modeling complicated situations in a much simpler way so that any user can still manage most aspects of the model without delving into complexities.</p>
+
+<h3 id="extra-simulation">Extra Simulation</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import random
+
+print("==================================")
+print("Simulation of newly born -- Panda!")
+print("==================================")
+
+births = 1000 #  sample size
+male_pandas = 0
+female_pandas = 0
+ 
+for i in range(births):
+    gender = random.randint(0,1) # get a random number between 0 and 1
+    if gender == 1: # head
+        male_pandas = male_pandas + 1
+    else:         # tail
+        female_pandas = female_pandas + 1
+ 
+print('Number of newly born pandas are male:', male_pandas, " and their percentage is ", (100*male_pandas/births), "%" )
+print('Number of newly born pandas are female:', female_pandas, " and their percentage is ", (100*female_pandas/births), "%" )
+</code></pre></div></div>
+
+<p>Output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>==================================
+Simulation of newly born -- Panda!
+==================================
+Number of newly born pandas are male: 493  and their percentage is  49.3 %
+Number of newly born pandas are female: 507  and their percentage is  50.7 %
+</code></pre></div></div>
 
 
   </div><a class="u-url" href="/fastpages/unit%203%20section%2016%20hacks/2022/12/14/Unit3Sec16Hacks.html" hidden></a>
