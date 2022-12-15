@@ -140,9 +140,12 @@ import random
 
 print("Generating 3 randomized 5x5 squares:")
 count = 0
+directions = ["up", "down", "left", "right"]
+
 while count < 3:
     grid = [['_' for _ in range(5)] for _ in range(5)]
 
+    direction = random.choice(directions)
     obstacles = 12
     for i in range(obstacles):
         row = random.randint(0, 4)
@@ -156,28 +159,33 @@ while count < 3:
     start_row = random.randint(0, 4)
     start_column = random.randint(0, 4)
     grid[start_row][start_column] = '>'
-
+    
+    print("Initial Direction: " + direction)
     for row in grid:
         print(' '.join(row))
     print("==========")
     count = count + 1
-    ```
-    
-Output
+```
+
+<p>Output</p>
+
 
 ```
+Initial Direction: right
 _ # _ _ #
 _ # > _ _
 _ # _ _ #
 _ # # # #
 # O # # _
 ==========
+Initial Direction: right
 O _ _ _ _
 # _ _ # _
 # # # _ #
 # # _ # _
 > _ # # #
 ==========
+Initial Direction: up
 # _ _ # _
 _ # # # _
 # _ _ # O
