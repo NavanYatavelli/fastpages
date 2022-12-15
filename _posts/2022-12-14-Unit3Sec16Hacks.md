@@ -37,9 +37,9 @@ A simulation is an simpler abstraction of an very complicated natural phenomena.
 ```
 import random
 
-print("=====================================================")
-print("Simulation of the gender of the newly born -- Pandas!")
-print("=====================================================")
+print("==========================================================")
+print("Simulation of the gender of the newly born -- 1000 Pandas!")
+print("==========================================================")
 
 births = 1000 #  sample size
 male_pandas = 0
@@ -59,9 +59,9 @@ print('Number of newly born pandas are female:', female_pandas, " and their perc
 Output
 
 ```
-================================================
-Simulation of the gender of newly born -- Pandas!
-================================================
+======================================================
+Simulation of the gender of newly born -- 1000 Pandas!
+======================================================
 Number of newly born pandas are male: 493  and their percentage is  49.3 %
 Number of newly born pandas are female: 507  and their percentage is  50.7 %
 ```
