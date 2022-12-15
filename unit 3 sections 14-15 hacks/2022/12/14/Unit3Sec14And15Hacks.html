@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -180,6 +180,44 @@ Russell Wilson
 Adrian Peterson
 Deshaun Watson
 </code></pre></div></div>
+
+<h5 id="2-create-a-program-to-simulate-a-dice-game-where-each-player-rolls-two-fair-dice-6-sides-the-player-with-the-greater-sum-wins">(2) Create a program to simulate a dice game where each player rolls two fair dice (6 sides); the player with the greater sum wins</h5>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import random
+
+def playerA():
+    firstRoll = 0
+    firstRoll = random.randrange(1,6)
+    secondRoll = 0
+    secondRoll = random.randrange(1,6)
+    score = firstRoll + secondRoll
+    return score
+
+def playerB():
+    firstRoll = 0
+    firstRoll = random.randrange(1,6)
+    secondRoll = 0
+    secondRoll = random.randrange(1,6)
+    score = firstRoll + secondRoll
+    return score
+
+first = playerA()
+print("First Player rolled",first)
+
+second = playerB()
+print("Second Player rolled",second)
+
+if (first &gt; second):
+ print("First Player won!") 
+else:
+ print("Second Player won!") 
+</code></pre></div></div>
+<p>Output</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>First Player rolled 3
+Second Player rolled 8
+Second Player won!
+</code></pre></div></div>
+
 
   </div><a class="u-url" href="/fastpages/unit%203%20sections%2014-15%20hacks/2022/12/14/Unit3Sec14And15Hacks.html" hidden></a>
 </article>
