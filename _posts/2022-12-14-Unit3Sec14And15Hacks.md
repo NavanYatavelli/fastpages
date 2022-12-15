@@ -13,150 +13,54 @@ Documentation is important for others or for yourself to understand your code la
 
 #### Problem 2: Multiple Choice
 
-(1) What does the random(a,b) function generate?
+##### (1) What does the random(a,b) function generate?
 - A. A random integer from a to be exclusive
 - <mark>B. A random integer from a to b inclusive.</mark>
 - C. A random word from variable a to variable b exclusive.
 - D. A random word from variable a to variable b inclusive.
-- 
-(2) What is x, y, and z in random.randrange(x, y, z)?
--<mark> A. x = start, y = stop, z = step</mark>
+
+##### (2) What is x, y, and z in random.randrange(x, y, z)?
+
+- <mark> A. x = start, y = stop, z = step</mark>
 - B. x = start, y = step, z = stop
 - C. x = stop, y = start, z = step
 - D. x = step, y = start, z = stop
 
-#### Problem 3: Procedures with return values
+##### (3) Which of the following is NOT part of the random library?
 
-Bubz is writing a program to calculate the carbon footprint of his activities. The procedure calcFlightFootprint calculates the pounds of carbon dioxide produced per passenger in a flight that covers a given number of miles and seats a given number of passengers.
+-  <mark> A. random.item </mark>
+- B. random.random
+- C. random.shuffle
+- D. random.randint
 
+#### Problem 3:  Short Answer Questions
+
+##### (1) What is the advantage of using libraries?
+Libraries have a distinct advantage of having pre-written code that can provide efficiency at a linear level. Libraries help to simplify complex programs by allowing the code to reference pre-written code. This reduces the workload for the user writing the code and improves reliability. This cuts out time that the user has to write repetitive code. The user can spend more time on the creative and work process then repetitive code writing.
+
+##### (2) Write a thorough documentation of the following code.
 ```
-PROCEDURE calcFlightFootprint(numMiles, numPassengers) { CO2_PER_MILE ← 53.29
+import random 
 
-carbonPerFlight ← numMiles * CO2_PER_MILE
+# Saves user input in the in the comma seperated format
+names_string = input("Give me everybody's names, seperated by a comma.")
 
-carbonPerPassenger ← carbonPerFlight / numPassengers
+# splits the stored user input by the character, comma, and stores each element in the list names
+names = names_string.split(",")
 
-RETURN carbonPerPassenger
+# get the length of names
+num_items = len(names)
 
-}
+# get random number within < num_items
+random_choice = random.randint(0, num_items - 1)
+
+# figuring out randomly who to play
+person_who_will_pay = names[random_choice]
+
+# Prints the name random person name with message
+print(f"{person_who_will_pay} is going to buy the meal today!")
 ```
-
-Bubz wants to use that procedure to calculate the total footprint for his two upcoming flights: LA to NY: 2,451 miles and 118 passengers NY to London: 3,442 miles and 252 passengers
-
-Which of these code snippets successfully calculates and stores her total footprint? Highlight 2 answers.
-
-- <mark>totalFootprint ← calcFlightFootprint(2451, 118) + calcFlightFootprint(3442, 252)</mark>
-- totalFootprint ← calcFlightFootprint(2451, 118 + 3442, 252)
-- <mark>totalFootprint ← calcFlightFootprint((2451, 118) + (3442, 252))</mark>
-- laNyCarbon ← calcFlightFootprint(2451, 118) nyLondonCarbon ← calcFlightFootprint(3442, 252) 
-- totalFootprint ← laNyCarbon + nyLondonCarbon
-
-
-### 3.12 Homework Part 2
-#### (1)
+Output
 ```
-PROCEDURE find a ()
-{ 
-c <-- 9
-b <-- 9 * 9
-a <-- b * c
-Print (a)
-}
-```
-What is a?
-```
-c = 9
-b = 9 * 9 = 81
-a = b c = 81 9 = 729
-```
-<mark>a=729</mark>
-
-#### (2)
-```
-cost <-- 173 tax - 10%
-PROCEDURE applytax (cost, cpercentDiscounted) { 
-temp <-- 100 + percentTaxed
-temp <-- temp / 100
-cost <-- cost x temp
-Print(cost)}
-```
-What is the cost?
-
-```
-temp = 110
-110/100 = 1.1
-173 * 1.1 = $190.30
-```
-<mark>$190.30</mark>
-#### (3)
-```
-Tempature - 103 Degrees
-PROCEDURE convet Fahrenheit (tempature)
-{
-Celsius <-- tempature - 32
-Celsius <-- Celsius x 5/9
-Print (Celsius)}
-103 - 32 = 71
-71 x (5/9) = 39.44 degrees Celsius
-}
-```
-<mark>39.44 degrees Celsius</mark>
-
-### 3.13 Hacks
-#### (1)
-Create a procedure that is meant to replace the top running backs yards per game in one season if the current running back has more yards per game
-Necessary Parameters: toprbyardspg(100), currentrbyards(1260), totalGames(12)
-
-```
-def replaceRrunningBackYards(toprbyardspg, currentrbyards, totalGames):
-    if ((toprbyardspg/totalGames) < (currentrbyards/totalGames)):
-        toprbyardspg = currentrbyards
-    print(toprbyardspg)
-replaceRrunningBackYards(100, 1260, 12)
-```
-
-<mark>1260</mark>
-
-#### (2)
-Write a procedure that will allow the A+ to get to the 1, while avoiding the black boxes.
-
-```
-PROCEDURE APlus(){
-If (canMoveForward):
-Move_Forward
-Else (canMoveRight):
-Rotate_Right
-Move_Forward
-If (canMoveLeft);
-Rotate_Left
-Move_forward
-}
-```
-#### (3)
-Which Is the Correct Way to define the Name of a Procedure?
-- A. PROCEDURE MYLIST
-- B. <mark>PROCEDURE MyList</mark>
-- C. procedure mylist
-Since the procedure should be in all capital and part of the procedure name should be capitalized
-
-#### (4)
-Write A Procedure That gets the BeachBall To the Green Square
-```
-PROCEDURE toGreenSquare {
-Rotate_Left
-    move_forward
-    move_forward
-    move_forward
-    move_forward
-    move_forward
-    move_forward
-    rotate_left
-    rotate_left
-    rotate_left
-}
-```
-
-
-
-
-
+ Brady is going to buy the meal today!
+``` 
