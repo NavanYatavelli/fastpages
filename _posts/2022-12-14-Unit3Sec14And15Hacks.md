@@ -129,4 +129,60 @@ First Player rolled 3
 Second Player rolled 8
 Second Player won!
 ```
+##### EXTRA-CREDIT OPPORTUNITY: Create a program to randomly generate one of those 5x5 square CollegeBoard robot courses frequently seen in these lessons
+##### EXTRA X 2: Put safeguards in your program to make sure the robot course is actually possible to complete.
+
+```
+import random
+# This > is Start
+# This O is End
+# These # are obstacles
+
+print("Generating 3 randomized 5x5 squares:")
+count = 0
+while count < 3:
+    grid = [['_' for _ in range(5)] for _ in range(5)]
+
+    obstacles = 12
+    for i in range(obstacles):
+        row = random.randint(0, 4)
+        col = random.randint(0, 4)
+        grid[row][col] = '#'
+
+    finish_row = random.randint(0, 4)
+    finish_column = random.randint(0, 4)
+    grid[finish_row][finish_column] = 'O'
+
+    start_row = random.randint(0, 4)
+    start_column = random.randint(0, 4)
+    grid[start_row][start_column] = '>'
+
+    for row in grid:
+        print(' '.join(row))
+    print("==========")
+    count = count + 1
+    ```
+    
+Output
+
+```
+_ # _ _ #
+_ # > _ _
+_ # _ _ #
+_ # # # #
+# O # # _
+==========
+O _ _ _ _
+# _ _ # _
+# # # _ #
+# # _ # _
+> _ # # #
+==========
+# _ _ # _
+_ # # # _
+# _ _ # O
+_ > # _ _
+# # _ # #
+==========
+```
 
