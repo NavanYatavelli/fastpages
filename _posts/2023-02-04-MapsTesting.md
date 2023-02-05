@@ -31,10 +31,10 @@ title: Maps Testing
       // Initialize and add the map
       function initMap() {
         // The location of Borrego Springs
-        var sd = { lat: 33.2559, lng: -116.3750 };
+        var sd = { lat: 33.1005, lng: -116.3013 };
         // The map, centered at Uluru
         var map = new google.maps.Map(document.getElementById("map"), {
-          zoom: 10,
+          zoom: 9,
           center: sd,
         });
         /*
