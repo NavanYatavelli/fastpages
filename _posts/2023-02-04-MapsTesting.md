@@ -39,12 +39,12 @@ title: Maps Testing
         });
                                  
         // The marker, positioned at Uluru
-        /*
+        
         const marker = new google.maps.Marker({
           position: sd,
           map: map,
         });
-        */
+        
            // Array of markers 
         var markers = [
           {
