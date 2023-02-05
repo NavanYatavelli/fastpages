@@ -55,12 +55,10 @@ title: Maps Testing
         }	
       ];
 
-
-
       // Add Marker Function 
       function addMarker(props){ 
         var marker =  new google.maps.Marker({ 
-          position:props.coords , 
+          position:props.coords, 
           map:map, 
         });
         // Check content 
@@ -92,7 +90,7 @@ title: Maps Testing
         });
       
         // Loop through markers 
-        for(var i = 0; i < markers. length; i++) { 
+        for(var i = 0; i < markers.length; i++) { 
           addMarker(markers[i]); 
         }      
       }
