@@ -112,37 +112,8 @@ window.onload = wrap_img;
 
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN2Uj3V2VRs9VYvj121X4olweMBKcBNzI&amp;callback=initMap&amp;v=weekly" defer=""></script>
-    <script>
-      // Array of markers 
-      var markers = [
-        {
-        coords : {lat: 32.7157, Ing: -117.1611}, 
-        content: '<h1>San Diego Breaking news added here </h1> ' 
-        },
-        {
-        coords : {lat: 32.9628, Ing: -117.0359}, 
-        content: '<h1>Poway Headlines News </h1> '  
-        }, 
-        {
-        coords : {lat: 32.9628, Ing: -117.0359}, 
-        content: '<h1>Poway Headlines News </h1> '  
-        }, 
-        {  
-        coords : {lat: 32.8351, Ing: -116.7664}, 
-        content: '<h1>Alpine Headlines News </h1> '  
-        }, 
-        {
-        coords : {lat: 32.8675, Ing: -116.4188}, 
-        content: '<h1>Mt Laguna Headlines News </h1> '  
-        },
-        {
-        coords : {lat: 33.1192, Ing: -117.0864}, 
-        content: '<h1>Escondido  Headlines News </h1> '  
-        }	
-      ];
-
-
-                                 
+    
+    <script>                              
       // Initialize and add the map
       function initMap() {
         // The location of Uluru
@@ -160,6 +131,33 @@ window.onload = wrap_img;
           map: map,
         });
         */
+           // Array of markers 
+        var markers = [
+          {
+          coords : {lat: 32.7157, Ing: -117.1611}, 
+          content: '<h1>San Diego Breaking news added here </h1> ' 
+          },
+          {
+          coords : {lat: 32.9628, Ing: -117.0359}, 
+          content: '<h1>Poway Headlines News </h1> '  
+          }, 
+          {
+          coords : {lat: 32.9628, Ing: -117.0359}, 
+          content: '<h1>Poway Headlines News </h1> '  
+          }, 
+          {  
+          coords : {lat: 32.8351, Ing: -116.7664}, 
+          content: '<h1>Alpine Headlines News </h1> '  
+          }, 
+          {
+          coords : {lat: 32.8675, Ing: -116.4188}, 
+          content: '<h1>Mt Laguna Headlines News </h1> '  
+          },
+          {
+          coords : {lat: 33.1192, Ing: -117.0864}, 
+          content: '<h1>Escondido  Headlines News </h1> '  
+          }	
+        ];
       
         // Loop through markers 
         for(var i = 0; i < markers.length; i++) { 
