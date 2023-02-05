@@ -56,10 +56,6 @@ title: Maps Testing
       ];
 
 
-      // Loop through markers 
-      for(var i = 0; i < markers. length; i++) { 
-        addMarker(markers[i]); 
-      }
 
       // Add Marker Function 
       function addMarker(props){ 
@@ -94,6 +90,11 @@ title: Maps Testing
           position: sd,
           map: map,
         });
+      
+        // Loop through markers 
+        for(var i = 0; i < markers. length; i++) { 
+          addMarker(markers[i]); 
+        }      
       }
 
       window.initMap = initMap;
