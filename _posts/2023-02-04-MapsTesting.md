@@ -23,7 +23,7 @@ title: Maps Testing
 
 
     <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN2Uj3V2VRs9VYvj121X4olweMBKcBNzI&callback=initMap&v=weekly"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGFTzdQZItR5kLPiXKNoM3Q2qCWHDAI1I&callback=initMap&v=weekly"
       defer
     ></script>
     
