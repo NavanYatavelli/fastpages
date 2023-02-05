@@ -124,13 +124,17 @@ window.onload = wrap_img;
           center: sd,
         });
                                  
-        // The marker, positioned at Uluru
-        
+        // The marker, positioned at Uluru      
         const marker = new google.maps.Marker({
           position: sd,
           map: map,
         });
-        
+        var poway = {lat: 32.9628, Ing: -117.0359};  
+        const marker1 = new google.maps.Marker({
+          position: poway,
+          map: map,
+        });      
+      
            // Array of markers 
         var markers = [
           {
