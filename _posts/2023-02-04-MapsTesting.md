@@ -55,23 +55,7 @@ title: Maps Testing
         }	
       ];
 
-      // Add Marker Function 
-      function addMarker(props){ 
-        var marker =  new google.maps.Marker({ 
-          position:props.coords, 
-          map:map, 
-        });
-        // Check content 
-        if(props.content) { 
-             var infoWindow = new google.maps.InfoWindow({ 
-            content:props.content 
-             });
 
-          marker.addListener( 'click', function(){ 
-            infoWindow.open(map, marker); 
-          });
-        }
-      }
                                  
       // Initialize and add the map
       function initMap() {
@@ -92,7 +76,25 @@ title: Maps Testing
         // Loop through markers 
         for(var i = 0; i < markers.length; i++) { 
           addMarker(markers[i]); 
-        }      
+        }
+                                          
+        // Add Marker Function 
+        function addMarker(props){ 
+          var marker =  new google.maps.Marker({ 
+            position:props.coords, 
+            map:map, 
+          });
+          // Check content 
+          if(props.content) { 
+               var infoWindow = new google.maps.InfoWindow({ 
+              content:props.content 
+               });
+
+            marker.addListener( 'click', function(){ 
+              infoWindow.open(map, marker); 
+            });
+          }
+        }                                          
       }
 
       window.initMap = initMap;
