@@ -54,27 +54,27 @@ title: Maps Testing
         var markers = [
           {
           coords : {lat: 32.7157, lng: -117.1611}, 
-          content: 'San Diego Breaking news added here' 
+          content: '<p style="color:blue;">San Diego Breaking news added here</p>' 
           },
           {
           coords : {lat: 33.4934, lng: -117.1488}, 
-          content: 'Temecula Headlines News'  
+          content: '<p style="color:blue;">Temecula Headlines News</p>'  
           }, 
           {
           coords : {lat: 33.6846, lng: -117.8265}, 
-          content: '<h6 style="color:blue;">Irvine Headlines News </h6> '  
+          content: '<h6 style="color:blue;">Irvine Headlines News</p> '  
           }, 
           {  
           coords : {lat: 32.7920, lng: -115.5631}, 
-          content: '<h5 style="color:black;">Irvine Headlines News </h5> '  
+          content: '<p style="color:blue;">Irvine Headlines News</p>'  
           }, 
           {
           coords : {lat: 33.8734, lng: -115.9010}, 
-          content: '<h1>Joshua Tree Headlines News </h1> '  
+          content: '<p style="color:blue;">Joshua Tree Headlines News</p>'  
           },
           {
           coords : {lat: 33.1192, lng: -117.0864}, 
-          content: '<h1>Escondido  Headlines News </h1> '  
+          content: '<p style="color:blue;">Escondido  Headlines News</p>'  
           }	
         ];
       
