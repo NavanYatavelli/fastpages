@@ -142,10 +142,6 @@ window.onload = wrap_img;
       ];
 
 
-      // Loop through markers 
-      for(var i = 0; i < markers. length; i++) { 
-        addMarker(markers[i]); 
-      }
 
       // Add Marker Function 
       function addMarker(props){ 
@@ -180,6 +176,11 @@ window.onload = wrap_img;
           position: sd,
           map: map,
         });
+      
+        // Loop through markers 
+        for(var i = 0; i < markers. length; i++) { 
+          addMarker(markers[i]); 
+        }      
       }
 
       window.initMap = initMap;
