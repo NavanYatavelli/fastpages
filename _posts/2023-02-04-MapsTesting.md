@@ -11,8 +11,8 @@ title: Maps Testing
     <title>Add Map</title>
     <style>
     #map {
-      height: 400px; /* The height is 400 pixels */
-      width: 100%; /* The width is the width of the web page */
+      height: 600px; /* The height is 400 pixels */
+      width: 150%; /* The width is the width of the web page */
     }
     </style>
   </head>
@@ -62,11 +62,11 @@ title: Maps Testing
           }, 
           {
           coords : {lat: 33.6846, lng: -117.8265}, 
-          content: '<h6 style="color:blue;">Irvine Headlines News</p> '  
+          content: '<p style="color:blue;">Irvine Headlines News</p> '  
           }, 
           {  
           coords : {lat: 32.7920, lng: -115.5631}, 
-          content: '<p style="color:blue;">Irvine Headlines News</p>'  
+          content: '<p style="color:blue;">El Centro Headlines News</p>'  
           }, 
           {
           coords : {lat: 33.8734, lng: -115.9010}, 
@@ -94,7 +94,7 @@ title: Maps Testing
                var infoWindow = new google.maps.InfoWindow({ 
               content:props.content 
                });
-
+            infoWindow.open(map, marker);//display by default
             marker.addListener( 'click', function(){ 
               infoWindow.open(map, marker); 
             });
