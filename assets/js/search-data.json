@@ -13,8 +13,8 @@
   
     
         ,"post1": {
-            "title": "Breaking News Backend -- Links to Maps",
-            "content": "Breaking News Backend – Links to Maps . (1)In this below question there are two answers and I picked the first A and B. After reading again the Boolean var val1 and va2 applying the AND and NOT logical operation I picked the correct answers. . (2)For this question, we need to pick two answers. I picked the first D and A. After evaluating again the the loop with missing condition for random function it is very clear C is the other answer. The option B is not correct since it does not satisfy the expected condition. . (3) In this question, again there are two correct answers. In A the loop repeates 4 times of move forward, left, forward, right to reach the gray area. Also D has two inner loops of move forward, forward, left and againg has similar loop that reaches target. The options B and C does not few extra moves that will not reach the gray box, hence these are incorrect. .",
+            "title": "Breaking News Backend Links to Maps",
+            "content": "Breaking News Backend – Links to Maps . (1)In this below question there are two answers and I picked the first A and B. After reading again the Boolean var val1 and va2 applying the AND and NOT logical operation I picked the correct answers. . (2)For this question, we need to pick two answers. I picked the first D and A. After evaluating again the the loop with missing condition for random function it is very clear C is the other answer. The option B is not correct since it does not satisfy the expected condition. . (3) Clicking on the News Links in Maps leads to the online News Page .",
             "url": "https://beebadger.github.io/fastpages/breaking%20news%20backend%20links%20to%20maps/2023/02/09/breakingnewsdb.html",
             "relUrl": "/breaking%20news%20backend%20links%20to%20maps/2023/02/09/breakingnewsdb.html",
             "date": " • Feb 9, 2023"
