@@ -1,12 +1,12 @@
 ---
 toc: false
 layout: post
-description: Breaking News Backend Link to Maps
-categories: [Breaking News Backend Link to Maps]
-title: Breaking News Backend Link to Maps
+description: Breaking News Back-end -- Links to Maps
+categories: [Breaking News Backend Links to Maps]
+title: Breaking News Backend -- Links to Maps
 ---
 
-## Breaking News Backend Link to Maps
+## Breaking News Backend -- Links to Maps
 
 
  (1)In this below question there are two answers and I picked the first A and B. After reading again the Boolean var val1 and va2 applying the AND and NOT logical operation I picked the correct answers.
