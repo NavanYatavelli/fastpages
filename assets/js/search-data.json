@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Breaking News Backend Links to Maps",
-            "content": "Breaking News Backend – Links to Maps . (1)In this below question there are two answers and I picked the first A and B. After reading again the Boolean var val1 and va2 applying the AND and NOT logical operation I picked the correct answers. . (2)For this question, we need to pick two answers. I picked the first D and A. After evaluating again the the loop with missing condition for random function it is very clear C is the other answer. The option B is not correct since it does not satisfy the expected condition. . (3) Clicking on the News Links in Maps leads to the online News Page .",
+            "content": "Breaking News Backend – Links to Maps . (1)In this below question there are two answers and I picked the first A and B. After reading again the Boolean var val1 and va2 applying the AND and NOT logical operation I picked the correct answers. . The front end would fetch the breaking news data from the Breaking API services and displays the maps with links to the news site. Currently the news is grabbed from the static array but in furture this will use the API services to fill the map with news links. . Clicking on the News Links in Maps leads to the online News Page .",
             "url": "https://beebadger.github.io/fastpages/breaking%20news%20backend%20links%20to%20maps/2023/02/09/breakingnewsdb.html",
             "relUrl": "/breaking%20news%20backend%20links%20to%20maps/2023/02/09/breakingnewsdb.html",
             "date": " • Feb 9, 2023"
