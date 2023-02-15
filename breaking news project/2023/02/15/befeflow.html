@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -97,11 +97,11 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <h1 id="backend-apimodeldb">Backend (API/Model/DB)</h1>
 
-<p>https://github.com/vardaansinha/flaskjnvs</p>
+<p><a href="https://github.com/vardaansinha/flaskjnvs">Project Link</a></p>
 
 <h4 id="modeldb--">Model/DB -</h4>
 <ul>
-  <li>https://github.com/vardaansinha/flaskjnvs/blob/main/model/breakingnews.py</li>
+  <li><a href="https://github.com/vardaansinha/flaskjnvs/blob/main/model/breakingnews.py">Model/DB Implementation</a></li>
   <li>Define the BreakingNews class</li>
   <li>Builds BreakingNews SQLite Table</li>
   <li>Defines Columns - title,network,day,city,link,lat,lng</li>
@@ -114,16 +114,16 @@ window.onload = wrap_img;
 
 <h4 id="api--">API -</h4>
 <ul>
-  <li>https://github.com/vardaansinha/flaskjnvs/blob/main/api/news.py</li>
+  <li><a href="https://github.com/vardaansinha/flaskjnvs/blob/main/api/news.py">API Implementation</a></li>
   <li>Hadles HTTP GET and POST requests</li>
   <li>Create - for HTTP POST method. To update SQL Columns</li>
   <li>Create - also checks any invalid input</li>
   <li>Read - for HTTP GET method. To read SQL Columns</li>
 </ul>
 
-<h4 id="be-startup">BE Startup</h4>
+<h4 id="backend-startup">Backend Startup</h4>
 <ul>
-  <li>https://github.com/vardaansinha/flaskjnvs/blob/main/main.py</li>
+  <li><a href="https://github.com/vardaansinha/flaskjnvs/blob/main/main.py">Backend Startup</a></li>
   <li>Register BreakingNews APIS, Model, URIs</li>
   <li>Calls initBreakingNews() of Model to initialize test data in tables</li>
 </ul>
@@ -131,6 +131,119 @@ window.onload = wrap_img;
 <h4 id="apis-uris">APIs URIs</h4>
 <p>HTTP GET - To read Breakingnews Columns -  http://localhost:8086/api/breakingnews
 HTTP POST - To Update/Add Breakingnews Columns - http://localhost:8086/api/breakingnews/create</p>
+
+<h1 id="frontend">Frontend</h1>
+<p><a href="https://github.com/vardaansinha/stg">JVNS Project</a></p>
+
+<p><a href="https://github.com/vardaansinha/stg/blob/gh-pages/activities.md">FE Implementation</a></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p&gt;Breaking News API&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th&gt;City&lt;/th&gt;
+    &lt;th&gt;Day&lt;/th&gt;
+    &lt;th&gt;Network&lt;/th&gt;
+    &lt;th&gt;Title&lt;/th&gt;
+    &lt;th&gt;Link&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody id="result"&gt;
+    &lt;!-- javascript generated data --&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;script&gt;
+  // prepare HTML result container for new output
+  const resultContainer = document.getElementById("result");
+  // prepare URL's to allow easy switch from deployment and localhost
+  const url = "http://localhost:8086/api/breakingnews"
+  //const url = "https://flask.nighthawkcodingsociety.com/api/users"
+  const create_fetch = url + '/create';
+  const read_fetch = url + '/';
+
+  // Load users on page entry
+  read_users();
+
+
+  // Display User Table, data is fetched from Backend Database
+  function read_users() {
+    // prepare fetch options
+    const read_options = {
+      method: 'GET', // *GET, POST, PUT, DELETE, etc.
+      mode: 'cors', // no-cors, *cors, same-origin
+      cache: 'default', // *default, no-cache, reload, force-cache, only-if-cached
+      credentials: 'omit', // include, *same-origin, omit
+      headers: {
+        'Content-Type': 'application/json'
+      },
+    };
+
+    // fetch the data from API
+    fetch(read_fetch, read_options)
+      // response is a RESTful "promise" on any successful fetch
+      .then(response =&gt; {
+        // check for response errors
+        if (response.status !== 200) {
+            const errorMsg = 'Database read error: ' + response.status;
+            console.log(errorMsg);
+            const tr = document.createElement("tr");
+            const td = document.createElement("td");
+            td.innerHTML = errorMsg;
+            tr.appendChild(td);
+            //resultContainer.appendChild(tr);
+            return;
+        }
+        // valid response will have json data
+        response.json().then(data =&gt; {
+            console.log(data);
+            for (let row in data) {
+              console.log(data[row]);
+              add_row(data[row]);
+            }
+        })
+    })
+    // catch fetch errors (ie ACCESS to server blocked)
+    .catch(err =&gt; {
+      console.error(err);
+      const tr = document.createElement("tr");
+      const td = document.createElement("td");
+      td.innerHTML = err;
+      tr.appendChild(td);
+      //resultContainer.appendChild(tr);
+    });
+  }
+
+  function add_row(data) {
+    const tr = document.createElement("tr");
+    const city = document.createElement("td");
+    const day = document.createElement("td");
+    const network = document.createElement("td")
+    const title = document.createElement("td");
+    const link = document.createElement("td");
+  
+
+    // obtain data that is specific to the API
+    city.innerHTML = data.city; 
+    day.innerHTML = data.day; 
+    network.innerHTML = data.network;
+    title.innerHTML = data.title; 
+    link.innerHTML = data.link; 
+
+    // add HTML to container
+    tr.appendChild(city);
+    tr.appendChild(day);
+    tr.appendChild(network);
+    tr.appendChild(title);
+    tr.appendChild(link);
+
+    resultContainer.appendChild(tr);
+  }
+
+&lt;/script&gt;
+</code></pre></div></div>
+
 
   </div><a class="u-url" href="/fastpages/breaking%20news%20project/2023/02/15/befeflow.html" hidden></a>
 </article>
