@@ -7,7 +7,7 @@
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      1 min read
     
 </span></p>
 
@@ -23,66 +23,63 @@
     </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <h1 id="backend-apimodeldb">Backend (API/Model/DB)</h1>
+    <body style="background-color:blue;text-align:center"><body style="background-color:blue;text-align:center">
+  
+# Backend (API/Model/DB)
 
-<p><a href="https://github.com/vardaansinha/flaskjnvs">Project Link</a></p>
+[Project Link](https://github.com/vardaansinha/flaskjnvs) 
 
-<h4 id="modeldb--">Model/DB -</h4>
-<ul>
-  <li><a href="https://github.com/vardaansinha/flaskjnvs/blob/main/model/breakingnews.py">Model/DB Implementation</a></li>
-  <li>Define the BreakingNews class</li>
-  <li>Builds BreakingNews SQLite Table</li>
-  <li>Defines Columns - title,network,day,city,link,lat,lng</li>
-  <li>getter/setter methods for Columns</li>
-  <li>Handles “read” - for GET requests from API</li>
-  <li>Handles “update” - for POST requests from API</li>
-  <li>Builds initial test data for Table</li>
-  <li>initBreakingNews()</li>
-</ul>
+#### Model/DB -
+- [Model/DB Implementation](https://github.com/vardaansinha/flaskjnvs/blob/main/model/breakingnews.py)
+- Define the BreakingNews class
+- Builds BreakingNews SQLite Table
+- Defines Columns - title,network,day,city,link,lat,lng
+- getter/setter methods for Columns
+- Handles "read" - for GET requests from API
+- Handles "update" - for POST requests from API
+- Builds initial test data for Table
+- initBreakingNews()
 
-<h4 id="api--">API -</h4>
-<ul>
-  <li><a href="https://github.com/vardaansinha/flaskjnvs/blob/main/api/news.py">API Implementation</a></li>
-  <li>Hadles HTTP GET and POST requests</li>
-  <li>Create - for HTTP POST method. To update SQL Columns</li>
-  <li>Create - also checks any invalid input</li>
-  <li>Read - for HTTP GET method. To read SQL Columns</li>
-</ul>
+#### API - 
+- [API Implementation](https://github.com/vardaansinha/flaskjnvs/blob/main/api/news.py)
+- Hadles HTTP GET and POST requests 
+- Create - for HTTP POST method. To update SQL Columns  
+- Create - also checks any invalid input
+- Read - for HTTP GET method. To read SQL Columns  
 
-<h4 id="backend-startup">Backend Startup</h4>
-<ul>
-  <li><a href="https://github.com/vardaansinha/flaskjnvs/blob/main/main.py">Backend Startup</a></li>
-  <li>Register BreakingNews APIS, Model, URIs</li>
-  <li>Calls initBreakingNews() of Model to initialize test data in tables</li>
-</ul>
+#### Backend Startup
+- [Backend Startup](https://github.com/vardaansinha/flaskjnvs/blob/main/main.py)
+- Register BreakingNews APIS, Model, URIs
+- Calls initBreakingNews() of Model to initialize test data in tables
 
-<h4 id="apis-uris">APIs URIs</h4>
-<p>HTTP GET - To read Breakingnews Columns -  http://localhost:8086/api/breakingnews
-HTTP POST - To Update/Add Breakingnews Columns - http://localhost:8086/api/breakingnews/create</p>
+#### APIs URIs
+HTTP GET - To read Breakingnews Columns -  http://localhost:8086/api/breakingnews
+HTTP POST - To Update/Add Breakingnews Columns - http://localhost:8086/api/breakingnews/create
 
-<h1 id="frontend">Frontend</h1>
-<p><a href="https://github.com/vardaansinha/stg">JVNS Project</a></p>
+# Frontend 
+[JVNS Project](https://github.com/vardaansinha/stg)
 
-<p><a href="https://github.com/vardaansinha/stg/blob/gh-pages/activities.md">FE Implementation</a></p>
+[FE Implementation](https://github.com/vardaansinha/stg/blob/gh-pages/activities.md)
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p&gt;Breaking News API&lt;/p&gt;
+```
+<p>Breaking News API</p>
 
-&lt;table&gt;
-  &lt;thead&gt;
-  &lt;tr&gt;
-    &lt;th&gt;City&lt;/th&gt;
-    &lt;th&gt;Day&lt;/th&gt;
-    &lt;th&gt;Network&lt;/th&gt;
-    &lt;th&gt;Title&lt;/th&gt;
-    &lt;th&gt;Link&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody id="result"&gt;
-    &lt;!-- javascript generated data --&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+<table>
+  <thead>
+  <tr>
+    <th>City</th>
+    <th>Day</th>
+    <th>Network</th>
+    <th>Title</th>
+    <th>Link</th>
+  </tr>
+  </thead>
+  <tbody id="result">
+    <!-- javascript generated data -->
+  </tbody>
+</table>
 
-&lt;script&gt;
+<script>
   // prepare HTML result container for new output
   const resultContainer = document.getElementById("result");
   // prepare URL's to allow easy switch from deployment and localhost
@@ -111,7 +108,7 @@ HTTP POST - To Update/Add Breakingnews Columns - http://localhost:8086/api/break
     // fetch the data from API
     fetch(read_fetch, read_options)
       // response is a RESTful "promise" on any successful fetch
-      .then(response =&gt; {
+      .then(response => {
         // check for response errors
         if (response.status !== 200) {
             const errorMsg = 'Database read error: ' + response.status;
@@ -124,7 +121,7 @@ HTTP POST - To Update/Add Breakingnews Columns - http://localhost:8086/api/break
             return;
         }
         // valid response will have json data
-        response.json().then(data =&gt; {
+        response.json().then(data => {
             console.log(data);
             for (let row in data) {
               console.log(data[row]);
@@ -133,7 +130,7 @@ HTTP POST - To Update/Add Breakingnews Columns - http://localhost:8086/api/break
         })
     })
     // catch fetch errors (ie ACCESS to server blocked)
-    .catch(err =&gt; {
+    .catch(err => {
       console.error(err);
       const tr = document.createElement("tr");
       const td = document.createElement("td");
@@ -169,9 +166,11 @@ HTTP POST - To Update/Add Breakingnews Columns - http://localhost:8086/api/break
     resultContainer.appendChild(tr);
   }
 
-&lt;/script&gt;
-</code></pre></div></div>
+</script>
+```
 
+
+</body></body>
 
   </div><a class="u-url" href="/fastpages/breaking%20news%20project/2023/02/15/befeflow.html" hidden></a>
 </article>
