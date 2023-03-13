@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      15 min read
+      17 min read
     
 </span></p>
 
@@ -1395,6 +1395,129 @@ Increase the number of iterations (max_iter) or scale the data as shown in:
 Please also refer to the documentation for alternative solver options:
     https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
   n_iter_i = _check_optimize_result(
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="s1">'swimmers.json'</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Olympic Championship Swimmer Statistics"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"This data is collected from https://www.topendsports.com/events/summer/science/swimming-100m-feeestyle.htm"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Tallest Olympic Swimmer"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">Height</span> <span class="o">==</span> <span class="n">df</span><span class="o">.</span><span class="n">Height</span><span class="o">.</span><span class="n">max</span><span class="p">()])</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Shortest Olympic Swimmer"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">Height</span> <span class="o">==</span> <span class="n">df</span><span class="o">.</span><span class="n">Height</span><span class="o">.</span><span class="n">min</span><span class="p">()])</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Strongest Olympic Swimmer"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">Weight</span> <span class="o">==</span> <span class="n">df</span><span class="o">.</span><span class="n">Weight</span><span class="o">.</span><span class="n">max</span><span class="p">()])</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Top 5 Fastest Swimmers"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">'Time'</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The average height of all Olympic Swimmers is.."</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'Height'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The median height of all Olympic Swimmers is.."</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'Weight'</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The mode of BMI of all Olympic Swimmers is.."</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'BMI'</span><span class="p">]</span><span class="o">.</span><span class="n">mode</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Statistics about Olympic Swimmers:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">())</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Olympic Championship Swimmer Statistics
+
+
+This data is collected from https://www.topendsports.com/events/summer/science/swimming-100m-feeestyle.htm
+
+
+Tallest Olympic Swimmer
+       Swimmer   Time  Height  Weight   BMI
+6  Matt Biondi  48.63     6.7     209  23.5
+
+
+Shortest Olympic Swimmer
+       Swimmer   Time  Height  Weight   BMI
+10  Mark Spitz  51.22     6.0     161  21.8
+
+
+Strongest Olympic Swimmer
+       Swimmer  Time  Height  Weight   BMI
+8  Jorg Woithe  50.4     6.6     231  26.8
+
+
+Top 5 Fastest Swimmers
+                     Swimmer   Time  Height  Weight   BMI
+0             Caeleb Dressel  47.02     6.3     194  24.1
+3              Alain Bernard  47.21     6.5     200  23.4
+2              Nathan Adrian  47.52     6.6     227  26.3
+1              Kyle Chalmers  47.58     6.4     198  23.9
+4  Pieter van den Hoogenband  48.17     6.4     180  21.5
+
+
+The average height of all Olympic Swimmers is..
+6.375
+
+
+The median height of all Olympic Swimmers is..
+194.0
+
+
+The mode of BMI of all Olympic Swimmers is..
+0    22.4
+1    24.1
+Name: BMI, dtype: float64
+
+
+Statistics about Olympic Swimmers:
+            Time     Height      Weight        BMI
+count  12.000000  12.000000   12.000000  12.000000
+mean   49.040000   6.375000  192.916667  23.458333
+std     1.677498   0.231104   22.912713   1.751601
+min    47.020000   6.000000  161.000000  21.300000
+25%    47.565000   6.250000  177.000000  22.250000
+50%    48.685000   6.400000  194.000000  23.450000
+75%    50.092500   6.562500  202.250000  24.100000
+max    52.200000   6.700000  231.000000  26.800000
 </pre>
 </div>
 </div>
