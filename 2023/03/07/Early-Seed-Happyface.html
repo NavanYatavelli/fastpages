@@ -195,23 +195,17 @@ window.onload = wrap_img;
 </blockquote>
 <p>Describe some of the meta data and considerations when managing Image files.  Describe how these relate to Data Compression ...</p>
 <ul>
-<li>File Type, PNG and JPG are two types used in this lab<blockquote>
-<ul>
-<li><em>Not all file types can be compressed, resized, or otherwise altered in the same way. For instance, the sort of compression used by jpg and png files could be different. PNG support transparent backgrounds. JPG contains lesser data than PNG and are usually smaller in size.</em></li>
-</ul>
-</blockquote>
+<li>
+<p>File Type, PNG and JPG are two types used in this lab</p>
+<p><em>Not all file types can be compressed, resized, or otherwise altered in the same way. For instance, the sort of compression used by jpg and png files could be different. PNG support transparent backgrounds. JPG contains lesser data than PNG and are usually smaller in size.</em></p>
 </li>
-<li>Size, height and width, number of pixels<blockquote>
-<ul>
-<li><em>The image files height, width, and size can be adjusted by compressing. In the below hacks I reduced width and height of my original happyface.JPG file.</em></li>
-</ul>
-</blockquote>
+<li>
+<p>Size, height and width, number of pixels</p>
+<p><em>The image files height, width, and size can be adjusted by compressing. In the below hacks I reduced width and height of my original happyface.JPG file.</em></p>
 </li>
-<li>Visual perception, lossy compression<blockquote>
-<ul>
-<li><em>When an image's file size is reduced using lossy compression, the visual experience of the image suffers. For example:the image quality becomes less crisp and clear.</em></li>
-</ul>
-</blockquote>
+<li>
+<p>Visual perception, lossy compression</p>
+<p><em>When an image's file size is reduced using lossy compression, the visual experience of the image suffers. For example: the image quality becomes less crisp and clear.</em></p>
 </li>
 </ul>
 
@@ -240,42 +234,41 @@ window.onload = wrap_img;
 <p>File paths are different on Windows versus Mac and Linux.  This can cause problems in a project as you work and deploy on different Operating Systems (OS's), pathlib is a solution to this problem.</p>
 <ul>
 <li>What are commands you use in terminal to access files?</li>
-<li><em>cd to change directory</em></li>
-<li>
-<em>ls to list the files in a directory</em> </li>
-<li><em>cat to read the insides of a file through terminal.</em></li>
-<li><em>vi to edit the files</em></li>
-<li>What are the command you use in Windows terminal to access files?</li>
-<li><em>cd is used to change directory</em></li>
-<li><em>dir is used to list the files in a directory.</em></li>
-<li>What are some of the major differences?</li>
-<li><em>commands to view files are different</em></li>
-<li><em>Linux uses forward slashes while Windows uses backwards slashes, that makes the absolute directory paths different between the two OSs</em></li>
 </ul>
 </blockquote>
+<p><em>cd to change directory</em>
+ <em>ls to list the files in a directory</em> 
+ <em>cat to read the insides of a file through terminal.</em>
+ <em>vi to edit the files</em></p>
+<ul>
+<li>
+<p>What are the command you use in Windows terminal to access files?</p>
+<p><em>cd is used to change directory</em>
+<em>dir is used to list the files in a directory.</em></p>
+</li>
+<li>
+<p>What are some of the major differences?</p>
+<p><em>commands to view files are different</em>
+<em>Linux uses forward slashes while Windows uses backwards slashes, that makes the absolute directory paths different between the two OSs</em></p>
+</li>
+</ul>
 <p>Provide what you observed, struggled with, or leaned while playing with this code.</p>
 <ul>
-<li>Why is path a big deal when working with images?<blockquote>
-<ul>
-<li><em>Path is a big concern, as all images are stored in folders, and to view those images, exact path has to be provided.</em></li>
-</ul>
-</blockquote>
+<li>
+<p>Why is path a big deal when working with images?</p>
+<p><em>Path is a big concern, as all images are stored in folders, and to view those images, exact path has to be provided.</em></p>
 </li>
-<li>How does the meta data source and label relate to Unit 5 topics?<blockquote>
-<ul>
-<li><em>Unit 5 is about program that can analyze data.</em></li>
-<li><em>The metadata source and label relates to these topics.</em></li>
-<li><em>The metadata contains all the unique information from the image and the data can be outputted from the program onto the screen</em></li>
-</ul>
-</blockquote>
+<li>
+<p>How does the meta data source and label relate to Unit 5 topics?</p>
+<p><em>Unit 5 is about program that can analyze data.</em>
+<em>The metadata source and label relates to these topics.</em>
+<em>The metadata contains all the unique information from the image and the data can be outputted from the program onto the screen</em></p>
 </li>
-<li>Look up IPython, describe why this is interesting in Jupyter Notebooks for both Pandas and Images?<blockquote>
-<ul>
-<li><em>IPython is a Python interactive shell which can be utilized to display images.</em></li>
-<li><em>Pandas can be used to extract metadata from the images</em></li>
-<li><em>Pandas can be used to calculate mean, median, mode, and other statistic data</em></li>
-</ul>
-</blockquote>
+<li>
+<p>Look up IPython, describe why this is interesting in Jupyter Notebooks for both Pandas and Images?</p>
+<p><em>IPython is a Python interactive shell which can be utilized to display images.</em>
+<em>Pandas can be used to extract metadata from the images</em>
+<em>Pandas can be used to calculate mean, median, mode, and other statistic data</em></p>
 </li>
 </ul>
 
@@ -374,23 +367,24 @@ window.onload = wrap_img;
 <a class="anchor" href="#PIL-(Python-Image-Library)" aria-hidden="true"><span class="octicon octicon-link"></span></a>PIL (Python Image Library)<a class="anchor-link" href="#PIL-(Python-Image-Library)"> </a>
 </h3>
 <blockquote>
-<p><a href="https://pillow.readthedocs.io/en/stable/">Pillow or PIL</a> provides the ability to work with images in Python.  <a href="https://www.geeksforgeeks.org/working-images-python/?ref=lbp">Geeks for Geeks</a> shows some ideas on working with images.&gt; - <em>PIL (Python Imaging Library) is an open-source library for image processing tasks that requires python programming language. PIL can perform tasks on an image such as reading, rescaling, saving in different image formats. PIL can be used for Image archives, Image processing, Image display.</em></p>
+<p><a href="https://pillow.readthedocs.io/en/stable/">Pillow or PIL</a> provides the ability to work with images in Python.  <a href="https://www.geeksforgeeks.org/working-images-python/?ref=lbp">Geeks for Geeks</a> shows some ideas on working with images.
+ <em>PIL (Python Imaging Library) is an open-source library for image processing tasks that requires python programming language. PIL can perform tasks on an image such as reading, rescaling, saving in different image formats. PIL can be used for Image archives, Image processing, Image display.</em></p>
 </blockquote>
 <h3 id="base64">
 <a class="anchor" href="#base64" aria-hidden="true"><span class="octicon octicon-link"></span></a>base64<a class="anchor-link" href="#base64"> </a>
 </h3>
 <blockquote>
 <p>Image formats (JPG, PNG) are often called <strong>*Binary File formats</strong>, it is difficult to pass these over HTTP.   Thus, <a href="https://en.wikipedia.org/wiki/Base64">base64</a> converts binary encoded data (8-bit, ASCII/Unicode) into a text encoded scheme (24 bits, 6-bit Base64 digits).  Thus base64 is used to transport and embed binary images into textual assets such as HTML and CSS.- How is Base64 similar or different to Binary and Hexadecimal?</p>
+</blockquote>
+<p><em>Base64 is similar to binary and hex, since it is an encoding format which can convert a normal string/number into a series of encoded characters.</em> 
+ <em>It is different from binary and hexadecimal in the base that it uses.</em> 
+ <em>Base64 uses base 64 (0-63), while binary uses base 2 (0-1) and hexadecimal uses base 16 (0-9 and A-F).</em></p>
 <ul>
 <li>
-<em>Base64 is similar to binary and hex, since it is an encoding format which can convert a normal string/number into a series of encoded characters.</em> </li>
-<li>
-<em>It is different from binary and hexadecimal in the base that it uses.</em> </li>
-<li><em>Base64 uses base 64 (0-63), while binary uses base 2 (0-1) and hexadecimal uses base 16 (0-9 and A-F).</em></li>
-<li>Translate first 3 letters of your name to Base64.</li>
-<li><em>See the below code snippet</em></li>
+<p>Translate first 3 letters of your name to Base64.</p>
+<p><em>See the below code snippet</em></p>
+</li>
 </ul>
-</blockquote>
 
 </div>
 </div>
@@ -441,10 +435,8 @@ window.onload = wrap_img;
 <a class="anchor" href="#numpy" aria-hidden="true"><span class="octicon octicon-link"></span></a>numpy<a class="anchor-link" href="#numpy"> </a>
 </h3>
 <blockquote>
-<p><a href="https://numpy.org/">Numpy</a> is described as "The fundamental package for scientific computing with Python".  In the Image Lab, a Numpy array is created from the image data in order to simplify access and change to the RGB values of the pixels, converting pixels to grey scale.</p>
-<ul>
-<li><em>Numpy is a python library used for working with arrays and also provides mathematical functions like, sqrt, sin, etc.</em></li>
-</ul>
+<p><a href="https://numpy.org/">Numpy</a> is described as "The fundamental package for scientific computing with Python".  In the Image Lab, a Numpy array is created from the image data in order to simplify access and change to the RGB values of the pixels, converting pixels to grey scale.
+ <em>Numpy is a python library used for working with arrays and also provides mathematical functions like, sqrt, sin, etc.</em></p>
 </blockquote>
 <h3 id="io,-BytesIO">
 <a class="anchor" href="#io,-BytesIO" aria-hidden="true"><span class="octicon octicon-link"></span></a>io, BytesIO<a class="anchor-link" href="#io,-BytesIO"> </a>
@@ -453,14 +445,19 @@ window.onload = wrap_img;
 <p>Input and Output (I/O) is a fundamental of all Computer Programming. Input/output (I/O) buffering is a technique used to optimize I/O operations.  In large quantities of data, how many frames of input the server currently has queued is the buffer.  In this example, there is a very large picture that lags.</p>
 <ul>
 <li>Where have you been a consumer of buffering? </li>
-<li>
-<em>I have seen buffering mostly when streaming videos online either on TV or on mobile phones</em> </li>
-<li>From your consumer experience, what effects have you experienced from buffering?  </li>
-<li><em>Streaming lags continuity and videos are not played continuously</em></li>
-<li>How do these effects apply to images?</li>
-<li><em>Buffering can be used to add some edits to the features of images, such as, scaling - grey and red scale</em></li>
 </ul>
 </blockquote>
+<p><em>I have seen buffering mostly when streaming videos online either on TV or on mobile phones</em></p>
+<ul>
+<li>
+<p>From your consumer experience, what effects have you experienced from buffering?</p>
+<p><em>Streaming lags continuity and videos are not played continuously</em></p>
+</li>
+<li>
+<p>How do these effects apply to images?</p>
+<p><em>Buffering can be used to add some edits to the features of images, such as, scaling - grey and red scale</em></p>
+</li>
+</ul>
 
 </div>
 </div>
@@ -779,23 +776,17 @@ Scaled size:  (320, 240)
 <a class="anchor" href="#Additionally,-review-all-the-imports-in-these-three-demos.--Create-a-definition-of-their-purpose,-specifically-these-..." aria-hidden="true"><span class="octicon octicon-link"></span></a>Additionally, review all the imports in these three demos.  Create a definition of their purpose, specifically these ...<a class="anchor-link" href="#Additionally,-review-all-the-imports-in-these-three-demos.--Create-a-definition-of-their-purpose,-specifically-these-..."> </a>
 </h2>
 <ul>
-<li>PIL<blockquote>
-<ul>
-<li><em>PIL (Python Imaging Library) is an open-source library for image processing tasks that requires python programming language. PIL can perform tasks on an image such as reading, rescaling, saving in different image formats. PIL can be used for Image archives, Image processing, Image display. PIL is used to manipulate imported image properties.</em></li>
-</ul>
-</blockquote>
+<li>
+<p>PIL</p>
+<p><em>PIL (Python Imaging Library) is an open-source library for image processing tasks that requires python programming language. PIL can perform tasks on an image such as reading, rescaling, saving in different image formats. PIL can be used for Image archives, Image processing, Image display. PIL is used to manipulate imported image properties.</em></p>
 </li>
-<li>numpy<blockquote>
-<ul>
-<li><em>Numpy is a python library used for working with arrays and also provides mathematical functions like, sqrt, sin, etc.</em></li>
-</ul>
-</blockquote>
+<li>
+<p>numpy</p>
+<p><em>Numpy is a python library used for working with arrays and also provides mathematical functions like, sqrt, sin, etc.</em></p>
 </li>
-<li>base64<blockquote>
-<ul>
-<li><em>Encoding algorithm representing binary data as text</em></li>
-</ul>
-</blockquote>
+<li>
+<p>base64</p>
+<p><em>Encoding algorithm representing binary data as text</em></p>
 </li>
 </ul>
 
@@ -1407,17 +1398,13 @@ Scaled size:  (320, 320)
 <h3 id="Programming-Paradigm-Explanation">
 <a class="anchor" href="#Programming-Paradigm-Explanation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Programming Paradigm Explanation<a class="anchor-link" href="#Programming-Paradigm-Explanation"> </a>
 </h3>
-<blockquote>
-<ul>
-<li><em>I used NumPy array to access and change to the RGB values of the pixels of Happy Face image.</em></li>
-<li><em>Converted the happy face to red scale, green scale, or blue scale.</em></li>
-<li><em>For red scale I added Red=+25 pixel color values but kept average values for Green and Blue scale.</em></li>
-<li><em>For blue scale I added Blue=+25 pixel color values but kept average values for Green and Red scale.</em></li>
-<li><em>For green scale I added Green=+25 pixel color values but kept average values for Red and Blue scale.</em></li>
-<li><em>Printed meta data of the Happy Face like name, size etc.</em></li>
-<li><em>Also added an extra meta field of Year.</em></li>
-</ul>
-</blockquote>
+<p><em>I used NumPy array to access and change to the RGB values of the pixels of Happy Face image.</em></p>
+<p><em>Converted the happy face to red scale, green scale, or blue scale.</em></p>
+<p><em>For red scale I added Red=+25 pixel color values but kept average values for Green and Blue scale.</em></p>
+<p><em>For blue scale I added Blue=+25 pixel color values but kept average values for Green and Red scale.</em></p>
+<p><em>For green scale I added Green=+25 pixel color values but kept average values for Red and Blue scale.</em></p>
+<p><em>Printed meta data of the Happy Face like name, size etc.</em></p>
+<p><em>Also added an extra meta field of Year.</em></p>
 
 </div>
 </div>
@@ -1431,11 +1418,11 @@ Scaled size:  (320, 320)
 <h4 id="Lossy-Compression">
 <a class="anchor" href="#Lossy-Compression" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lossy Compression<a class="anchor-link" href="#Lossy-Compression"> </a>
 </h4>
-<p><strong>The lassen-volcano.jpg image will represent lossy compression. This is because if the image file is compressed, it will definitely have a drastically reduced file size, but the image quality will also go down, due to the very fine details in the image, and the variety of colors. It will likely become more fuzzy.</strong></p>
+<p><em>The lassen-volcano.jpg image will represent lossy compression. This is because if the image file is compressed, it will definitely have a drastically reduced file size, but the image quality will also go down, due to the very fine details in the image, and the variety of colors. It will likely become more fuzzy.</em></p>
 <h4 id="Lossless-Compression">
 <a class="anchor" href="#Lossless-Compression" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lossless Compression<a class="anchor-link" href="#Lossless-Compression"> </a>
 </h4>
-<p><strong>The green-square-16.png is an example of lossless compression. That image has one sole color, so the RGB pixel values are going to be the same every time, and the quality of the image will not deteriorate, while the image file size will still reduce</strong></p>
+<p><em>The green-square-16.png is an example of lossless compression. That image has one sole color, so the RGB pixel values are going to be the same every time, and the quality of the image will not deteriorate, while the image file size will still reduce</em></p>
 
 </div>
 </div>
