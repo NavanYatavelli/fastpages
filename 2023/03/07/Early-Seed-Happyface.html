@@ -441,7 +441,10 @@ window.onload = wrap_img;
 <a class="anchor" href="#numpy" aria-hidden="true"><span class="octicon octicon-link"></span></a>numpy<a class="anchor-link" href="#numpy"> </a>
 </h3>
 <blockquote>
-<p><a href="https://numpy.org/">Numpy</a> is described as "The fundamental package for scientific computing with Python".  In the Image Lab, a Numpy array is created from the image data in order to simplify access and change to the RGB values of the pixels, converting pixels to grey scale.&gt;- <em>Numpy is a python library used for working with arrays and also provides mathematical functions like, sqrt, sin, etc.</em></p>
+<p><a href="https://numpy.org/">Numpy</a> is described as "The fundamental package for scientific computing with Python".  In the Image Lab, a Numpy array is created from the image data in order to simplify access and change to the RGB values of the pixels, converting pixels to grey scale.</p>
+<ul>
+<li><em>Numpy is a python library used for working with arrays and also provides mathematical functions like, sqrt, sin, etc.</em></li>
+</ul>
 </blockquote>
 <h3 id="io,-BytesIO">
 <a class="anchor" href="#io,-BytesIO" aria-hidden="true"><span class="octicon octicon-link"></span></a>io, BytesIO<a class="anchor-link" href="#io,-BytesIO"> </a>
@@ -472,29 +475,38 @@ window.onload = wrap_img;
 <p>Introduction to creating meta data and manipulating images.  Look at each procedure and explain the the purpose and results of this program.  Add any insights or challenges as you explored this program.</p>
 <ul>
 <li>Does this code seem like a series of steps are being performed?</li>
-<li><em>Yes, this code seems like a series of steps are being performed to manipulate the images</em></li>
-<li>Describe Grey Scale algorithm in English or Pseudo code?</li>
-<li>
-<em>All grayscale algorithms use the same basic three-step process:</em>&gt; - <em>Get the red, green, and blue values of a pixel.</em>
-</li>
-<li><em>Calculate the Average RGB of those numbers into a single gray value.</em></li>
-<li><em>Replace the original red, green, and blue values with the new gray value.</em></li>
-<li>Describe scale image?  </li>
-<li><em>Scale image is a feature allowing for the images to get scaled up or down in size.</em></li>
-<li><em>For example both base height and width of bigger image are scaled down.</em></li>
-<li><em>When scaling a image, a new image with a higher or lower number of pixels is generated. In the case of decreasing the pixel number (scaling down) this usually results in a visible quality loss.</em></li>
-<li>What is before and after on pixels in three images?</li>
-<li><em>Before scaling, the pixels are of a larger size, but after the averages of all the pixels are taken, they are compressed down to a smaller size.</em></li>
-<li><em>In the example below, here is the scaled and original sizes-</em></li>
-<li><em>Green Square</em></li>
-<li>
-<em>Original size:(16, 16)</em>&gt; - <em>Scaled size:(320, 320)</em>&gt; - <em>Clouds Impression</em>
-</li>
-<li>
-<em>Original size:(320, 234)</em>&gt; - <em>Scaled size:(320, 234)</em>- Is scale image a type of compression?  If so, line it up with College Board terms described?</li>
-<li><em>Yes, scaling image ia a type of lossy compression. The image file size is reduced and also the image quality is compromised.</em></li>
 </ul>
 </blockquote>
+<p><em>Yes, this code seems like a series of steps are being performed to manipulate the images</em></p>
+<ul>
+<li>
+<p>Describe Grey Scale algorithm in English or Pseudo code?</p>
+<p><em>All grayscale algorithms use the same basic three-step process:</em> <em>Get the red, green, and blue values of a pixel.</em>
+<em>Calculate the Average RGB of those numbers into a single gray value.</em>
+<em>Replace the original red, green, and blue values with the new gray value.</em></p>
+</li>
+<li>
+<p>Describe scale image?</p>
+<p><em>Scale image is a feature allowing for the images to get scaled up or down in size.</em>
+<em>For example both base height and width of bigger image are scaled down.</em>
+<em>When scaling a image, a new image with a higher or lower number of pixels is generated. In the case of decreasing the pixel number (scaling down) this usually results in a visible quality loss.</em></p>
+</li>
+<li>
+<p>What is before and after on pixels in three images?</p>
+<p><em>Before scaling, the pixels are of a larger size, but after the averages of all the pixels are taken, they are compressed down to a smaller size.</em>
+<em>In the example below, here is the scaled and original sizes-</em></p>
+<p><em>Green Square</em>
+<em>Original size: (16, 16)</em>
+<em>Scaled size: (320, 320)</em></p>
+<p><em>Clouds Impression</em>
+<em>Original size: (320, 234)</em>
+<em>Scaled size: (320, 234)</em></p>
+</li>
+<li>
+<p>Is scale image a type of compression?  If so, line it up with College Board terms described?</p>
+<p><em>Yes, scaling image ia a type of lossy compression. The image file size is reduced and also the image quality is compromised.</em></p>
+</li>
+</ul>
 
 </div>
 </div>
