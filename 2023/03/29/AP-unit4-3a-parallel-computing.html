@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      6 min read
     
 </span></p>
 
@@ -776,9 +776,18 @@ Scaled size:  (320, 240)
 <blockquote>
 <p>AP Classroom. Provide answers and thoughts on theoritical question form college board Video in section 4.3.  They start at about the 9 minute mark.</p>
 <ul>
-<li>Example 1</li>
-<li>Example 2</li>
+<li>Example 1
+What is the minimum amount of time taken for all the three tasks x=50s,y=10s and z=30s when run on two processors in parallel?</li>
 </ul>
+</blockquote>
+<p>Answer:This will take total 50 seconds since one processor can do tasks Y and Z, which take 40 seconds.  The other can complete tasks X, which takes 50 seconds.</p>
+<ul>
+<li>Example 2
+Task A=25s and task B=45s execution time. What is the time execution difference if two tasks running in parallel vs sequential?</li>
+</ul>
+<p>Answer: If run sequential 25 + 45 = 70s. Running in parallel would take minimum time of 45s. 
+So the time difference is 70-45= 25s.</p>
+<blockquote>
 <p>Data Structures.  Build a List Comprehension example</p>
 <ul>
 <li>list = [calc(item) for item in items]</li>
@@ -788,6 +797,61 @@ Scaled size:  (320, 240)
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Not using a List Comprehension</span>
+<span class="c1">#</span>
+<span class="n">array_of_letters</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="c1"># using simple for loop to fill an array with my name and course</span>
+<span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="s1">'Navan Yatavelli, APCSP'</span><span class="p">:</span>
+    <span class="n">array_of_letters</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">letter</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Example of -- Not using a List Comprehension!!"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">array_of_letters</span><span class="p">)</span>
+
+
+
+
+<span class="c1">#</span>
+<span class="c1"># Using a List Comprehension</span>
+<span class="c1">#</span>
+
+<span class="c1"># using list compression fill the list list_comp_letters my name and course</span>
+<span class="n">list_comp_letters</span> <span class="o">=</span> <span class="p">[</span> <span class="n">letter</span> <span class="k">for</span> <span class="n">letter</span> <span class="ow">in</span> <span class="s1">'Navan Yatavelli, APCSP'</span> <span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Example of --  using a List Comprehension!!"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span> <span class="n">list_comp_letters</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Example of -- Not using a List Comprehension!!
+['N', 'a', 'v', 'a', 'n', ' ', 'Y', 'a', 't', 'a', 'v', 'e', 'l', 'l', 'i', ',', ' ', 'A', 'P', 'C', 'S', 'P']
+Example of --  using a List Comprehension!!
+['N', 'a', 'v', 'a', 'n', ' ', 'Y', 'a', 't', 'a', 'v', 'e', 'l', 'l', 'i', ',', ' ', 'A', 'P', 'C', 'S', 'P']
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
