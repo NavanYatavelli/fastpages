@@ -540,6 +540,27 @@ Base 30 --&gt; n, also Base 50 --&gt; n</p>
 <span class="n">binaryResult</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">finish</span><span class="o">=</span><span class="mi">0</span> <span class="c1"># to track completion</span>
 
+<span class="c1"># converts to binary from decimal </span>
+<span class="k">def</span> <span class="nf">toBinaryValue</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+    <span class="nb">bin</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="c1"># array to store  binary digits</span>
+    <span class="n">arr</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="c1"># loop till end of all digits</span>
+    <span class="k">while</span> <span class="n">num</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="c1"># mod of 2 will give either 0 or 1</span>
+        <span class="c1"># append to array</span>
+        <span class="n">arr</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">num</span> <span class="o">%</span> <span class="mi">2</span><span class="p">)</span>
+        
+        <span class="c1"># divide the number by 2 to move to next digit</span>
+        <span class="n">num</span> <span class="o">//=</span> <span class="mi">2</span>
+    <span class="n">arr</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+    
+    <span class="c1"># convert to displayable format </span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">arr</span><span class="p">:</span>
+        <span class="nb">bin</span> <span class="o">=</span> <span class="nb">bin</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">+</span> <span class="n">i</span>
+    <span class="k">return</span> <span class="nb">bin</span>
+
 <span class="c1"># converts to decimal from binary</span>
 <span class="k">def</span> <span class="nf">toDecimalValue</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
     <span class="n">pos</span> <span class="o">=</span> <span class="p">[]</span>
@@ -568,46 +589,8 @@ Base 30 --&gt; n, also Base 50 --&gt; n</p>
         <span class="n">decimal</span> <span class="o">+=</span> <span class="mi">2</span><span class="o">**</span><span class="n">x</span>
     <span class="k">return</span> <span class="n">decimal</span>
 
-<span class="c1"># converts to binary from decimal </span>
-<span class="k">def</span> <span class="nf">toBinaryValue</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
-    <span class="n">binaryones</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="n">binary</span><span class="o">=</span><span class="p">[]</span>
-    <span class="n">number</span><span class="o">=</span><span class="mi">0</span>
-    <span class="n">spots</span><span class="o">=</span><span class="mi">0</span>
-    
-    <span class="c1"># loop till finish</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">finish</span><span class="o">==</span><span class="mi">0</span><span class="p">):</span>
-        <span class="k">if</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">num</span><span class="p">)</span><span class="o">-</span><span class="mi">2</span><span class="o">**</span><span class="n">number</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">):</span>
-            <span class="n">number</span> <span class="o">-=</span> <span class="mi">1</span>
-            <span class="c1"># append the digit to binaryones array</span>
-            <span class="n">binaryones</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
-            <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">num</span><span class="p">)</span><span class="o">-</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="n">number</span><span class="p">)</span>
-            <span class="k">break</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">number</span> <span class="o">+=</span> <span class="mi">1</span>
-    <span class="k">while</span><span class="p">(</span><span class="n">number</span> <span class="o">&gt;</span> <span class="o">-</span><span class="mi">2</span><span class="p">):</span>
-        <span class="k">if</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">num</span><span class="p">)</span><span class="o">-</span><span class="mi">2</span><span class="o">**</span><span class="n">number</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">):</span>
-            <span class="c1"># append the digit to binaryones array</span>
-            <span class="n">binaryones</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
-            <span class="n">num</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">num</span><span class="p">)</span><span class="o">-</span><span class="p">(</span><span class="mi">2</span><span class="o">**</span><span class="n">number</span><span class="p">)</span>
-            <span class="k">if</span><span class="p">(</span><span class="n">num</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span>
-                <span class="k">break</span>
-            
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">number</span> <span class="o">-=</span><span class="mi">1</span>
-    <span class="c1"># append the 0 digit to binary array        </span>
-    <span class="k">while</span> <span class="p">(</span><span class="n">spots</span><span class="o">-</span><span class="mi">1</span><span class="o">&lt;</span><span class="n">binaryones</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
-        <span class="n">binary</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">"0"</span><span class="p">)</span>
-        <span class="n">spots</span><span class="o">+=</span><span class="mi">1</span>
-        
-    <span class="c1"># loop and mark 1 digit to binary array    </span>
-    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">binaryones</span><span class="p">:</span>
-        <span class="n">binary</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"1"</span>
-    
-    <span class="c1"># reverse the digits</span>
-    <span class="n">binary</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
-    <span class="n">space</span> <span class="o">=</span> <span class="s2">""</span>
-    <span class="k">return</span> <span class="n">space</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">binary</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Number 1: Binary: "</span> <span class="o">+</span> <span class="n">digit1</span> <span class="o">+</span> <span class="s2">" Decimal: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">toDecimalValue</span><span class="p">(</span><span class="n">digit1</span><span class="p">)))</span> 
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Number 2: Binary: "</span> <span class="o">+</span> <span class="n">digit2</span> <span class="o">+</span> <span class="s2">" Decimal: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">toDecimalValue</span><span class="p">(</span><span class="n">digit2</span><span class="p">)))</span> 
 
 <span class="c1"># Do Addition</span>
 <span class="n">decimalResult</span> <span class="o">=</span> <span class="n">toDecimalValue</span><span class="p">(</span><span class="n">digit1</span><span class="p">)</span> <span class="o">+</span> <span class="n">toDecimalValue</span><span class="p">(</span><span class="n">digit2</span><span class="p">)</span>
@@ -640,7 +623,9 @@ Base 30 --&gt; n, also Base 50 --&gt; n</p>
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Addition: 1010 + 10 = Decimal value is: 12 and Binary value is: 1100
+<pre>Number 1: Binary: 1010 Decimal: 10
+Number 2: Binary: 10 Decimal: 2
+Addition: 1010 + 10 = Decimal value is: 12 and Binary value is: 1100
 Subtraction: 1010 - 10 = Decimal value is: 8 and Binary value is: 1000
 Multiplication: 1010 * 10 = Decimal value is: 20 and Binary value is: 10100
 Division: 1010 / 10 = Decimal value is: 5.0 and Binary value is: 101
