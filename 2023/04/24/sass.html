@@ -248,6 +248,22 @@ margin: 1rem;
 }
 </code></pre></div></div>
 
+<h4 id="conditional-statements">Conditional Statements</h4>
+<ul>
+  <li>SASS allows conditional statements such as if else that we use extensively in our  nighthawkguessr project</li>
+  <li>In CSS no such concepts as Conditional</li>
+</ul>
+
+<p>Here is an example of nighthawkguessr map that uses conditional statement</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@function nighthawkguessr-max-map-point($point1, $point2 ) {
+  $max = point2;
+  if $point1 &gt; $point2 {
+    $max = $point1;
+  }
+  @return $max;
+}
+</code></pre></div></div>
 
   </div><a class="u-url" href="/fastpages/2023/04/24/sass.html" hidden></a>
 </article>
