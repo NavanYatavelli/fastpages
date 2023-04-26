@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      3 min read
     
 </span></p>
 
@@ -214,6 +214,38 @@ margin: 1rem;
   @extend .nighthawkguessr-button;
   background-color: #4CAF50; // Green
 }  
+</code></pre></div></div>
+
+<h4 id="loops">Loops</h4>
+<ul>
+  <li>SASS allows for, while and each loops.</li>
+  <li>In SAAS it is preferable to use @each and @for as they are more comprehensible and can speed up compilation.</li>
+  <li>In CSS no such concepts as loops</li>
+</ul>
+
+<p>We are implementing and using these loops logic in  our nighthawkguessr  project:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@function nighthawkguessr-map-index($maps, $point ) {
+  $index = 0;
+  @while $maps != $point {
+    $maps++;
+    $index++;
+  }
+  @return $index;
+}
+</code></pre></div></div>
+
+<h4 id="operators">Operators</h4>
+<ul>
+  <li>SASS allows operators for equal, add, divide, subtract, multiply,.</li>
+  <li>In CSS no such concepts as operators</li>
+</ul>
+
+<p>Example use of + operator in a function in our nighthawkguessr project.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@function get-nighthawkguessr-random-color() {
+  @return "#007f" + random(1,100);
+}
 </code></pre></div></div>
 
 
