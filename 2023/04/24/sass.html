@@ -94,35 +94,39 @@ window.onload = wrap_img;
 <ul>
   <li>Variables are a way to store information that we want to reuse throughout in our stylesheet.</li>
   <li>They allow us to store values for colors, fonts or really any CSS value that you want to reuse!</li>
-  <li>We use the $ symbol when we wish to make something a variable.
-```
-$color-blue: #ffff00; // Blue</li>
+  <li>We use the $ symbol when we wish to make something a variable.</li>
 </ul>
 
-<p>body {
-  background-color: $color-blue;
-}</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$color-blue: #ffff00; // Blue
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-#### Nesting - 
-- Nesting is a way to organize your code and make it easier to read. It also helps keep your code DRY (Don't Repeat Yourself).
-- Nesting is when you put one selector inside another selector. This is a great way to keep your code organized and make it easier to read.
- CSS Nesting example
+body {
+  background-color: $color-blue;
+}
 </code></pre></div></div>
-<p>.navbar {
-  background-color: orangered;
-  padding: 1rem;
+
+<h4 id="nesting--">Nesting -</h4>
+<ul>
+  <li>Nesting is a way to organize your code and make it easier to read. It also helps keep your code DRY (Don’t Repeat Yourself).</li>
+  <li>Nesting is when you put one selector inside another selector. This is a great way to keep your code organized and make it easier to read.
+ CSS Nesting example
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> .navbar {
+background-color: orangered;
+padding: 1rem;
 }
 .navbar ul {
-  list-style: none;
+list-style: none;
 }
 .navbar li {
-  text-align: center;
-  margin: 1rem;
-}</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Sass nesting, we can write much cleaner code.
-</code></pre></div></div>
-<p>.navbar {
+text-align: center;
+margin: 1rem;
+}
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>Sass nesting, we can write much cleaner code.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.navbar {
   background-color: orangered;
   padding: 1rem;
   ul {
@@ -133,7 +137,7 @@ $color-blue: #ffff00; // Blue</li>
     margin: 1rem;
   }
 }
-```</p>
+</code></pre></div></div>
 
 
   </div><a class="u-url" href="/fastpages/2023/04/24/sass.html" hidden></a>
