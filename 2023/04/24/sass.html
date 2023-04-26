@@ -139,6 +139,34 @@ margin: 1rem;
 }
 </code></pre></div></div>
 
+<h4 id="mixins">Mixins</h4>
+<ul>
+  <li>Mixins are a technique to create CSS groups that you may reuse wherever you like on your website.</li>
+  <li>Mixins are a type of template that you can use to create additional features later on without having to keep writing the same code from scratch.</li>
+  <li>This type of CSS encapsulation is a terrific method to structure your code and make it simpler to read.</li>
+  <li>If that is a feature you want to add to your website, mixins can also take in arguments and be used to apply effects to specific elements. Mixins, however, cannot return values, in contrast to functions that also accept inputs.</li>
+</ul>
+
+<p>Mixin example.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@mixin transform {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+</code></pre></div></div>
+
+<p>Call the mixin</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@include transform (rotate(80deg));
+</code></pre></div></div>
+
+<h4 id="functions">Functions</h4>
+<ul>
+  <li>Sass functions can receive arguments and return a single value.</li>
+  <li>Sass functions add an element of programming to writing CSS code.</li>
+  <li>In CSS code there are no such concepts as functions</li>
+</ul>
+
 
   </div><a class="u-url" href="/fastpages/2023/04/24/sass.html" hidden></a>
 </article>
