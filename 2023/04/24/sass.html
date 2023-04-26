@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -165,8 +165,27 @@ margin: 1rem;
 <ul>
   <li>Sass functions can receive arguments and return a single value.</li>
   <li>Sass functions add an element of programming to writing CSS code.</li>
+  <li>There are inbuilt math, color, string functions in sass</li>
   <li>In CSS code there are no such concepts as functions</li>
 </ul>
+
+<p>Here is an example function that we use in our nighthawkguessr project</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@function get-nighthawkguessr-random-color() {
+  @return "#007f" + random(1,100);
+}
+
+.navbar {
+  background-color: orangered;
+  nighthawkguessr-color: get-nighthawkguessr-random-color();
+  ul {
+    list-style: none;
+  }
+  li {
+    text-align: center;
+    margin: 1rem;
+  }
+}
+</code></pre></div></div>
 
 
   </div><a class="u-url" href="/fastpages/2023/04/24/sass.html" hidden></a>
