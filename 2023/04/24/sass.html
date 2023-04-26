@@ -97,10 +97,11 @@ window.onload = wrap_img;
   <li>We use the $ symbol when we wish to make something a variable.</li>
 </ul>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$color-blue: #ffff00; // Blue
+<p>Here is an example of the color variable that we will be using in our project nighthawkguessr</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$nighthawkguessr-color-blue: #ffff00; // Blue
 
 body {
-  background-color: $color-blue;
+  nighthawkguessr-background-color: $color-blue;
 }
 </code></pre></div></div>
 
@@ -108,9 +109,9 @@ body {
 <ul>
   <li>Nesting is a way to organize your code and make it easier to read. It also helps keep your code DRY (Don’t Repeat Yourself).</li>
   <li>Nesting is when you put one selector inside another selector. This is a great way to keep your code organized and make it easier to read.
- CSS Nesting example
+ CSS Nesting example for our project nighthawkguessr
     <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> .navbar {
-background-color: orangered;
+nighthawkguessr-background-color: orangered;
 padding: 1rem;
 }
 .navbar ul {
@@ -124,10 +125,10 @@ margin: 1rem;
   </li>
 </ul>
 
-<p>Sass nesting, we can write much cleaner code.</p>
+<p>Sass nesting, we can write much cleaner code in our project nighthawkguessr.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.navbar {
-  background-color: orangered;
+  nighthawkguessr-background-color: orangered;
   padding: 1rem;
   ul {
     list-style: none;
@@ -147,9 +148,9 @@ margin: 1rem;
   <li>If that is a feature you want to add to your website, mixins can also take in arguments and be used to apply effects to specific elements. Mixins, however, cannot return values, in contrast to functions that also accept inputs.</li>
 </ul>
 
-<p>Mixin example.</p>
+<p>Mixin example for our project nighthawkguessr.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@mixin transform {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@mixin nighthawkguessr-transform {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
@@ -157,7 +158,7 @@ margin: 1rem;
 </code></pre></div></div>
 
 <p>Call the mixin</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@include transform (rotate(80deg));
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@include nighthawkguessr-transform (rotate(80deg));
 </code></pre></div></div>
 
 <h4 id="functions">Functions</h4>
