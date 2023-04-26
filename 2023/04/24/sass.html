@@ -170,6 +170,7 @@ margin: 1rem;
 </ul>
 
 <p>Here is an example function that we use in our nighthawkguessr project</p>
+
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@function get-nighthawkguessr-random-color() {
   @return "#007f" + random(1,100);
 }
@@ -185,6 +186,34 @@ margin: 1rem;
     margin: 1rem;
   }
 }
+</code></pre></div></div>
+
+<h4 id="inheritance">Inheritance</h4>
+<ul>
+  <li>Multiple classes can share a common set of characteristics thanks to the SASS capability of inheritance.</li>
+  <li>In CSS code there are no such concepts of Inheritance</li>
+</ul>
+
+<p>Here is an example Inheritance that we use in our nighthawkguessr project</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.nighthawkguessr-button {
+  background-color: #0000FF; // Blue
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+</code></pre></div></div>
+
+<p>We are implementing a secondary nighthawkguessr button via inheritance in our project:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.nighthawkguessr-button-secondary {
+  @extend .nighthawkguessr-button;
+  background-color: #4CAF50; // Green
+}  
 </code></pre></div></div>
 
 
