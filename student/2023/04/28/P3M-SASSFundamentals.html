@@ -165,6 +165,14 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Part-2:-Sass-Demo-0.5+-Points">Part 2: Sass Demo 0.5+ Points </a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#Modular-SCSS">Modular SCSS </a></li>
+<li class="toc-entry toc-h3"><a href="#Nesting">Nesting </a></li>
+<li class="toc-entry toc-h3"><a href="#Variables">Variables </a></li>
+<li class="toc-entry toc-h3"><a href="#Operators">Operators </a></li>
+<li class="toc-entry toc-h3"><a href="#Conditional-Statements">Conditional Statements </a></li>
+<li class="toc-entry toc-h3"><a href="#Loops-in-SASS">Loops in SASS </a></li>
+<li class="toc-entry toc-h3"><a href="#Functions-in-SASS">Functions in SASS </a></li>
+<li class="toc-entry toc-h3"><a href="#Mixins">Mixins </a></li>
+<li class="toc-entry toc-h3"><a href="#Inheritance">Inheritance </a></li>
 </ul>
 </li>
 </ul>
@@ -1205,39 +1213,71 @@ Fun Fact: Variables in SASS came before CSS and often SASS has features long bef
 <li>Modular SCSS allows for breaking up code into multiple files, which can be compiled into a single CSS file</li>
 <li>This is done by creating partials, denoted by the filename prefix "_", which can then be imported into other files</li>
 <li>Using partials can make managing large websites easier by breaking up the code into smaller components and making it easier to make changes</li>
-<li>All styles in the partial are added to the main file and can be used as if they were defined in the main file
-### Nesting</li>
+<li>All styles in the partial are added to the main file and can be used as if they were defined in the main file</li>
+</ul>
+<h3 id="Nesting">
+<a class="anchor" href="#Nesting" aria-hidden="true"><span class="octicon octicon-link"></span></a>Nesting<a class="anchor-link" href="#Nesting"> </a>
+</h3>
+<ul>
 <li>Nesting in coding is a way to organize and improve readability</li>
 <li>It involves placing one selector inside another to create a clear structure</li>
 <li>In regular CSS, nesting can be difficult, but SASS can help</li>
 <li>However, over-nesting can create overqualified selectors that are hard to read and maintain</li>
-<li>Nesting in SASS can be useful for creating a better-organized CSS and increasing its overall readability
-### Variables</li>
+<li>Nesting in SASS can be useful for creating a better-organized CSS and increasing its overall readability</li>
+</ul>
+<h3 id="Variables">
+<a class="anchor" href="#Variables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Variables<a class="anchor-link" href="#Variables"> </a>
+</h3>
+<ul>
 <li>A variable is a storage unit that holds information and can be used multiple times instead of writing the same value over and over</li>
 <li>This is useful in SASS because it enables the reuse of values throughout the stylesheet</li>
-<li>Sass allows for the storage of information, such as colors or font stacks, and the $ symbol is used to indicate a variable
-### Operators</li>
+<li>Sass allows for the storage of information, such as colors or font stacks, and the $ symbol is used to indicate a variable</li>
+</ul>
+<h3 id="Operators">
+<a class="anchor" href="#Operators" aria-hidden="true"><span class="octicon octicon-link"></span></a>Operators<a class="anchor-link" href="#Operators"> </a>
+</h3>
+<ul>
 <li>Operators are used to perform operations on variables and other aspects of the language, such as in Python</li>
-<li>Similarly, SASS also has various operators that allow performing operations on variables and other language elements
-### Conditional Statements</li>
+<li>Similarly, SASS also has various operators that allow performing operations on variables and other language elements</li>
+</ul>
+<h3 id="Conditional-Statements">
+<a class="anchor" href="#Conditional-Statements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Conditional Statements<a class="anchor-link" href="#Conditional-Statements"> </a>
+</h3>
+<ul>
 <li>SASS has conditional statements, similar to those found in Python and JavaScript, that are used to perform different actions based on specific conditions</li>
-<li>The @if statement allows for different styles based on a boolean expression being true or false, @else allows for a different set of styles if the @if condition was not met, and @else if allows for an alternative condition to be run if the first one is not met
-### Loops in SASS</li>
+<li>The @if statement allows for different styles based on a boolean expression being true or false, @else allows for a different set of styles if the @if condition was not met, and @else if allows for an alternative condition to be run if the first one is not met</li>
+</ul>
+<h3 id="Loops-in-SASS">
+<a class="anchor" href="#Loops-in-SASS" aria-hidden="true"><span class="octicon octicon-link"></span></a>Loops in SASS<a class="anchor-link" href="#Loops-in-SASS"> </a>
+</h3>
+<ul>
 <li>SASS has loop decorators such as @for, @while, and @each which allow you to repeat a block of code a certain number of times or until a specific condition is met</li>
 <li>The @for decorator is used to iterate through a value like a list or range of numbers, while the @while decorator is used to iterate through a block of code until a certain condition is met</li>
-<li>The @each decorator is also available for iteration purposes. It is recommended to use @for and @each over @while for better code readability and faster compilation
-### Functions in SASS</li>
+<li>The @each decorator is also available for iteration purposes. It is recommended to use @for and @each over @while for better code readability and faster compilation</li>
+</ul>
+<h3 id="Functions-in-SASS">
+<a class="anchor" href="#Functions-in-SASS" aria-hidden="true"><span class="octicon octicon-link"></span></a>Functions in SASS<a class="anchor-link" href="#Functions-in-SASS"> </a>
+</h3>
+<ul>
 <li>Functions in SASS allow you to define complex calculations and transformations that can be reused throughout your stylesheet, similar to how functions work in programming languages like JavaScript and Python</li>
 <li>These functions can perform various tasks such as arithmetic operations, color manipulation, string manipulation, and more</li>
 <li>Additionally, you can create your own functions in SASS to meet your specific needs</li>
-<li>By using functions, you can generate CSS code dynamically and make your stylesheet more efficient and organized
-### Mixins</li>
+<li>By using functions, you can generate CSS code dynamically and make your stylesheet more efficient and organized</li>
+</ul>
+<h3 id="Mixins">
+<a class="anchor" href="#Mixins" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mixins<a class="anchor-link" href="#Mixins"> </a>
+</h3>
+<ul>
 <li>Mixins in SASS are a way to group CSS styles that can be reused throughout a website</li>
 <li>They are similar to templates and can be built upon to create new features without writing the same code repeatedly</li>
 <li>Mixins can also take arguments to apply effects on specific elements, but unlike functions, they cannot return values</li>
 <li>To use a mixin in SASS, it needs to be declared using @mixin and incorporated using @include</li>
-<li>Mixins help to organize and make CSS code more readable
-### Inheritance</li>
+<li>Mixins help to organize and make CSS code more readable</li>
+</ul>
+<h3 id="Inheritance">
+<a class="anchor" href="#Inheritance" aria-hidden="true"><span class="octicon octicon-link"></span></a>Inheritance<a class="anchor-link" href="#Inheritance"> </a>
+</h3>
+<ul>
 <li>In SASS, we have the concept of inheritance, where a child class can inherit properties from a parent class</li>
 <li>This is similar to the inheritance concept in general programming, where it allows for more flexible and reusable code</li>
 <li>We can create base styles and have other styles inherit from them using the @extend directive in SASS</li>
