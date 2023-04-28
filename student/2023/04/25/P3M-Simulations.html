@@ -4542,11 +4542,11 @@ wattsPerHour ← 1
 
 wattsLeft ← 20
 
-daysStarving ← 0
+wattsConsumed = 0
 
     REPEAT 24 TIMES {
 
-        wattsConsumed ← numApps * wattsPerDay
+        wattsConsumed ← numApps * wattsPerHour
 
         wattsLeft ← wattsLeft - wattsConsumed
 
@@ -4556,7 +4556,7 @@ daysStarving ← 0
 
         }
     }
-DISPLAY("Power consumed by running  " + numApps + " Apps is " + wattsConsumer)
+DISPLAY("Power consumed by running  " + numApps + " Apps is " + wattsConsumed)
 DISPLAY("Power remaining by running  " + numApps + " Apps is " + wattsLeft)
 
 </code></pre>
