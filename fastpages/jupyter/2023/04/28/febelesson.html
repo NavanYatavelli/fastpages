@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      6 min read
     
 </span></p>
 
@@ -135,9 +135,20 @@ window.onload = wrap_img;
 </li>
 <li class="toc-entry toc-h2"><a href="#Setting-up-GitHub-Pages-with-FastPages-Features">Setting up GitHub Pages with FastPages Features </a></li>
 <li class="toc-entry toc-h2"><a href="#How-to-Make-a-Pull-Request">How to Make a Pull Request </a></li>
+<li class="toc-entry toc-h2"><a href="#Fetching">Fetching </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#The-Basics">The Basics </a></li>
+<li class="toc-entry toc-h3"><a href="#About-Fetching">About Fetching </a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#Method">Method </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#Filtering-Data">Filtering Data </a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h1"><a href="#Hacks-and-Point-Division">Hacks and Point Division </a>
 <ul>
-<li class="toc-entry toc-h2"><a href="#Done-as-pair-hacks-(Navan)">Done as pair hacks (Navan) </a></li>
+<li class="toc-entry toc-h2"><a href="#Done-as-pair-hacks-(Navan-and-Kaiden)">Done as pair hacks (Navan and Kaiden) </a></li>
 </ul>
 </li>
 </ul><!--
@@ -335,6 +346,65 @@ $ brew install java # openjdk install</p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Fetching">
+<a class="anchor" href="#Fetching" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fetching<a class="anchor-link" href="#Fetching"> </a>
+</h2>
+<h3 id="The-Basics">
+<a class="anchor" href="#The-Basics" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Basics<a class="anchor-link" href="#The-Basics"> </a>
+</h3>
+<ul>
+<li>Fetching means getting data from somewhere else, like a website or database.</li>
+</ul>
+<p>JavaScript is a programming language that can be used to fetch data from a website or database.</p>
+<ul>
+<li>When you fetch data with JavaScript, you first need to tell it where to get the data from. This is called the URL.</li>
+<li>Once you know the URL, you can use JavaScript to go and get the data from that URL.</li>
+<li>When the data comes back, it's usually in a format like text or JSON. This means that you might need to do some additional work to turn the data into something that your website or application can use.</li>
+<li>Once you have the data, you can use JavaScript to display it on your website or application. You can put it in a table, show it on a map, or do anything else you can think of.</li>
+</ul>
+<h3 id="About-Fetching">
+<a class="anchor" href="#About-Fetching" aria-hidden="true"><span class="octicon octicon-link"></span></a>About Fetching<a class="anchor-link" href="#About-Fetching"> </a>
+</h3>
+<h4 id="Method">
+<a class="anchor" href="#Method" aria-hidden="true"><span class="octicon octicon-link"></span></a>Method<a class="anchor-link" href="#Method"> </a>
+</h4>
+<p>The fetching methods are in line with the CRUD (Create, Read, Update, Delete), and list as follows:</p>
+<ul>
+<li>"GET": Probably the most common method you would use, which is in line with "read". It essentially "gets" the information from the API and brings it to the frontend where you are able to display it and read it.</li>
+<li>"POST": Lines up with "create" and adds a resource to the API. You will probably mostly be using this with your own API or if a website adds your input to an API.</li>
+<li>"PUT" and "PATCH": Essentially the "update" for API. Use "PUT" if you want to change the whole resource, or "PATCH" if you want to change just one part of a resource.</li>
+<li>"DELETE": Exactly how it sounds, deletes a resource from the API</li>
+</ul>
+<p>Popcorn Hacks:</p>
+<ul>
+<li>What method should I use if I want to display some of the data stored in the backend?</li>
+</ul>
+<p>GET</p>
+<ul>
+<li>What method would I use if something in the data is misspelled and I want to fix it real quick?</li>
+</ul>
+<p>PATCH</p>
+<ul>
+<li>What method should I use if I want to add a new entry to the data?</li>
+</ul>
+<p>POST</p>
+<h3 id="Filtering-Data">
+<a class="anchor" href="#Filtering-Data" aria-hidden="true"><span class="octicon octicon-link"></span></a>Filtering Data<a class="anchor-link" href="#Filtering-Data"> </a>
+</h3>
+<ul>
+<li>If we want to display API data, we are going to have to filter what we want to display for multiple reasons<ul>
+<li>These include making sure that the user only sees information they need to see, and not anything else</li>
+<li>Also we need to present the information in a readable format instead of just seeing the raw data</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Hacks-and-Point-Division">
 <a class="anchor" href="#Hacks-and-Point-Division" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks and Point Division<a class="anchor-link" href="#Hacks-and-Point-Division"> </a>
 </h1>
@@ -342,8 +412,8 @@ $ brew install java # openjdk install</p>
 <li>Popcorn questions answered within lesson (.2)</li>
 <li>Screenshot showing proof that conda is installed (.1)</li>
 </ul>
-<h2 id="Done-as-pair-hacks-(Navan)">
-<a class="anchor" href="#Done-as-pair-hacks-(Navan)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Done as pair hacks (Navan)<a class="anchor-link" href="#Done-as-pair-hacks-(Navan)"> </a>
+<h2 id="Done-as-pair-hacks-(Navan-and-Kaiden)">
+<a class="anchor" href="#Done-as-pair-hacks-(Navan-and-Kaiden)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Done as pair hacks (Navan and Kaiden)<a class="anchor-link" href="#Done-as-pair-hacks-(Navan-and-Kaiden)"> </a>
 </h2>
 <ul>
 <li>Create 3 quiz questions to demonstrate the main steps in creating a repository on Github (.1)</li>
