@@ -58,6 +58,8 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
     - Computer Device --> A physical object that has the ability to execute code is a computing device. Computers, tablets, servers, routers, and smart sensors are a few examples.
     - Bandwidth --> In most cases, bandwidth is expressed in bits per second.
     - Computer Network --> A collection of connected computers that can send and receive data is known as a computer network.
+   
+   ![OSI Layers]({{site.baseurl}}/images/layers.png)
 
 > Watch/review College Board Daily Video 4.1.2
 
