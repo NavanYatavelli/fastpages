@@ -130,11 +130,17 @@ The "network" layer is responsible for ***routing data packets between networks*
 
 - What is naturally Distributed in Frontend/Backend archeticture?  
 
+The frontend is divided into numerous distinct components that can be created and deployed separately in a distributed frontend/backend architecture. This enables more scalability, easier maintenance, and quicker development.
+
 - Analyze this command in Docker: ```ENV GUNICORN_CMD_ARGS="--workers=1 --bind=0.0.0.0:8086"```.   Determine if there is options are options in this command for parallel computing within the server that runs python/gunicorn.  Here is an [article](https://medium.com/building-the-system/gunicorn-3-means-of-concurrency-efbb547674b7)
 
 
 > Last week we discussed parallel computing on local machine.  There are many options.  Here is something to get parallel computing work with a tool called Ray.
 - Review this [article](https://www.anyscale.com/blog/writing-your-first-distributed-python-application-with-ray)...  Can you get parallel code on images to work more effectively?  I have not tried Ray.
+
+
+Yes, there are several ways to improve the performance of parallel code on images. The image can be split into smaller blocks and processed one at a time as one method. Using a specific parallel image processing package is an additional option. Finally, you can run your code across other machines by using a distributed computing platform.
+
 
 - Code example from ChatGPT using squares.  This might be more interesting if nums we generated to be a lot bigger.
 
