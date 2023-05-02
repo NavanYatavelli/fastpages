@@ -36,6 +36,7 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 
 
 ![Computer Hardware]({{site.baseurl}}/images/cpu.jpeg)
+![Computer Hardware]({{site.baseurl}}/images/comp.png)
 
 
 ### The Internet
