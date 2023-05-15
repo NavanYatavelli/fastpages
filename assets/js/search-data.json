@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Test JS Quotes!!!",
-            "content": "Test JS . This Java Script fetches from a third party API, and display json data. This also uses the json data in JavaScript function as an object and prints the value. . . Click the below button for JavaScript to fetch 3rd party API JSON data. . Fetch Quotes!!! . Click the above button to random facts in JSON format. .",
+            "content": "Test JS . This Java Script fetches from a third party API, and display json data. This also uses the json data in JavaScript function as an object and prints the value. . . Click the below button for JavaScript to fetch 3rd party API JSON data. . Fetch Plants!!! . Click the above button to random facts in JSON format. .",
             "url": "https://beebadger.github.io/fastpages/2023/05/13/test-quotes.html",
             "relUrl": "/2023/05/13/test-quotes.html",
             "date": " • May 13, 2023"
