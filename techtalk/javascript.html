@@ -274,10 +274,10 @@ window.onload = wrap_img;
 
 
 
-<div id="7dfdb866-d656-4d23-bac3-3020c08a2db7"></div>
+<div id="d900b3a1-4978-49d1-a622-7afcb18cf265"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#7dfdb866-d656-4d23-bac3-3020c08a2db7');
+var element = $('#d900b3a1-4978-49d1-a622-7afcb18cf265');
 console.log("JavaScript/Jupyter Output Intro");
 
 // Browser Console output; debugging or tracing
@@ -350,10 +350,10 @@ element.append('<br><b>Hello World Again!');
 
 
 
-<div id="9c8d9da7-ea45-4f58-9731-5c4372dd1704"></div>
+<div id="93745613-f715-461e-9013-3fb3574020a7"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#9c8d9da7-ea45-4f58-9731-5c4372dd1704');
+var element = $('#93745613-f715-461e-9013-3fb3574020a7');
 console.log("Variable Definition");
 
 var msg = "Hello, World!";
@@ -435,10 +435,10 @@ element.text(msg);
 
 
 
-<div id="b32c81c8-d370-4ac6-b69e-f666de3fc823"></div>
+<div id="3d8fdfcd-79fe-4d00-ae75-b40479b50b9b"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#b32c81c8-d370-4ac6-b69e-f666de3fc823');
+var element = $('#3d8fdfcd-79fe-4d00-ae75-b40479b50b9b');
 console.log("Function Definition");
 
 /* Function: logIt
@@ -546,10 +546,10 @@ logIt(msg + "  " + classOf); // concatenation of strings
 
 
 
-<div id="7542073b-9a7f-4a09-ac39-134f3b1cb1de"></div>
+<div id="feae24ef-7add-4601-96eb-53f32a41d267"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#7542073b-9a7f-4a09-ac39-134f3b1cb1de');
+var element = $('#feae24ef-7add-4601-96eb-53f32a41d267');
 console.log("Examine Data Types");
 
 // Function to add typeof to output
@@ -796,10 +796,10 @@ logIt(JSON.stringify(person));  //method used to convert this object into readab
 
 
 
-<div id="3793e6d4-d55d-4b5b-850a-30d0cf4e0191"></div>
+<div id="b8df65f1-0773-4a8c-861f-ce8faa740602"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#3793e6d4-d55d-4b5b-850a-30d0cf4e0191');
+var element = $('#b8df65f1-0773-4a8c-861f-ce8faa740602');
 console.log("Person objects");
 
 /* class: Person
@@ -1017,10 +1017,10 @@ student.logIt(); // log to console
 
 
 
-<div id="af6d7dc0-140f-4d61-827d-461ca9c6e1d6"></div>
+<div id="9d694781-b12c-4678-82b0-d9e21294f02d"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#af6d7dc0-140f-4d61-827d-461ca9c6e1d6');
+var element = $('#9d694781-b12c-4678-82b0-d9e21294f02d');
 console.log("Classroom object");
 
 /* class: Person
@@ -1209,10 +1209,10 @@ $('#jsonText').text(compsci.json);  // posts/embeds/writes compsci.json to HTML 
 
 
 
-<div id="b2dbf00b-c2e4-4847-9c35-a7d7319919ef"></div>
+<div id="34c3a841-a025-4813-b123-792e44f4f592"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#b2dbf00b-c2e4-4847-9c35-a7d7319919ef');
+var element = $('#34c3a841-a025-4813-b123-792e44f4f592');
 console.log("Classroom Web Page");
 
 // extract JSON text from HTML page
@@ -1414,6 +1414,8 @@ for (var row of classroom) {
 <span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
 
 <span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+
+  <span class="c1">// Get the plants data from Rapid API using API key</span>
   <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
     <span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://house-plants2.p.rapidapi.com/all-lite&#39;</span><span class="p">,</span> <span class="p">{</span>
 	<span class="nx">method</span><span class="o">:</span> <span class="s1">&#39;GET&#39;</span><span class="p">,</span>
@@ -1426,18 +1428,21 @@ for (var row of classroom) {
       <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">response</span><span class="p">.</span><span class="nx">ok</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="s1">&#39;API response failed&#39;</span><span class="p">);</span>
       <span class="p">}</span>
-      <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+      <span class="c1">// Parse the JSON response of Plants data, this is returned as JSON array</span>
+      <span class="k">return</span> <span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span> 
     <span class="p">})</span>
     <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="p">=&gt;</span> <span class="p">{</span>
       <span class="k">for</span> <span class="p">(</span><span class="kr">const</span> <span class="nx">row</span> <span class="k">of</span> <span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">// BUG warning/resolution - DataTable requires row to be single append</span>
+        <span class="c1">// loop through each JRON array to build a Plant row. </span>
+        <span class="c1">// Append the row to the table body</span>
         <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#fBody&#39;</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;&lt;tr&gt;&lt;td&gt;&#39;</span> <span class="o">+</span> 
             <span class="nx">row</span><span class="p">.</span><span class="nx">Categories</span> <span class="o">+</span> <span class="s1">&#39;&lt;/td&gt;&lt;td&gt;&#39;</span> <span class="o">+</span> 
             <span class="nx">row</span><span class="p">.</span><span class="nx">Family</span> <span class="o">+</span> <span class="s1">&#39;&lt;/td&gt;&lt;td&gt;&#39;</span> <span class="o">+</span> 
             <span class="nx">row</span><span class="p">.</span><span class="nx">Origin</span> <span class="o">+</span> <span class="s1">&#39;&lt;/td&gt;&lt;td&gt;&#39;</span> <span class="o">+</span> 
             <span class="nx">row</span><span class="p">.</span><span class="nx">Climat</span> <span class="o">+</span> <span class="s1">&#39;&lt;/td&gt;&lt;/tr&gt;&#39;</span><span class="p">);</span>
       <span class="p">}</span>
-      <span class="c1">// BUG warning - Jupyter does not show Datatable controls, works on deployed GitHub pages</span>
+      
+      <span class="c1">// Display the table</span>
       <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#fTable&quot;</span><span class="p">).</span><span class="nx">DataTable</span><span class="p">();</span>
     <span class="p">})</span>
     <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">error</span> <span class="p">=&gt;</span> <span class="p">{</span>
@@ -1477,6 +1482,8 @@ for (var row of classroom) {
 </table>
 
 <script>
+
+  // Get the plants data from Rapid API using API key
   $(document).ready(function() {
     fetch('https://house-plants2.p.rapidapi.com/all-lite', {
 	method: 'GET',
@@ -1489,18 +1496,21 @@ for (var row of classroom) {
       if (!response.ok) {
         throw new Error('API response failed');
       }
-      return response.json();
+      // Parse the JSON response of Plants data, this is returned as JSON array
+      return response.json(); 
     })
     .then(data => {
       for (const row of data) {
-        // BUG warning/resolution - DataTable requires row to be single append
+        // loop through each JRON array to build a Plant row. 
+        // Append the row to the table body
         $('#fBody').append('<tr><td>' + 
             row.Categories + '</td><td>' + 
             row.Family + '</td><td>' + 
             row.Origin + '</td><td>' + 
             row.Climat + '</td></tr>');
       }
-      // BUG warning - Jupyter does not show Datatable controls, works on deployed GitHub pages
+      
+      // Display the table
       $("#fTable").DataTable();
     })
     .catch(error => {
