@@ -1,48 +1,13 @@
 ---
 toc: false
 layout: post
-description: Test Quotes!!!
-categories: [Java Script]
+description: Test Quotes
 title:Test Quotes!!!
 ---
 
-#### Here is the Java Script code explanation 
+#### Test JS
 This Java Script fetches from a third party API, and display json data. This also uses the json data in JavaScript function as an object and prints the value. 
 
-```
-// Clicking this button will call function fetchStocks() 
-<button name="button" onclick="fetchStocks()" >Fetches the stock values in JSON format!!!</button>
-
-<script>
-async function fetchStocks() {
-	// URL of 3rd party API to get stocks data
-	const url = 'https://alpha-vantage.p.rapidapi.com/query?interval=5min&function=TIME_SERIES_INTRADAY&symbol=MSFT&datatype=json&output_size=compact';
-
-	// HTTP Headers
-	const options = {
-		method: 'GET',
-		headers: {
-			'X-RapidAPI-Key': '61c6a629f7msh3c7c0f786cc7e20p158b5bjsnea9db1f03bc5',
-			'X-RapidAPI-Host': 'alpha-vantage.p.rapidapi.com'
-		}
-	};
-
-	try {
-		// Fetch function
-		const response = await fetch(url, options);
-		// Wait until response is complete
-		const result = await response.text();
-		console.log(result);
-
-		// Update teh HTML with JSON response data
-		document.getElementById('tips').innerHTML = result;
-	} catch (error) {
-		console.error(error);
-	}
-}
-
-</script>
-```
 <br/><br/><br/><br/>
 
 
@@ -75,5 +40,3 @@ $.ajax(settings).done(function (response) {
 }
 
 </script>
-
-
