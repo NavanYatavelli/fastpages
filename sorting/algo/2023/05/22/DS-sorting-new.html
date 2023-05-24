@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -195,6 +195,69 @@ window.onload = wrap_img;
 <h3 id="Selection-Sort">Selection Sort<a class="anchor-link" href="#Selection-Sort"> </a></h3><p>Searches through all of the lists and finds the lowest, placing it at the very bottom, in this case the value would be 0, then 17, etc.</p>
 <h3 id="Merge-Sort">Merge Sort<a class="anchor-link" href="#Merge-Sort"> </a></h3><p>We would split the value in half, in this case we would split it into 5 and 5, then each of those would be split into 2 and 3, then the 3 would be split into 2 and 1. All of these would then be sorted with lowest value at the bottom and then all put together again.</p>
 <h3 id="Insertion-Sort">Insertion Sort<a class="anchor-link" href="#Insertion-Sort"> </a></h3><p>It will sort each value left to right like bubble sort but instead of just moving one value to the right, every value would be moved however far left it needs to be moved</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Sorting-Words">Sorting Words<a class="anchor-link" href="#Sorting-Words"> </a></h1><p>Sorting strings works in the same way as integers. Using your expertise algorithm, sort the following list of random words.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">nltk</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="n">nltk</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s1">&#39;words&#39;</span><span class="p">)</span>  <span class="c1"># Download the word list (only required once)</span>
+
+<span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">words</span>
+
+<span class="n">english_words</span> <span class="o">=</span> <span class="n">words</span><span class="o">.</span><span class="n">words</span><span class="p">()</span>
+<span class="c1">#print(len(english_words))  # Prints the number of words in the list</span>
+
+<span class="c1"># You can now use the &#39;english_words&#39; list in your code</span>
+
+<span class="n">words</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="n">words</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">english_words</span><span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">english_words</span><span class="p">))])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Random List&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Discuss">Discuss<a class="anchor-link" href="#Discuss"> </a></h2><p>Answer the following with your group.</p>
+<ul>
+<li>When should you use each algorithm? What makes an algorithm the right choice?
+<pre><code>  The best algorithm to choose depends on the smallest number of steps it takes to accomplish a task</code></pre>
+</li>
+<li>Given the following lists...<ul>
+<li>[0, 2, 6, 4, 8, 10]
+  Bubble sort would be the best option here since you only have to switch the 6 and 4</li>
+<li>[Elephant, Banana, Cat, Dog, Apple]
+<pre><code>  Selection sort would only takes 4 steps to accomplish</code></pre>
+</li>
+<li>[29, 13, 83, 47, 32, 78, 100, 60, 65, 15, 24, 9, 40, 68, 53, 8, 90, 58, 39, 32, 34, 91, 74, 94, 49, 87, 34, 87, 23, 17, 27, 2, 38, 58, 84, 15, 9, 46, 74, 40, 44, 8, 55, 28, 81, 92, 81, 88, 53, 38, 19, 21, 9, 54, 21, 67, 3, 41, 3, 74, 13, 71, 70, 45, 5, 36, 80, 64, 97, 86, 73, 74, 94, 79, 49, 32, 20, 68, 64, 69, 1, 77, 31, 56, 100, 80, 48, 75, 85, 93, 67, 57, 26, 56, 43, 53, 59, 28, 67, 50]
+  Merge would be the best since it would split the table in half reducing the amount of times we would need to check the values against the other values
+Select the algorithm you believe is best for each, explain.</li>
+</ul>
+</li>
+</ul>
 
 </div>
 </div>
