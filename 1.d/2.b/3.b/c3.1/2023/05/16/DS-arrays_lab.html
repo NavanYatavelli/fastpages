@@ -81,7 +81,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      13 min read
+      14 min read
     
 </span></p>
 
@@ -187,6 +187,8 @@ window.onload = wrap_img;
 <li>Candy Challenge:print a christmas tree and trunk</li>
 </ul>
 </blockquote>
+
+<pre><code>Printed below!!!</code></pre>
 
 </div>
 </div>
@@ -393,7 +395,8 @@ For loop with shortcut (*) row expansion
 <blockquote>
 <p>Example below populate a 2D array.  Key concepts are ij loop and assignments.  Observe the object that is created in console.  Learn the basics of iteration through 2D array in JavaScript.</p>
 <ul>
-<li>Candy challenge:Work of pairs.  Create one of the Python examples (christmas tree, keyboard, ...). Use the element.append to output within the notebook.   As you work on JavaScript make sure your development enviornment is setup like JavaScript programmer.</li>
+<li>Candy challenge:Work of pairs.  Create one of the Python examples (christmas tree, keyboard, ...). Use the element.append to output within the notebook.   As you work on JavaScript make sure your development enviornment is setup like JavaScript programmer.
+Done. Printing the keypad in Java Script.</li>
 </ul>
 </blockquote>
 
@@ -427,6 +430,36 @@ For loop with shortcut (*) row expansion
 <span class="p">}</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">arr2D</span><span class="p">);</span>
 <span class="nx">element</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">arr2D</span><span class="p">);</span>
+
+<span class="c1">// Candy Challenge</span>
+<span class="c1">// Printing the keypad in Java Script</span>
+<span class="kd">var</span> <span class="nx">keypad</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="kd">var</span> <span class="nx">keypad_rows</span> <span class="o">=</span> <span class="mf">4</span><span class="p">;</span>
+<span class="kd">var</span> <span class="nx">keypad_cols</span> <span class="o">=</span> <span class="mf">3</span><span class="p">;</span>
+
+<span class="c1">// Fill the keypad with values</span>
+<span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">keypad_rows</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">keypad</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">[];</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kd">var</span> <span class="nx">j</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span> <span class="nx">j</span> <span class="o">&lt;</span> <span class="nx">keypad_cols</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kd">var</span> <span class="nx">num</span> <span class="o">=</span> <span class="nx">i</span> <span class="o">*</span> <span class="nx">keypad</span> <span class="nx">_cols</span><span class="o">+</span> <span class="nx">j</span> <span class="o">+</span> <span class="mf">1</span><span class="p">;</span>
+            
+            <span class="c1">// Add the number to the keypad button</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">&lt;=</span> <span class="mf">9</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">keypad</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="nx">j</span><span class="p">]</span> <span class="o">=</span> <span class="nx">num</span><span class="p">;</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">==</span> <span class="mf">10</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// For 10th button, show space</span>
+                <span class="nx">keypad</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="nx">j</span><span class="p">]</span> <span class="o">=</span> <span class="s2">" "</span><span class="p">;</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">==</span> <span class="mf">11</span><span class="p">)</span> <span class="p">{</span>  <span class="c1">// For 11th button, show 0</span>
+                <span class="nx">keypad</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="nx">j</span><span class="p">]</span> <span class="o">=</span> <span class="mf">0</span><span class="p">;</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">==</span> <span class="mf">12</span><span class="p">)</span> <span class="p">{</span> <span class="c1">// For 12th button, show space</span>
+                <span class="nx">keypad</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="nx">j</span><span class="p">]</span> <span class="o">=</span> <span class="s2">" "</span><span class="p">;</span>
+            <span class="p">}</span>
+      <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// Append the keypad</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">keypad</span><span class="p">);</span>
+<span class="nx">element</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s2">"&lt;br/&gt; &lt;br/&gt;"</span> <span class="p">);</span>
+<span class="nx">element</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="nx">keypad</span><span class="p">);</span>
 </pre></div>
 
     </div>
@@ -441,10 +474,10 @@ For loop with shortcut (*) row expansion
 
 
 
-<div id="d4b461ff-762f-4169-ae6f-4f6c56f704a9"></div>
+<div id="739ba961-b305-4b9f-8776-838caecc726e"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#d4b461ff-762f-4169-ae6f-4f6c56f704a9');
+var element = $('#739ba961-b305-4b9f-8776-838caecc726e');
 
 /*
 * Creator: Nighthawk Coding Society
@@ -464,6 +497,36 @@ for (var i = 0; i < rows; i + 3;) {
 }
 console.log(arr2D);
 element.append(arr2D);
+
+// Candy Challenge
+// Printing the keypad in Java Script
+var keypad = [];
+var keypad_rows = 4;
+var keypad_cols = 3;
+
+// Fill the keypad with values
+for (var i = 0; i < keypad_rows; i++) {
+      keypad[i] = [];
+        for (var j = 0; j < keypad_cols; j++) {
+            var num = i * keypad _cols+ j + 1;
+            
+            // Add the number to the keypad button
+            if (num <= 9) {
+                keypad[i][j] = num;
+            } else if (num == 10) { // For 10th button, show space
+                keypad[i][j] = " ";
+            } else if (num == 11) {  // For 11th button, show 0
+                keypad[i][j] = 0;
+            } else if (num == 12) { // For 12th button, show space
+                keypad[i][j] = " ";
+            }
+      }
+}
+
+// Append the keypad
+console.log(keypad);
+element.append("<br/> <br/>" );
+element.append(keypad);
 
 </script>
 </div>
@@ -487,7 +550,8 @@ element.append(arr2D);
 <ul>
 <li>Build ASCII monkeys, 5 different monkeys using ASCII Art for the "Monkey Jumpers" countdown poem</li>
 <li>ANSII Color codes are added to each Monkey</li>
-<li>Candy Challenge:Print monkeys horizontally versus vertically.</li>
+<li>Candy Challenge:Print monkeys horizontally versus vertically.
+  Printed monkeys horizontally, below.</li>
 </ul>
 </blockquote>
 
@@ -567,17 +631,24 @@ element.append(arr2D);
         <span class="c1"># concatenation (+) of the loop variable and string to form a countdown message</span>
         <span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" little monkeys jumping on the bed..."</span><span class="p">)</span>
 
-        <span class="c1"># cycle through monkeys that are left in poem countdown</span>
-        <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>  <span class="c1"># cycles through remaining monkeys in countdown</span>
-
+        <span class="c1"># Below printing horizontally </span>
+        <span class="c1"># cycling through monkeys that are left in poem countdown</span>
+        <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">monkeys</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
             <span class="c1"># cycles through monkey part by part</span>
-            <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">monkeys</span><span class="p">[</span><span class="n">row</span><span class="p">])):</span>
-                <span class="c1"># prints specific part of the monkey from the 2D cell</span>
-                <span class="nb">print</span><span class="p">(</span><span class="n">monkeys</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">col</span><span class="p">]</span> <span class="o">+</span> <span class="s2">" "</span><span class="p">)</span>
+            <span class="n">string</span> <span class="o">=</span> <span class="s2">""</span>
+            <span class="c1"># cycles through remaining monkeys in countdown</span>
+            <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>  
 
-            <span class="c1"># this new line gives separation between stanza of poem</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\u001b</span><span class="s2">[0m"</span><span class="p">)</span>  <span class="c1"># reset color</span>
+                
+                
+                    <span class="c1"># here print specific part of the monkey from the 2D cell</span>
+                <span class="n">string</span> <span class="o">=</span> <span class="n">string</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\u001b</span><span class="s2">[0m"</span> <span class="o">+</span> <span class="n">monkeys</span><span class="p">[</span><span class="n">row</span><span class="p">][</span><span class="n">col</span><span class="p">]</span> <span class="o">+</span> <span class="s2">" "</span>
+                
+                
+                <span class="c1"># this new line gives separation between stanza of poem</span>
+                  
             
+            <span class="nb">print</span><span class="p">(</span><span class="n">string</span><span class="p">)</span>
         <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 
     <span class="c1"># out of all the loops, prints finishing messages</span>
@@ -976,6 +1047,14 @@ element.append(arr2D);
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Candy challenge: Make you own ASCII art animation. Here is a pet chasing his toy!!!</p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -994,13 +1073,13 @@ element.append(arr2D);
     
     <span class="n">sp</span> <span class="o">=</span> <span class="s2">" "</span> <span class="o">*</span> <span class="n">position</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">COLOR</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">"        |__|"</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">" |======||||"</span><span class="p">)</span>     
-    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">"  ||    |__|"</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">"  ||===||"</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">"        |__|        "</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">" |======||||        "</span><span class="p">)</span>     
+    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">"  ||    |__|        "</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">sp</span> <span class="o">+</span> <span class="s2">"  ||===||    &gt;&lt;(((0&gt;"</span><span class="p">)</span>
     
-<span class="c1"># Makes animal walk</span>
-<span class="k">def</span> <span class="nf">animal_walk</span><span class="p">():</span>
+<span class="c1"># Makes animal chasing</span>
+<span class="k">def</span> <span class="nf">animal_chasing</span><span class="p">():</span>
     <span class="n">begin</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="n">distance</span> <span class="o">=</span> <span class="mi">90</span>
     <span class="n">step</span> <span class="o">=</span> <span class="mi">1</span>
@@ -1009,7 +1088,7 @@ element.append(arr2D);
         <span class="n">animal_print</span><span class="p">(</span><span class="n">position</span><span class="p">)</span>
         <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.1</span><span class="p">)</span>
 
-<span class="n">animal_walk</span><span class="p">()</span>
+<span class="n">animal_chasing</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -1022,10 +1101,10 @@ element.append(arr2D);
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansi-green-fg">                                                                                                 |__|
-                                                                                          |======||||
-                                                                                           ||    |__|
-                                                                                           ||===||
+<pre><span class="ansi-green-fg">                                                                                                 |__|        
+                                                                                          |======||||        
+                                                                                           ||    |__|        
+                                                                                           ||===||    &gt;&lt;(((0&gt;
 </span></pre>
 </div>
 </div>
